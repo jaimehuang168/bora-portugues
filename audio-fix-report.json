@@ -1,0 +1,30 @@
+{
+  "version": "2.1.1",
+  "original_git_blob": "6d95654a5d6d3d9aa834e7aba0cede29ea8f8b7e",
+  "index_sha256": "e8cb9850a544e78dd60836bf7bf068f978b47314167a0468b7ea74762d112efd",
+  "audio_clips": 222,
+  "patches": [
+    "visible version marker and mobile transport layout",
+    "persistent native audio controls",
+    "retain media element and source on stop",
+    "cancel system speech only when owned",
+    "per-play engine override without mutating profile",
+    "require fresh tap after asynchronous voice discovery",
+    "auto prefers built-in clips for fixed lessons",
+    "fresh tap after online-voice consent",
+    "ready state rather than delayed unsolicited play",
+    "explicit blocked-play recovery",
+    "explicit audible media state",
+    "native pause keeps transport synchronized",
+    "retry from ready and blocked states",
+    "sentence fallback without regex lookbehind",
+    "updated engine label",
+    "test independent of stored system-voice preference",
+    "visible mobile repair badge",
+    "one-tap sound test on homepage",
+    "native manual playback and retry button",
+    "footer version"
+  ],
+  "validation": "JS syntax and deterministic patch checks passed. Real mobile speakers not verified.",
+  "privacy": "No storage-key changes, no telemetry, no microphone or user-data upload."
+}

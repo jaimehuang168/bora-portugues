@@ -33,6 +33,9 @@
 @media(max-width:650px){.pron-entry{align-items:flex-start;flex-direction:column;gap:12px}.pron-entry .btn{margin-left:54px}.pron-entry b{font-size:13px}.pron-entry p{font-size:11px}.pron-hero{padding:25px 22px}.pron-hero h2{font-size:25px}.pron-hero p{font-size:12px}.pron-layout{gap:17px}.pron-controls{grid-template-columns:1fr 1fr}.pron-controls .form-field:last-child{grid-column:1/-1}.pron-sentence h3{font-size:18px}.pron-sentence{gap:10px;padding:19px 0}.speech-dock{bottom:84px;padding:11px 12px;border-radius:14px}#speech-now{font-size:16px;max-height:76px}.speech-dock-actions{gap:3px}.speech-dock-actions>.row{gap:6px}.speech-dock-actions .btn{font-size:11px;padding:7px 9px}.speech-dock-actions .icon-btn{width:34px;height:34px}.speech-dock-actions .text-btn{min-height:32px}.speech-dock-top>.icon-btn{width:32px;height:32px}.has-speech .main{padding-bottom:385px}.has-speech .toast{bottom:355px}.visitor-line>.row{flex-wrap:wrap;gap:8px}.visitor-line>.row>.row{flex-wrap:wrap}.top-info{gap:7px}.topbar .top-language{display:none}}
 
 </style>
+<meta name="bora-audio-fix" content="2.1.1">
+<style>
+.bora-native-wrap{border-top:1px solid #d7e2d5;margin-top:12px;padding-top:9px}.bora-native-wrap p{font-size:12px;line-height:1.6;color:#496453;margin:0 0 6px}.bora-native-wrap audio{display:block;width:100%;height:44px}.speech-dock{max-height:65dvh;overflow-y:auto;overscroll-behavior:contain}@media(max-width:650px){.pron-entry{flex-wrap:wrap}.pron-entry>.row.wrap{width:100%}.speech-dock-actions>.row{flex-wrap:wrap}.speech-dock{max-height:60vh}}</style>
 </head>
 <body>
 <a class="skip" href="#main" data-action="skip-main">跳至主要內容</a>
@@ -463,7 +466,7 @@ function splitText(value, max = 230) {
       const segmenter = new Intl.Segmenter('pt-BR', {granularity: 'sentence'});
       sentences.push(...Array.from(segmenter.segment(paragraph), s => s.segment.trim()).filter(Boolean));
     } else {
-      sentences.push(...paragraph.split(/(?<=[.!?])\s+(?=[A-ZÀ-Ý])/).filter(Boolean));
+      sentences.push(...(paragraph.match(/[^.!?]+[.!?]+(?:["'”’]+)?|[^.!?]+$/g)||[paragraph]).map(t=>t.trim()).filter(Boolean));
     }
   }
   // Bound each utterance without silently discarding the rest of a long script.
@@ -483,7 +486,10 @@ function splitText(value, max = 230) {
 }
 function create(config) {
   const bank = global.BORA_AUDIO?.clips || {};
-  const audio = new Audio(); audio.preload = 'auto';
+  const audio = new Audio(); audio.preload = 'metadata';
+  audio.id='bora-native-audio'; audio.controls=true; audio.setAttribute('aria-label','葡語發音：手機原生播放器');
+  audio.setAttribute('playsinline',''); audio.setAttribute('webkit-playsinline','');
+  audio.muted=false; audio.volume=1;
   let status='idle', queue=[], index=0, token=0, turn=0, timer=null, watchdog=null;
   let utterance=null, rate=1, gap=500, label='發音練習', mask=false;
   let source='', message='', consent=false, waitingForVoice=false;
@@ -503,10 +509,13 @@ function create(config) {
   function setStatus(next, note='') { status=next; message=note; notify(); }
   function cleanup() {
     turn++; clearTimeout(timer); clearTimeout(watchdog); timer=watchdog=null;
-    audio.onended=audio.onerror=audio.onplaying=null;
-    audio.pause(); audio.removeAttribute('src'); audio.load();
-    if (utterance) { utterance.onend=utterance.onerror=utterance.onstart=null; utterance=null; }
-    try { global.speechSynthesis?.cancel(); } catch (_) {}
+    audio.onended=audio.onerror=audio.onplaying=audio.onpause=null;
+    // Keep the same media element and source between user gestures.
+    audio.pause();
+    if (utterance) {
+      utterance.onend=utterance.onerror=utterance.onstart=null; utterance=null;
+      try { global.speechSynthesis?.cancel(); } catch (_) {}
+    }
     started=false;
   }
   function stop(hide=true) {
@@ -541,6 +550,8 @@ function create(config) {
     }
     const session=token;
     settings={...config.profile?.()};
+    if(['auto','builtin','system'].includes(options.engine))settings.speechEngine=options.engine;
+    let needsGesture=false;
     rate=Math.max(.6,Math.min(1.2,Number(options.rate)||1));
     gap=Math.max(0,Math.min(10000,Number(options.gap) || 0));
     label=String(options.label||'發音練習'); mask=options.mask===true;
@@ -553,15 +564,15 @@ function create(config) {
     const engine=settings.speechEngine||'auto';
     if(engine!=='builtin' && !voice && !allBuiltin && global.speechSynthesis) {
       waitingForVoice=true;setStatus('loading','正在偵測裝置的 pt-BR 語音…');
-      await waitVoices(session);waitingForVoice=false;
+      await waitVoices(session);waitingForVoice=false;needsGesture=true;
       if(session!==token)return false;voice=voiceFor(settings);
     }
     const selectEngine=item=>{
       if(engine==='builtin')return item.clip?'builtin':'';
       if(engine==='system')return voice?'system':'';
-      // Auto: local device voice > embedded clip > explicitly permitted online voice.
-      if(voice?.localService)return 'system';
+      // Fixed lessons use ready-to-play clips inside the user's tap.
       if(item.clip)return 'builtin';
+      if(voice?.localService)return 'system';
       return voice?'system':'';
     };
     for(const item of queue){item.engine=selectEngine(item);item.voice=voice;}
@@ -573,10 +584,12 @@ function create(config) {
     }
     if(queue.some(x=>x.engine==='system'&&!x.voice.localService)&&!consent){
       const accepted=global.confirm('這段文字將由裝置的線上 pt-BR 語音服務合成，可能傳送給該供應商。請勿包含機密資料。App 不會傳送你的錄音。允許本次頁面工作階段使用嗎？');
-      if(!accepted){stop();return false;}consent=true;
+      if(!accepted){stop();return false;}consent=true;needsGesture=true;
     }
     if(session!==token)return false;
-    index=0; startCurrent(session);return true;
+    index=0;
+    if(needsGesture){source=queue[0].engine;setStatus('ready','語音已備妥，請點「繼續」開始；手機可能要求再次點擊。');return true;}
+    startCurrent(session);return true;
   }
   function fail(note){cleanup();setStatus('error',note);config.onNotice?.(note);}
   function startCurrent(session=token, forceBuiltin=false){
@@ -590,8 +603,13 @@ function create(config) {
       setStatus('waiting',gap>=2000?`換你跟讀：留白 ${gap/1000} 秒`:'準備下一句…');
       timer=setTimeout(()=>{if(alive()){index++;startCurrent(session);}},gap);
     };
-    const failed=()=>{
+    const failed=(error)=>{
       if(!alive())return;
+      if(error?.name==='NotAllowedError'||error?.error==='not-allowed'){
+        clearTimeout(watchdog);
+        setStatus('blocked','瀏覽器擋住播放。請點「繼續」，或直接點下方原生播放器的 ▶。');
+        config.onNotice?.(message);return;
+      }
       if(source==='system'&&item.clip&&(settings.speechEngine||'auto')==='auto'){
         config.onNotice?.('系統語音未成功，改用內建基礎合成音。');startCurrent(session,true);
       } else fail(source==='builtin'?'音檔未能播放。請以完整瀏覽器開啟下載的 HTML，並檢查音量與媒體權限。':'系統朗讀未完成。請檢查語音、網路與音量，再按重播；也可改用內建音檔。');
@@ -605,8 +623,9 @@ function create(config) {
       watchdog=setTimeout(failed,Math.min(180000,expected));
     };
     if(source==='builtin'){
-      audio.src=item.clip.src; audio.playbackRate=rate;
+      audio.src=item.clip.src; audio.muted=false; audio.volume=1; audio.playbackRate=rate;
       audio.preservesPitch=true; audio.onplaying=playing;audio.onended=completed;audio.onerror=failed;
+      audio.onpause=()=>{if(alive()&&!audio.ended&&status==='playing'){clearTimeout(watchdog);setStatus('paused','已暫停；可用下方原生播放器續播，或按繼續重播本句。');}};
       try{const promise=audio.play();promise?.catch(failed);}catch(_){failed();}
     }else{
       const u=new SpeechSynthesisUtterance(item.text);utterance=u;
@@ -616,7 +635,7 @@ function create(config) {
     }
   }
   function pause(){if(['playing','waiting','loading'].includes(status)&&!waitingForVoice){cleanup();setStatus('paused','已暫停。繼續會從本句開頭播放。');}}
-  function resume(){if(queue.length&&['paused','stopped','done','error'].includes(status)&&queue[index].engine)startCurrent();}
+  function resume(){if(queue.length&&['paused','stopped','done','error','blocked','ready'].includes(status)&&queue[index].engine)startCurrent();}
   function replay(){if(queue[index]?.engine)startCurrent();}
   function restart(){if(queue[0]?.engine){index=0;startCurrent();}}
   function next(delta=1){if(!queue.length||!queue[index]?.engine)return;index=Math.max(0,Math.min(queue.length-1,index+delta));startCurrent();}
@@ -738,7 +757,7 @@ function heading(title,sub,extra=''){return `<div class="page-heading"><div><h1>
 function shell(content){
  const sec=section(),nav=navData();
  return `<aside class="sidebar"><a class="brand" href="#home" aria-label="Bora 首頁"><div class="brandmark">b.</div><div><div class="brand-name">Bora!</div><div class="brand-sub">巴西葡語練習室</div></div></a><div class="nav-section">YOUR LEARNING SPACE</div><nav aria-label="主要選單">${nav.slice(0,-1).map(n=>`<button class="nav-link ${sec===n[0]?'active':''}" data-action="go" data-route="${n[0]}" ${sec===n[0]?'aria-current="page"':''}>${icon(n[1])}${n[2]}${n[0]==='cards'&&dueCards().length?`<span class="badge">${dueCards().length}</span>`:''}</button>`).join('')}</nav><div class="sidebar-bottom"><div class="coach-card">${icon('leaf')}<h3>一點一滴，也是在前進。</h3><p>App 內每天 ${state.profile.dailyMinutes} 分鐘；外部聽力另計 30 分鐘。</p></div><button class="nav-link ${sec==='settings'?'active':''}" data-action="go" data-route="settings">${icon('settings')}偏好與備份</button><div class="local-profile"><div class="avatar">${esc(state.profile.name.slice(0,1).toUpperCase())}</div><div><div class="profile-name">${esc(state.profile.name)}</div><div class="profile-sub">本機個人學習空間</div></div></div></div></aside>
- <div class="shell"><header class="topbar"><div class="breadcrumbs"><span>學習空間</span>${icon('chevron')}<b>${nav.find(n=>n[0]===sec)?.[2]||'今日學習'}</b></div><div class="top-info"><div class="top-language"><span class="flag-br" aria-label="巴西"></span><span>Português do Brasil</span></div><span class="saved" id="save-status"><i class="dot"></i>${storageOK&&!storageLocked?'本機儲存':'暫存模式'}</span><button class="icon-btn" data-action="pron-open" aria-label="開啟發音練習">${icon('volume')}</button><button class="icon-btn" data-action="go" data-route="settings" aria-label="開啟偏好與語音設定">${icon('settings')}</button></div></header>${storageMessage?`<div class="notice-banner">${esc(storageMessage)}</div>`:''}<main id="main" class="main" tabindex="-1">${content}<div class="footer-note">${icon('shield')}Bora! v2.1 · 18 個月招商葡文 · 原創練習教材 · 進度儲存在本機 · 非語言能力認證</div></main></div><nav class="mobile-nav" aria-label="行動版選單">${nav.map(n=>`<button class="${sec===n[0]?'active':''}" data-action="go" data-route="${n[0]}" ${sec===n[0]?'aria-current="page"':''}>${icon(n[1])}<span>${n[3]}</span></button>`).join('')}</nav>`;
+ <div class="shell"><header class="topbar"><div class="breadcrumbs"><span>學習空間</span>${icon('chevron')}<b>${nav.find(n=>n[0]===sec)?.[2]||'今日學習'}</b></div><div class="top-info"><div class="top-language"><span class="flag-br" aria-label="巴西"></span><span>Português do Brasil</span></div><span class="saved" id="save-status"><i class="dot"></i>${storageOK&&!storageLocked?'本機儲存':'暫存模式'}</span><button class="icon-btn" data-action="pron-open" aria-label="開啟發音練習">${icon('volume')}</button><button class="icon-btn" data-action="go" data-route="settings" aria-label="開啟偏好與語音設定">${icon('settings')}</button></div></header>${storageMessage?`<div class="notice-banner">${esc(storageMessage)}</div>`:''}<main id="main" class="main" tabindex="-1">${content}<div class="footer-note">${icon('shield')}Bora! v2.1.1 · 手機發音修正 · 18 個月招商葡文 · 原創練習教材 · 進度儲存在本機 · 非語言能力認證</div></main></div><nav class="mobile-nav" aria-label="行動版選單">${nav.map(n=>`<button class="${sec===n[0]?'active':''}" data-action="go" data-route="${n[0]}" ${sec===n[0]?'aria-current="page"':''}>${icon(n[1])}<span>${n[3]}</span></button>`).join('')}</nav>`;
 }
 function render(){
  route=location.hash.slice(1)||'home';document.body.classList.toggle('large-type',state.profile.large);
@@ -839,8 +858,8 @@ function speechOptions(overrides={}){return {rate:state.profile.speechRate,repea
 async function speak(text,slow=false){loadVoices();return speech.play(text,speechOptions({rate:slow?.75:state.profile.speechRate}));}
 async function speakPlaylist(texts,options={}){loadVoices();return speech.play(texts,speechOptions(options));}
 function stopSpeech(){speech.stop();}
-function pronunciationEntry(){return `<section class="pron-entry"><div class="row"><span class="pron-entry-icon">${icon('volume')}</span><div><b>現在，就聽一句巴西葡語。</b><p>固定教材內建合成音；也可選裝置的 pt-BR 語音。</p></div></div><button class="btn small" data-action="pron-open">開始發音練習${icon('arrow')}</button></section>`;}
-function engineOptions(){return [['auto','自動：本機語音優先，內建音檔備援'],['builtin','內建音檔：離線基礎合成音（較機械）'],['system','系統 pt-BR：可朗讀自訂講稿']].map(([v,t])=>`<option value="${v}" ${state.profile.speechEngine===v?'selected':''}>${t}</option>`).join('');}
+function pronunciationEntry(){return `<section class="pron-entry"><div class="row"><span class="pron-entry-icon">${icon('volume')}</span><div><b>手機發音修正版 v2.1.1</b><p>固定教材內建合成音；也可選裝置的 pt-BR 語音。</p></div></div><div class="row wrap gap8"><button class="btn small" data-action="pron-test">${icon('volume')}測試手機聲音</button><button class="btn outline small" data-action="pron-open">開始發音練習${icon('arrow')}</button></div></section>`;}
+function engineOptions(){return [['auto','自動：固定教材優先內建音，自訂稿用系統'],['builtin','內建音檔：離線基礎合成音（較機械）'],['system','系統 pt-BR：可朗讀自訂講稿']].map(([v,t])=>`<option value="${v}" ${state.profile.speechEngine===v?'selected':''}>${t}</option>`).join('');}
 function pronunciationPage(){
  const list=lphrases(pronLesson),selected=lessonMap.get(pronLesson)||LESSONS[0];
  return `<div class="pron-hero"><div><div class="kicker">OUÇA. REPITA. CONVERSE.</div><h2>先聽清楚，再說自然。</h2><p>一句一句來。正常聽、慢速聽，留一點時間給自己開口。</p><div class="row wrap mt16"><span class="pill">pt-BR 巴西葡語</span><span class="pill gold">${window.BORA_AUDIO.meta.count} 段內建合成音</span></div></div><div class="pron-wave" aria-hidden="true">${Array.from({length:23},(_,i)=>`<i style="height:${22+((i*37)%69)}px"></i>`).join('')}</div></div>
@@ -856,7 +875,16 @@ function updateSpeechDock(s){
  $('#speech-meta').textContent=`${s.label} · ${Math.min(s.index+1,s.total)} / ${s.total} 段 · ${s.rate} ×`;
  $('#speech-now').textContent=s.text;$('#speech-feedback').textContent=s.message;
  $('#speech-toggle').innerHTML=icon(playing?'pause':'play')+(playing?'暫停':'繼續');
- $('#speech-toggle').disabled=s.status==='error';
+ $('#speech-toggle').disabled=false;
+ const retry=['blocked','ready','error'].includes(s.status);
+ if(retry)$('#speech-toggle').innerHTML=icon('play')+'點此播放';
+ let nativeWrap=$('#bora-native-wrap');
+ if(!nativeWrap){
+  nativeWrap=document.createElement('div');nativeWrap.id='bora-native-wrap';nativeWrap.className='bora-native-wrap';
+  const hint=document.createElement('p');hint.textContent='沒有聲音？直接點下方 ▶；播放時調高手機媒體音量，並確認藍牙輸出。';
+  nativeWrap.appendChild(hint);nativeWrap.appendChild(speech.audioElement);dock.appendChild(nativeWrap);
+ }
+ nativeWrap.hidden=s.source!=='builtin'||s.mask;
  $('#speech-now').setAttribute('lang',s.mask?'zh-Hant':'pt-BR');
  const a=$('#speech-download');a.hidden=!s.canDownload;if(s.canDownload)a.href=s.download;else a.removeAttribute('href');
  dock.querySelector('[data-action="speech-prev"]').disabled=s.index<=0;
@@ -908,7 +936,7 @@ document.addEventListener('click',async event=>{
  switch(action){
   case 'pron-open':clearRecording();stopSpeech();speakTab='pronunciation';go('speak');break;
   case 'pron-voices':loadVoices();toast(voiceStatus());break;
-  case 'pron-test':{const before=state.profile.speechEngine;state.profile.speechEngine='builtin';await speech.play('Oi, tudo bem?',{rate:1,label:'內建音檔測試'});state.profile.speechEngine=before;break;}
+  case 'pron-test':{await speech.play('Oi, tudo bem?',{engine:'builtin',rate:1,label:'手機聲音測試 · v2.1.1'});break;}
   case 'pron-repeat':await speakPlaylist([b.dataset.text],{rate:.75,repeat:3,gap:state.profile.speechGap*1000,label:'慢速跟讀 3 次'});break;
   case 'pron-lesson-play':case 'pron-lesson-shadow':await speakPlaylist(lphrases(id||pronLesson).map(p=>p.pt),{repeat:state.profile.speechRepeat,gap:action.endsWith('shadow')?state.profile.speechGap*1000:500,label:lessonMap.get(id||pronLesson)?.title||'課程逐句發音'});break;
   case 'pron-text-play':case 'pron-text-shadow':pronDraft=$('#pron-text')?.value||pronDraft;await speakPlaylist(pronDraft,{repeat:state.profile.speechRepeat,gap:action.endsWith('shadow')?state.profile.speechGap*1000:500,label:'自訂葡文 · 逐句朗讀'});break;
