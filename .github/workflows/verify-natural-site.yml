@@ -12,7 +12,7 @@ jobs:
     timeout-minutes: 7
     steps:
       - uses: actions/checkout@v5
-      - name: Check live Pages content and audio
+      - name: Check live Pages content, curriculum and audio
         env:
           VERIFY_RUN: ${{ github.run_id }}
         run: |
@@ -20,39 +20,43 @@ jobs:
           import hashlib, json, os, time, urllib.request
           from pathlib import Path
           base = 'https://jaimehuang168.github.io/bora-portugues/'
-          quality = json.loads(Path('audio-quality-report.json').read_text())
-          manifest = json.loads(Path('audio/natural-manifest.json').read_text())
+          release = Path('conversation-release-report.json')
+          quality = json.loads((release if release.exists() else Path('audio-quality-report.json')).read_text())
+          files = quality.get('files', {'index.html': quality['index_sha256']})
           def get(path):
-              request = urllib.request.Request(base + path + '?verify=' + os.environ['VERIFY_RUN'], headers={'User-Agent': 'Bora-Deployment-Check/2.2'})
+              request = urllib.request.Request(base + path + '?verify=' + os.environ['VERIFY_RUN'], headers={'User-Agent': 'Bora-Deployment-Check/2.3'})
               with urllib.request.urlopen(request, timeout=30) as response:
                   if response.status != 200:
                       raise ValueError('HTTP ' + str(response.status))
                   return response.read()
           for attempt in range(16):
               try:
-                  body = get('index.html')
-                  if hashlib.sha256(body).hexdigest() != quality['index_sha256']:
-                      raise ValueError('Pages is still serving a different HTML revision')
+                  for path, expected in files.items():
+                      body = get(path)
+                      if hashlib.sha256(body).hexdigest() != expected:
+                          raise ValueError('Pages serves a different revision: ' + path)
                   break
               except Exception as error:
                   print('Pages check:', str(error), flush=True)
                   if attempt == 15:
                       raise
                   time.sleep(15)
-          assert '清晰巴葡發音版 v2.2.0' in body.decode()
-          selected = list(manifest['clips'].values())[::40]
+          assert ('v' + quality['version']) in get('index.html').decode()
+          selected = []
+          for name in ['audio/natural-manifest.json', 'audio/conversation-manifest.json']:
+              if Path(name).exists():
+                  manifest = json.loads(Path(name).read_text())
+                  selected.extend(list(manifest['clips'].values())[::35])
           for item in selected:
               for path_key, hash_key in [('src', 'sha256'), ('slowSrc', 'slowSha256')]:
-                  data = get(item[path_key])
-                  assert hashlib.sha256(data).hexdigest() == item[hash_key], item[path_key]
+                  assert hashlib.sha256(get(item[path_key])).hexdigest() == item[hash_key], item[path_key]
           for path in ['audio-sample.mp3', 'audio-sample-slow.mp3', 'audio-test.html']:
-              data = get(path)
-              assert hashlib.sha256(data).digest() == hashlib.sha256(Path(path).read_bytes()).digest(), path
-          report = {'version': quality['version'], 'site': base, 'verified_index_sha256': quality['index_sha256'], 'public_neural_files_checked': len(selected) * 2, 'sample_files_and_test_page_match': True, 'limits': 'HTTP byte verification, not a physical-phone listening test.'}
+              assert hashlib.sha256(get(path)).digest() == hashlib.sha256(Path(path).read_bytes()).digest(), path
+          report = {'version': quality['version'], 'site': base, 'verified_index_sha256': quality['index_sha256'], 'application_assets_verified': list(files), 'public_neural_files_checked': len(selected)*2, 'sample_files_and_test_page_match': True, 'limits': 'HTTP byte verification, not a physical-phone listening test.'}
           Path('live-verification.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
           print(json.dumps(report, ensure_ascii=False), flush=True)
           PY
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: bora-live-verification
           path: live-verification.json
