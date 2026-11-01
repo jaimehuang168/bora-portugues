@@ -41,6 +41,8 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: bora-v22-clear-voice
+          include-hidden-files: true
+          if-no-files-found: error
           path: |
             .build/Bora-v2.2-Clear-Voice.html
             .build/Bora-v2.2-Mobile.png
