@@ -1,31 +1,16 @@
-# 聲音來源與授權說明
+# Bora! v2.2.0 — Brazilian Portuguese neural audio
 
-## 這一版提供什麼
+Voice: Kokoro-82M `pf_dora`, Brazilian Portuguese neural synthesis, not a human recording or a cloned user voice.
 
-音檔來源為 App 既有原創固定教學文字，使用 eSpeak 1.48.15 的 `pt-br`（brazil）聲音合成，再用 FFmpeg 編碼為 MP3。不是網路抓取的真人教材、老師錄音或神經語音。沒有把使用者資料送往第三方合成服務。
+The existing 222 original public curriculum phrases were regenerated into 444 MP3 files: normal speed 1.0 and a separately synthesized slow speed 0.75. Output: mono 24 kHz, 96 kbps MP3, with peak normalization and short silence padding.
 
-eSpeak 以共振峰合成（formant synthesis）產生聲音，音色較機械。葡文的開閉母音、鼻音、連音和不同地區韻律，仍需和合格老師或可信賴的母語錄音對照；本版不宣稱完成母語教師逐句發音審核。
+Generation: Kokoro v1.0 full-precision ONNX with kokoro-onnx 0.6.1. Kokoro model: Apache-2.0; kokoro-onnx: MIT. espeak-ng is used only for grapheme-to-phoneme conversion, not to render the voice. No old eSpeak formant audio is used by the current app. Model files are not distributed in the site; upstream hashes are recorded in the manifest.
 
-## 製作規格
+The website serves static MP3s. It does not call a TTS API or expose a key. Audio was generated locally on the build runner from public lesson text. Learner records, visitor cards, microphone recordings and private scripts were not accessed. Custom script system voices retain their existing permission flow.
 
-- 合成聲音：eSpeak 1.48.15 / `pt-br` / brazil。
-- 指令參數：`-v pt-br -s 145 -a 145`，以 UTF-8 stdin 輸入固定教材。
-- 輸出：MP3，單聲道，22,050 Hz，48 kbps。
-- 222 段不重複音檔；以正規化文字為查找鍵。
-- `audio-bank.js` 收錄 data URI、文字、長度及 SHA-256。
-- `tools/audio-manifest.json` 提供無 base64 的清單。
-- `tools/build_audio.py` 與 `tools/collect-audio.cjs` 提供重建流程。這些是開發工具，不是使用者的安裝要求。
-- `assets/voice-sample.mp3` 是「Oi, tudo bem?」的實際同源示範，不是另配較好聽的聲音。
+All waveforms were checked for finite values and non-silence; all 444 MP3s were decoded and checked for duration. These checks are not native-speaker pronunciation review or a physical-phone speaker test. Non-English and very short utterances remain model limitations; practice with a teacher.
 
-## 第三方軟體
-
-App 只附合成完成的聲音和自寫的瀏覽器播放器，不分發 eSpeak 或 FFmpeg 執行檔、語音引擎、系統字型。音訊來源列示供追溯，不表示 eSpeak 為此 App 提供背書或通過發音品質認證。開發者另行安裝或分發上述工具時應遵守各軟體的授權條款。
-
-## 參考文件（2026-09-21 查閱）
-
-- eSpeak 官方介紹與合成方式：https://espeak.sourceforge.net/
-- eSpeak 語言表：https://espeak.sourceforge.net/languages.html
-- eSpeak 指令說明：https://espeak.sourceforge.net/commands.html
-- MDN getVoices：https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/getVoices
-- MDN voiceschanged：https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/voiceschanged_event
-- Apple Mac 語音設定：https://support.apple.com/guide/mac-help/change-the-voice-your-mac-uses-to-speak-text-mchlp2290/mac
+References:
+- https://huggingface.co/hexgrad/Kokoro-82M
+- https://huggingface.co/hexgrad/Kokoro-82M/blob/main/VOICES.md
+- https://github.com/thewh1teagle/kokoro-onnx

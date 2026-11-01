@@ -1,0 +1,13 @@
+{
+  "version": "2.2.0",
+  "voice": "Kokoro pf_dora",
+  "phrases": 222,
+  "mp3_files": 444,
+  "normal_rate": 1.0,
+  "slow_rate": 0.75,
+  "separate_slow_recordings": true,
+  "legacy_formant_fallback": false,
+  "storage_key_changed": false,
+  "index_sha256": "1de049b78305dfd9b8452832b4400a63a98700026ac497f803bc2295db206c26",
+  "validation": "444 asset SHA-256 checks and all inline JavaScript syntax checks passed; browser transport tests recorded separately. Physical mobile speakers and native-speaker review not verified."
+}
