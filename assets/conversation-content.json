@@ -1,0 +1,1668 @@
+{
+  "version": "2.3.0",
+  "locale": "pt-BR",
+  "notes": "原創教學內容；例句與工作情境不代表園區實際承諾。參考文獻核對部分文法，不代表母語教師逐條審稿。",
+  "rounds": [
+    {
+      "dialog": "coffee-talk",
+      "step": 0,
+      "title": "用 gostaria de 禮貌點餐",
+      "pattern": "(Eu) gostaria de + 名詞／原形動詞",
+      "explain": "gostaria 是 gostar 的未來過去式（futuro do pretérito）。這裡用來委婉表達「我想要」，不是在說過去。eu 可省略；de 後可接飲品，也可接原形動詞。",
+      "promptNote": "O que 詢問「什麼」；você 搭配第三人稱單數動詞。gostaria de pedir = 想點餐／想提出請求。",
+      "pitfall": "葡文 gostar 通常配 de；不要依西文 gustar 的句型直譯。名詞前的冠詞也要配合：um café、uma água。",
+      "replyZh": "我想要一杯咖啡，謝謝。",
+      "examples": [
+        {
+          "pt": "Eu gostaria de uma água sem gás.",
+          "zh": "我想要一瓶無氣泡水。"
+        },
+        {
+          "pt": "Gostaria de conhecer o parque.",
+          "zh": "我想參觀了解園區。"
+        }
+      ],
+      "words": [
+        "gostar",
+        "pedir",
+        "café"
+      ],
+      "practice": "把咖啡換成你想點的飲料，再用 gostaria de 說出一個工作上的請求。",
+      "refs": [
+        "conditional",
+        "voce"
+      ]
+    },
+    {
+      "dialog": "coffee-talk",
+      "step": 1,
+      "title": "用 com／sem 說明要不要加",
+      "pattern": "com + 名詞／sem + 名詞",
+      "explain": "com 表示「有、加、和」，sem 表示「沒有、不加」。Sem açúcar 是省略完整句子的自然回應，在點餐情境已很清楚。por favor 讓請求更有禮貌。",
+      "promptNote": "quer 是 querer 的現在式；você quer 表示「你要」。本句省略了前一輪已知的飲品。",
+      "pitfall": "sem 本身表示「不加」，不是單純說 não。不要說成西文的 sin azúcar；葡文糖寫作 açúcar。",
+      "replyZh": "請不要加糖。",
+      "examples": [
+        {
+          "pt": "Um café com leite, por favor.",
+          "zh": "請給我一杯加牛奶的咖啡。"
+        },
+        {
+          "pt": "Uma água sem gás, por favor.",
+          "zh": "請給我一瓶無氣泡水。"
+        }
+      ],
+      "words": [
+        "querer",
+        "açúcar",
+        "sem"
+      ],
+      "practice": "用 com 和 sem 各說一次你的飲品偏好。",
+      "refs": []
+    },
+    {
+      "dialog": "coffee-talk",
+      "step": 2,
+      "title": "禮貌婉拒與省略句",
+      "pattern": "Não, obrigado/obrigada. + 名詞, por favor.",
+      "explain": "Não 回答「不需要」。Obrigado／obrigada 在此按說話者選用，不按店員性別改變。A conta, por favor 是省略「請把帳單拿來」的完整意思。",
+      "promptNote": "Deseja 是 desejar 的第三人稱單數；alguma coisa 是「某樣東西」，mais alguma coisa 表示「還有別的東西」。",
+      "pitfall": "本教材回應採男性形式 obrigado。conta 在餐廳是帳單，在其他情境也可能是帳戶。",
+      "replyZh": "不用了，謝謝。請結帳。",
+      "examples": [
+        {
+          "pt": "Não, obrigado. Só a conta, por favor.",
+          "zh": "不用了，謝謝。請只給我帳單。"
+        },
+        {
+          "pt": "O cardápio, por favor.",
+          "zh": "請給我菜單。"
+        }
+      ],
+      "words": [
+        "desejar",
+        "alguma",
+        "conta"
+      ],
+      "practice": "先婉拒再結帳；下一次改成請店員拿菜單。",
+      "refs": []
+    },
+    {
+      "dialog": "taxi-talk",
+      "step": 0,
+      "title": "需要做某事：precisar + 原形",
+      "pattern": "precisar + 原形動詞；precisar de + 名詞",
+      "explain": "preciso 是 precisar 的第一人稱單數。在巴西葡語中，precisar 後接動詞常不加 de：preciso ir；接名詞通常加 de：preciso de ajuda。ao = a + o。",
+      "promptNote": "Para onde 問目的地；você vai 是 ir 的現在式第三人稱單數。在搭車情境可用來問「你要去哪裡」。",
+      "pitfall": "不要把名詞用法也省掉 de：說 preciso de um táxi。precisar de + 原形也存在，不能把它一概判錯。",
+      "replyZh": "我需要去機場。",
+      "examples": [
+        {
+          "pt": "Preciso ir ao parque amanhã.",
+          "zh": "我明天需要去園區。"
+        },
+        {
+          "pt": "Preciso de um táxi para o aeroporto.",
+          "zh": "我需要一輛去機場的計程車。"
+        }
+      ],
+      "words": [
+        "precisar",
+        "ir",
+        "aeroporto"
+      ],
+      "practice": "各說一句「我需要做……」和「我需要一個……」。",
+      "refs": [
+        "precisar"
+      ]
+    },
+    {
+      "dialog": "taxi-talk",
+      "step": 1,
+      "title": "詢問需要多長時間",
+      "pattern": "Quanto tempo + levar（配合主詞變化）?",
+      "explain": "quanto tempo 詢問時長。leva 在此是 levar 的第三人稱單數，主詞可從情境理解為「這段車程」。不需要照英文問句另外加助動詞。",
+      "promptNote": "vamos sair = 我們要出發；vamos 是 ir 的第一人稱複數。此處 ir + 原形表達即將進行的行動。",
+      "pitfall": "Quanto tempo leva? 問「多久」；A que horas...? 問「幾點」。tempo 在此是時間，不是天氣。",
+      "replyZh": "需要多久？",
+      "examples": [
+        {
+          "pt": "Quanto tempo leva a visita?",
+          "zh": "參觀需要多長時間？"
+        },
+        {
+          "pt": "A viagem leva cerca de trinta minutos.",
+          "zh": "車程大約需要三十分鐘。"
+        }
+      ],
+      "words": [
+        "sair",
+        "tempo",
+        "levar"
+      ],
+      "practice": "先問參觀要多久，再用 cerca de 加一段時間作答。",
+      "refs": []
+    },
+    {
+      "dialog": "taxi-talk",
+      "step": 2,
+      "title": "用 pode + 原形提出請求",
+      "pattern": "(Você) pode + me + 原形動詞...?",
+      "explain": "pode 是 poder 的第三人稱單數，搭配原形 deixar。me 指「我」，deixar 在此表示讓我下車／把我送到。na = em + a，表示在入口。",
+      "promptNote": "estamos chegando 是 estar + 動名詞，這裡表示快到目的地。prefere 是 preferir 的現在式；descer 是下車。",
+      "pitfall": "Pode me deixar... 是巴西日常常見說法。這裡的 deixar 不是「遺棄」；入口是 entrada，不是西文 entrada 的所有意思都能直接搬用。",
+      "replyZh": "可以讓我在入口下車嗎？",
+      "examples": [
+        {
+          "pt": "Pode me deixar perto da entrada?",
+          "zh": "可以讓我在入口附近下車嗎？"
+        },
+        {
+          "pt": "Pode me avisar quando chegarmos?",
+          "zh": "我們到達時，可以通知我嗎？"
+        }
+      ],
+      "words": [
+        "chegar",
+        "descer",
+        "entrada"
+      ],
+      "practice": "把下車地點換成飯店或園區入口；第二例的 quando chegarmos 表示未來到達時。",
+      "refs": []
+    },
+    {
+      "dialog": "expo-talk",
+      "step": 0,
+      "title": "介紹所代表的機構",
+      "pattern": "(Eu) represento + 機構；em + o = no",
+      "explain": "represento 是 representar 的現在式第一人稱單數，eu 可省略。um parque tecnológico 中形容詞 tecnológico 配合陽性單數 parque。no Paraguai 表示在巴拉圭。",
+      "promptNote": "Qual organização...? 問哪個機構；você representa 是第三人稱單數，不是 eu represento。",
+      "pitfall": "representar 後在此直接接機構，不加 em；不要說 represento em um parque 來表達「代表園區」。",
+      "replyZh": "我代表巴拉圭的一個科技園區。",
+      "examples": [
+        {
+          "pt": "Represento uma empresa brasileira.",
+          "zh": "我代表一家巴西企業。"
+        },
+        {
+          "pt": "Trabalho em um parque tecnológico no Paraguai.",
+          "zh": "我在巴拉圭的一個科技園區工作。"
+        }
+      ],
+      "words": [
+        "representar",
+        "organização",
+        "tecnológico"
+      ],
+      "practice": "用 represento 說機構，用 trabalho em 說工作地點，分清兩者。",
+      "refs": [
+        "voce"
+      ]
+    },
+    {
+      "dialog": "expo-talk",
+      "step": 1,
+      "title": "詢問企業在哪個產業經營",
+      "pattern": "Em que setor + 主詞 + atuar?",
+      "explain": "atuar em 表示「從事／經營某領域」。提問時把 em 放在 que setor 前。a sua empresa 是單數主詞，因此用 atua；複數 as empresas 用 atuam。",
+      "promptNote": "estamos buscando = 我們正在尋找，採 estar + 動名詞。oportunidades de expansão 表示擴張機會，不代表已決定投資。",
+      "pitfall": "sua 配合陰性名詞 empresa，不是按企業代表的性別改變。產業可以說 setor，並非西文 sector 的拼字。",
+      "replyZh": "貴公司從事哪個產業？",
+      "examples": [
+        {
+          "pt": "Em que setor vocês atuam?",
+          "zh": "你們從事哪個產業？"
+        },
+        {
+          "pt": "Nossa empresa atua no setor de alimentos.",
+          "zh": "我們公司從事食品業。"
+        }
+      ],
+      "words": [
+        "buscar",
+        "oportunidade",
+        "atuar"
+      ],
+      "practice": "先問對方產業，再用 atuar no setor de 回答自己的產業。",
+      "refs": [
+        "voce"
+      ]
+    },
+    {
+      "dialog": "expo-talk",
+      "step": 2,
+      "title": "提議交換資料與說明下一步",
+      "pattern": "Podemos + 原形...?；vou + 原形",
+      "explain": "podemos 是 poder 的第一人稱複數；trocar contatos 表示互換聯絡資料。vou enviar 使用 ir + 原形，表達接下來打算做的事；por e-mail 表示傳送方式。",
+      "promptNote": "atuamos 表示我們從事；gostaria de receber 表示想收到。informações 是 informação 的複數。",
+      "pitfall": "vou 後的 enviar 保持原形，不再加第一人稱詞尾。contatos 在這裡是聯絡資料，不等於合約 contratos。",
+      "replyZh": "我們可以交換聯絡資料嗎？我會用電子郵件寄一份簡報。",
+      "examples": [
+        {
+          "pt": "Podemos trocar cartões?",
+          "zh": "我們可以交換名片嗎？"
+        },
+        {
+          "pt": "Vou enviar as informações por e-mail.",
+          "zh": "我會用電子郵件寄出資訊。"
+        }
+      ],
+      "words": [
+        "receber",
+        "contato",
+        "apresentação"
+      ],
+      "practice": "先提出交換聯絡方式，再承諾一個你確實能完成的寄送動作。",
+      "refs": []
+    },
+    {
+      "dialog": "visit-talk",
+      "step": 0,
+      "title": "邀請某人參加活動",
+      "pattern": "Gostaria de convidar + 人 + para + 活動",
+      "explain": "gostaria de 讓邀請更委婉。convidar 後接受邀者 vocês，再用 para 引入活動 uma visita。這裡 vocês 是受詞，不會讓 gostaria 變成複數。",
+      "promptNote": "estamos avaliando 表示仍在評估；um local para a nova operação 是新營運據點。para 在此表示用途。",
+      "pitfall": "邀請是 convidar alguém para...；不要把 para 省略，也不要把邀請寫成保證符合所有技術條件。",
+      "replyZh": "我想邀請你們來參觀。",
+      "examples": [
+        {
+          "pt": "Gostaria de convidar vocês para uma reunião.",
+          "zh": "我想邀請你們參加一場會議。"
+        },
+        {
+          "pt": "Gostaríamos de convidar a equipe para visitar o parque.",
+          "zh": "我們想邀請團隊參觀園區。"
+        }
+      ],
+      "words": [
+        "avaliar",
+        "convidar",
+        "visita"
+      ],
+      "practice": "把 eu 的 gostaria 換成 nós 的 gostaríamos，代表整個園區團隊邀請。",
+      "refs": [
+        "conditional"
+      ]
+    },
+    {
+      "dialog": "visit-talk",
+      "step": 1,
+      "title": "詢問需要多少空間",
+      "pattern": "De quanto + 名詞 + 主詞 + precisar?",
+      "explain": "precisar de 接名詞；變成問句時，de 保留在句首。quanto 配合陽性單數 espaço；問面積 área 時改為 quanta。vocês 對應 precisam。",
+      "promptNote": "verificar se 表示確認是否；atender ao projeto 在這裡指符合專案需求，ao = a + o。",
+      "pitfall": "不可因問句而丟掉 de。espaço 是陽性，área 是陰性；不能說 quanto área。",
+      "replyZh": "你們需要多少空間？",
+      "examples": [
+        {
+          "pt": "De quanto espaço a empresa precisa?",
+          "zh": "這家公司需要多少空間？"
+        },
+        {
+          "pt": "De quanta área vocês precisam?",
+          "zh": "你們需要多大的面積？"
+        }
+      ],
+      "words": [
+        "verificar",
+        "área",
+        "espaço"
+      ],
+      "practice": "分別用 espaço 與 área 問一次需求，注意 quanto／quanta。",
+      "refs": [
+        "precisar",
+        "voce"
+      ]
+    },
+    {
+      "dialog": "visit-talk",
+      "step": 2,
+      "title": "詢問特定需求：qual é",
+      "pattern": "Qual é + 冠詞 + 名詞...?",
+      "explain": "qual é 用來詢問需求內容或數值。a demanda 是陰性單數；de energia 說明需求種類，da empresa = de + a empresa，說明是哪家公司的需求。",
+      "promptNote": "também 表示也；precisamos analisar 是我們需要分析。fornecimento de energia 表示能源供應，實際容量需另行核實。",
+      "pitfall": "單數說 Qual é a demanda?；複數說 Quais são as demandas?。需求、供應能力和保證供應是不同概念。",
+      "replyZh": "公司的用電需求是多少？",
+      "examples": [
+        {
+          "pt": "Qual é a demanda de energia do projeto?",
+          "zh": "這個專案的用電需求是多少？"
+        },
+        {
+          "pt": "Quais são as necessidades técnicas da empresa?",
+          "zh": "這家公司有哪些技術需求？"
+        }
+      ],
+      "words": [
+        "analisar",
+        "fornecimento",
+        "demanda"
+      ],
+      "practice": "用 qual é 問一項需求，再用 quais são 問多項技術需求。",
+      "refs": []
+    },
+    {
+      "dialog": "quote-talk",
+      "step": 0,
+      "title": "用 poderia 禮貌索取報價",
+      "pattern": "(Você) poderia + nos + 原形動詞...?",
+      "explain": "poderia 是 poder 的未來過去式，在此表示委婉請求。nos 是「給我們／向我們」，enviar 保持原形。整句比直接命令對方寄送更客氣。",
+      "promptNote": "obrigado pelo interesse 中 pelo = por + o；interesse em 表示對某事感興趣。nossos produtos 的所有格配合陽性複數 produtos。",
+      "pitfall": "poderia nos enviar 是自然巴西用法；正式書信也可見 poderia enviar-nos。nos 不要與主詞 nós 混淆。",
+      "replyZh": "可以寄一份報價給我們嗎？",
+      "examples": [
+        {
+          "pt": "Poderia nos enviar um orçamento detalhado?",
+          "zh": "可以寄一份詳細報價給我們嗎？"
+        },
+        {
+          "pt": "Poderia me informar o prazo de entrega?",
+          "zh": "可以告訴我交貨期限嗎？"
+        }
+      ],
+      "words": [
+        "interesse",
+        "enviar",
+        "orçamento"
+      ],
+      "practice": "把 nos（我們）換成 me（我），練習索取另一份資料。",
+      "refs": [
+        "conditional"
+      ]
+    },
+    {
+      "dialog": "quote-talk",
+      "step": 1,
+      "title": "用 incluir 確認價格範圍",
+      "pattern": "O valor + inclui + 項目?",
+      "explain": "inclui 是 incluir 的現在式第三人稱單數，主詞 o valor 為單數。葡文一般問句可沿用陳述句詞序，以問號和語調表示疑問。",
+      "promptNote": "enviei 是 enviar 的簡單過去式第一人稱單數，表示已寄出；com o valor total 是包含總價，不一定已列出所有費用細目。",
+      "pitfall": "inclui 表示包含，不是 excluir（排除）。不要只因對方說 valor total 就自行假設含稅、運費與安裝費。",
+      "replyZh": "價格包含運費嗎？",
+      "examples": [
+        {
+          "pt": "O valor inclui a instalação?",
+          "zh": "價格包含安裝嗎？"
+        },
+        {
+          "pt": "O orçamento inclui os impostos?",
+          "zh": "報價包含稅金嗎？"
+        }
+      ],
+      "words": [
+        "proposta",
+        "valor",
+        "incluir"
+      ],
+      "practice": "把運費換成安裝或稅金，逐項確認，不自行推定。",
+      "refs": []
+    },
+    {
+      "dialog": "quote-talk",
+      "step": 2,
+      "title": "詢問交期與辨認包含狀態",
+      "pattern": "Qual é o prazo de + 名詞?",
+      "explain": "prazo 是期限或約定期間；de entrega 說明是交貨期限。o prazo 為單數，因此用 qual é。可進一步要求具體日期，避免雙方對起算日理解不同。",
+      "promptNote": "está incluído 描述已包含的狀態；incluído 配合陽性單數 transporte。若主詞換成 a instalação，使用 incluída。",
+      "pitfall": "prazo（期限）與 preço（價格）拼字及意思不同。此處 estar + particípio 描述狀態，不要與進行式 estar + gerúndio 混淆。",
+      "replyZh": "交貨期限是多久？",
+      "examples": [
+        {
+          "pt": "Qual é o prazo de pagamento?",
+          "zh": "付款期限是多久？"
+        },
+        {
+          "pt": "A instalação está incluída no preço.",
+          "zh": "價格已包含安裝。"
+        }
+      ],
+      "words": [
+        "transporte",
+        "prazo",
+        "entrega"
+      ],
+      "practice": "先問交貨期限，再問付款期限；指出第二例為何用 incluída。",
+      "refs": []
+    },
+    {
+      "dialog": "follow-talk",
+      "step": 0,
+      "title": "委婉詢問是否有更新",
+      "pattern": "Gostaria de saber se + 子句",
+      "explain": "gostaria de saber 是「我想了解」。se 在這裡引導間接問句，意思是「是否」，不是條件句的「如果」。há 表示存在，採無人稱第三人稱單數。",
+      "promptNote": "obrigado por entrar em contato 表示感謝再次聯絡；por 後接原形 entrar。novamente 表示再一次。",
+      "pitfall": "há 表示存在時，即使後面是複數仍用 há：há atualizações，而非 hão atualizações。se 在本句是「是否」，不要譯成「如果」。",
+      "replyZh": "我想了解是否有任何最新進展。",
+      "examples": [
+        {
+          "pt": "Gostaria de saber se há novas informações.",
+          "zh": "我想了解是否有新的資訊。"
+        },
+        {
+          "pt": "Gostaria de saber se o projeto já foi aprovado.",
+          "zh": "我想了解專案是否已獲核准。"
+        }
+      ],
+      "words": [
+        "novamente",
+        "saber",
+        "atualização"
+      ],
+      "practice": "把詢問內容換成資料或核准狀態；第二例的 foi aprovado 表示已被核准。",
+      "refs": [
+        "conditional",
+        "haver"
+      ]
+    },
+    {
+      "dialog": "follow-talk",
+      "step": 1,
+      "title": "用 já 搭配過去式問完成狀態",
+      "pattern": "Vocês já + 簡單過去式（複數）...?",
+      "explain": "definiram 是 definir 的簡單過去式第三人稱複數，搭配 vocês。já 在這裡問「已經……了嗎」。cronograma 是含步驟與時間安排的進度表。",
+      "promptNote": "ainda estamos discutindo 表示仍在討論；estar + 動名詞描述進行中的活動。internamente 表示在公司內部。",
+      "pitfall": "já 的 a 有重音符號。尚未完成常說 ainda não；不要把 já 與 ainda 的意思對調。",
+      "replyZh": "你們已經訂出時程表了嗎？",
+      "examples": [
+        {
+          "pt": "Vocês já definiram a data da visita?",
+          "zh": "你們已經訂好參觀日期了嗎？"
+        },
+        {
+          "pt": "Ainda não definimos o cronograma.",
+          "zh": "我們還沒有訂出時程表。"
+        }
+      ],
+      "words": [
+        "ainda",
+        "definir",
+        "cronograma"
+      ],
+      "practice": "先用 já 詢問；再用 ainda não 回答仍未完成。",
+      "refs": [
+        "voce"
+      ]
+    },
+    {
+      "dialog": "follow-talk",
+      "step": 2,
+      "title": "安排下一次聯絡",
+      "pattern": "Podemos + agendar + 活動 + 時間?",
+      "explain": "podemos + 原形用來提出共同安排。na próxima semana 中 na = em + a；próxima 配合陰性單數 semana，意思是下週。",
+      "promptNote": "precisaremos 是 precisar 的簡單未來式第一人稱複數，表達之後會需要；mais alguns dias 是再幾天，para avaliar 說明用途。",
+      "pitfall": "conversa 是對話／交談，不一定是正式會議。próxima semana 是下週，semana passada 才是上週；約定日期後仍應再次確認。",
+      "replyZh": "我們可以在下週安排一次談話嗎？",
+      "examples": [
+        {
+          "pt": "Podemos agendar uma reunião na próxima semana?",
+          "zh": "我們可以在下週安排一場會議嗎？"
+        },
+        {
+          "pt": "Podemos conversar na terça-feira?",
+          "zh": "我們可以星期二談談嗎？"
+        }
+      ],
+      "words": [
+        "agendar",
+        "conversa",
+        "próxima"
+      ],
+      "practice": "把下週換成一個星期幾，再向對方確認是否有空。",
+      "refs": []
+    }
+  ],
+  "words": {
+    "gostar": {
+      "term": "gostar",
+      "pos": "動詞",
+      "meaning": "喜歡；gostaria de 在此為委婉的「想要」",
+      "forms": "eu gosto；eu/você gostaria",
+      "note": "gostar de + 名詞或動詞；本句不是說過去。",
+      "related": [
+        {
+          "pt": "gosto",
+          "zh": "喜好、品味",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "gostaria de pedir",
+          "zh": "想點餐／想提出請求",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "pedir": {
+      "term": "pedir",
+      "pos": "動詞",
+      "meaning": "請求；在餐廳指點餐",
+      "forms": "eu peço；você pede；原形 pedir",
+      "note": "eu 的現在式是 peço，字母會變化。",
+      "related": [
+        {
+          "pt": "pedido",
+          "zh": "訂單、點的餐、請求",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "fazer um pedido",
+          "zh": "下訂單／點餐",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "café": {
+      "term": "café",
+      "pos": "陽性名詞",
+      "meaning": "咖啡；依情境也可指咖啡館",
+      "forms": "um café；dois cafés",
+      "note": "重音符號在最後的 é；此課是一杯咖啡。",
+      "related": [
+        {
+          "pt": "cafeteria",
+          "zh": "咖啡館",
+          "type": "相關詞"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "café com leite",
+          "zh": "加牛奶的咖啡",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "querer": {
+      "term": "querer",
+      "pos": "動詞",
+      "meaning": "想要",
+      "forms": "eu quero；você quer；vocês querem",
+      "note": "quero 可直接表達想要；gostaria de 更委婉。",
+      "related": [
+        {
+          "pt": "desejar",
+          "zh": "希望、想要",
+          "type": "近義詞"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "querer mais",
+          "zh": "還想要更多",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "açúcar": {
+      "term": "açúcar",
+      "pos": "陽性名詞",
+      "meaning": "糖",
+      "forms": "o açúcar",
+      "note": "通常當物質名詞使用，不必把「不加糖」說成複數。",
+      "related": [
+        {
+          "pt": "açucarado",
+          "zh": "加了糖的、含糖的",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "sem açúcar",
+          "zh": "不加糖",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "sem": {
+      "term": "sem",
+      "pos": "介詞",
+      "meaning": "沒有；不加",
+      "forms": "固定形式，不隨性數改變",
+      "note": "通常後接名詞：sem açúcar、sem gás。",
+      "related": [
+        {
+          "pt": "com",
+          "zh": "有、加、和",
+          "type": "反義詞"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "sem gás",
+          "zh": "無氣泡",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "desejar": {
+      "term": "desejar",
+      "pos": "動詞",
+      "meaning": "想要、希望",
+      "forms": "eu desejo；você deseja",
+      "note": "店員用 deseja 詢問客人需求，語氣較客氣。",
+      "related": [
+        {
+          "pt": "desejo",
+          "zh": "願望、想要的事物",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "desejar algo",
+          "zh": "想要某樣東西",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "alguma": {
+      "term": "alguma",
+      "pos": "不定代詞的陰性形式",
+      "meaning": "某個、任何一個；此處配合 coisa",
+      "forms": "algum／alguma；alguns／algumas",
+      "note": "alguma coisa 是某樣東西；依上下文可譯為「什麼東西」。",
+      "related": [
+        {
+          "pt": "nenhuma",
+          "zh": "沒有任何一個（陰性）",
+          "type": "相對詞"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "mais alguma coisa",
+          "zh": "還有別的東西",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "conta": {
+      "term": "conta",
+      "pos": "陰性名詞",
+      "meaning": "帳單；也可指帳戶",
+      "forms": "a conta；as contas",
+      "note": "餐廳的 conta 是帳單；不是每個語境都可翻為發票。",
+      "related": [
+        {
+          "pt": "conta bancária",
+          "zh": "銀行帳戶",
+          "type": "同詞不同義搭配"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "pagar a conta",
+          "zh": "付帳",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "precisar": {
+      "term": "precisar",
+      "pos": "動詞",
+      "meaning": "需要",
+      "forms": "eu preciso；vocês precisam",
+      "note": "接名詞用 de；巴西用法接動詞常省 de。",
+      "related": [
+        {
+          "pt": "necessitar",
+          "zh": "需要",
+          "type": "近義詞"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "precisar de ajuda",
+          "zh": "需要幫助",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "ir": {
+      "term": "ir",
+      "pos": "動詞",
+      "meaning": "去、前往",
+      "forms": "eu vou；você vai；nós vamos",
+      "note": "是常用不規則動詞；ir + 原形也能表將來安排。",
+      "related": [
+        {
+          "pt": "vir",
+          "zh": "來",
+          "type": "方向對照"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "ir ao parque",
+          "zh": "去園區",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "aeroporto": {
+      "term": "aeroporto",
+      "pos": "陽性名詞",
+      "meaning": "機場",
+      "forms": "o aeroporto；os aeroportos",
+      "note": "ir ao aeroporto 中 ao = a + o。",
+      "related": [
+        {
+          "pt": "aeroportuário",
+          "zh": "機場的、機場相關的",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "terminal de embarque",
+          "zh": "登機航廈",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "sair": {
+      "term": "sair",
+      "pos": "動詞",
+      "meaning": "離開、出發、出去",
+      "forms": "eu saio；nós saímos；原形 sair",
+      "note": "vamos sair 中 sair 保持原形。",
+      "related": [
+        {
+          "pt": "saída",
+          "zh": "出口、出發",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "sair agora",
+          "zh": "現在出發",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "tempo": {
+      "term": "tempo",
+      "pos": "陽性名詞",
+      "meaning": "時間；其他情境也可指天氣",
+      "forms": "o tempo",
+      "note": "本輪 quanto tempo 問時長，不是在問天氣。",
+      "related": [
+        {
+          "pt": "duração",
+          "zh": "持續時間",
+          "type": "近義詞（本情境）"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "tempo de viagem",
+          "zh": "行程時間",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "levar": {
+      "term": "levar",
+      "pos": "動詞",
+      "meaning": "花費時間；也可指帶走、帶去",
+      "forms": "eu levo；você leva",
+      "note": "主詞若為單數 viagem，用 leva；複數 viagens 用 levam。",
+      "related": [
+        {
+          "pt": "demorar",
+          "zh": "花時間、耽擱",
+          "type": "相關動詞"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "levar dez minutos",
+          "zh": "花十分鐘",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "chegar": {
+      "term": "chegar",
+      "pos": "動詞",
+      "meaning": "到達",
+      "forms": "eu chego；nós chegamos；chegando",
+      "note": "estamos chegando 是正在到達／快到了。",
+      "related": [
+        {
+          "pt": "chegada",
+          "zh": "到達、抵達",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "horário de chegada",
+          "zh": "抵達時間",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "descer": {
+      "term": "descer",
+      "pos": "動詞",
+      "meaning": "下來、下降；搭車時指下車",
+      "forms": "eu desço；você desce",
+      "note": "交通情境依前文理解為下車，不限於下樓。",
+      "related": [
+        {
+          "pt": "subir",
+          "zh": "上去、上升",
+          "type": "反義詞"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "descer na entrada",
+          "zh": "在入口下車",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "entrada": {
+      "term": "entrada",
+      "pos": "陰性名詞",
+      "meaning": "入口；也可指進入或入場",
+      "forms": "a entrada；as entradas",
+      "note": "本課是入口；不要和 saída（出口）混淆。",
+      "related": [
+        {
+          "pt": "entrar",
+          "zh": "進入",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "entrada principal",
+          "zh": "主要入口",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "representar": {
+      "term": "representar",
+      "pos": "動詞",
+      "meaning": "代表",
+      "forms": "eu represento；você representa",
+      "note": "代表機構：representar uma organização。",
+      "related": [
+        {
+          "pt": "representante",
+          "zh": "代表人（可用 o／a）",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "representar a empresa",
+          "zh": "代表公司",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "organização": {
+      "term": "organização",
+      "pos": "陰性名詞",
+      "meaning": "組織、機構；也可指安排",
+      "forms": "a organização；as organizações",
+      "note": "-ção 複數為 -ções。此處問機構身分。",
+      "related": [
+        {
+          "pt": "organizar",
+          "zh": "組織、安排",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "organização empresarial",
+          "zh": "企業組織",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "tecnológico": {
+      "term": "tecnológico",
+      "pos": "形容詞",
+      "meaning": "科技的、技術相關的",
+      "forms": "tecnológico／tecnológica；複數加 s",
+      "note": "需配合所修飾名詞的性與數。",
+      "related": [
+        {
+          "pt": "tecnologia",
+          "zh": "科技、技術",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "parque tecnológico",
+          "zh": "科技園區",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "buscar": {
+      "term": "buscar",
+      "pos": "動詞",
+      "meaning": "尋找、尋求",
+      "forms": "eu busco；nós buscamos；buscando",
+      "note": "商務情境常表示尋找機會、方案或合作。",
+      "related": [
+        {
+          "pt": "busca",
+          "zh": "尋找、搜尋",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "buscar oportunidades",
+          "zh": "尋找機會",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "oportunidade": {
+      "term": "oportunidade",
+      "pos": "陰性名詞",
+      "meaning": "機會",
+      "forms": "a oportunidade；as oportunidades",
+      "note": "會話中用複數 oportunidades。",
+      "related": [
+        {
+          "pt": "possibilidade",
+          "zh": "可能性；不一定等於有利機會",
+          "type": "相關詞"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "oportunidade de investimento",
+          "zh": "投資機會",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "atuar": {
+      "term": "atuar",
+      "pos": "動詞",
+      "meaning": "在某領域活動、從事、經營",
+      "forms": "eu atuo；a empresa atua；vocês atuam",
+      "note": "常與 em 搭配：atuar em um setor。",
+      "related": [
+        {
+          "pt": "atuação",
+          "zh": "活動、業務範圍、表現",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "atuar no setor",
+          "zh": "在該產業經營",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "receber": {
+      "term": "receber",
+      "pos": "動詞",
+      "meaning": "收到；也可指接待",
+      "forms": "eu recebo；você recebe",
+      "note": "receber informações 是收資料；receber visitantes 是接待訪客。",
+      "related": [
+        {
+          "pt": "recebimento",
+          "zh": "收到、接收",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "receber informações",
+          "zh": "收到資訊",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "contato": {
+      "term": "contato",
+      "pos": "陽性名詞",
+      "meaning": "聯絡、接觸；複數可指聯絡資料",
+      "forms": "o contato；os contatos",
+      "note": "與 contrato（合約）只差一個 r，但意思不同。",
+      "related": [
+        {
+          "pt": "contatar",
+          "zh": "聯絡",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "trocar contatos",
+          "zh": "交換聯絡資料",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "apresentação": {
+      "term": "apresentação",
+      "pos": "陰性名詞",
+      "meaning": "介紹、簡報、展示",
+      "forms": "a apresentação；as apresentações",
+      "note": "商務 e-mail 中通常指簡報或介紹資料。",
+      "related": [
+        {
+          "pt": "apresentar",
+          "zh": "介紹、展示",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "enviar uma apresentação",
+          "zh": "寄送一份簡報",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "avaliar": {
+      "term": "avaliar",
+      "pos": "動詞",
+      "meaning": "評估、評量",
+      "forms": "eu avalio；nós avaliamos；avaliando",
+      "note": "評估中不等於已經做出投資決定。",
+      "related": [
+        {
+          "pt": "avaliação",
+          "zh": "評估",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "avaliar um projeto",
+          "zh": "評估專案",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "convidar": {
+      "term": "convidar",
+      "pos": "動詞",
+      "meaning": "邀請",
+      "forms": "eu convido；nós convidamos",
+      "note": "convidar + 人 + para + 活動。",
+      "related": [
+        {
+          "pt": "convite",
+          "zh": "邀請、邀請函",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "convidar para uma visita",
+          "zh": "邀請參觀",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "visita": {
+      "term": "visita",
+      "pos": "陰性名詞",
+      "meaning": "參觀、拜訪",
+      "forms": "a visita；as visitas",
+      "note": "既可指拜訪行程，也可依語境指來訪者。",
+      "related": [
+        {
+          "pt": "visitar",
+          "zh": "參觀、拜訪",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "visita técnica",
+          "zh": "技術考察／參訪",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "verificar": {
+      "term": "verificar",
+      "pos": "動詞",
+      "meaning": "確認、查驗",
+      "forms": "eu verifico；nós verificamos",
+      "note": "verificar se 用來確認「是否」。",
+      "related": [
+        {
+          "pt": "verificação",
+          "zh": "查核、確認",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "verificar as condições",
+          "zh": "確認條件",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "área": {
+      "term": "área",
+      "pos": "陰性名詞",
+      "meaning": "面積、區域、領域",
+      "forms": "a área；as áreas",
+      "note": "問面積用 quanta área；本文不代填園區實際數字。",
+      "related": [
+        {
+          "pt": "superfície",
+          "zh": "表面、面積",
+          "type": "相關詞"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "área disponível",
+          "zh": "可用區域／面積",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "espaço": {
+      "term": "espaço",
+      "pos": "陽性名詞",
+      "meaning": "空間",
+      "forms": "o espaço；os espaços",
+      "note": "問需求時用 de quanto espaço。",
+      "related": [
+        {
+          "pt": "espaçoso",
+          "zh": "寬敞的",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "espaço necessário",
+          "zh": "所需空間",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "analisar": {
+      "term": "analisar",
+      "pos": "動詞",
+      "meaning": "分析、檢視",
+      "forms": "eu analiso；nós analisamos",
+      "note": "不是承諾結果，而是先檢視條件。",
+      "related": [
+        {
+          "pt": "análise",
+          "zh": "分析（陰性名詞）",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "analisar a proposta",
+          "zh": "分析提案",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "fornecimento": {
+      "term": "fornecimento",
+      "pos": "陽性名詞",
+      "meaning": "供應、提供",
+      "forms": "o fornecimento",
+      "note": "商務語境常與供電、供水、材料搭配。",
+      "related": [
+        {
+          "pt": "fornecer",
+          "zh": "供應、提供",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "fornecimento de energia",
+          "zh": "能源／電力供應",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "demanda": {
+      "term": "demanda",
+      "pos": "陰性名詞",
+      "meaning": "需求；某些語境也可指要求或訴訟",
+      "forms": "a demanda；as demandas",
+      "note": "本課是用電需求，不是法律意義。",
+      "related": [
+        {
+          "pt": "necessidade",
+          "zh": "需要、需求",
+          "type": "近義詞（本情境）"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "demanda de energia",
+          "zh": "用電／能源需求",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "interesse": {
+      "term": "interesse",
+      "pos": "陽性名詞",
+      "meaning": "興趣、關注、意願",
+      "forms": "o interesse；os interesses",
+      "note": "interesse em；不是英語 interest 在所有情境的意思。",
+      "related": [
+        {
+          "pt": "interessado",
+          "zh": "感興趣的（陰性 interessada）",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "interesse no projeto",
+          "zh": "對專案感興趣",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "enviar": {
+      "term": "enviar",
+      "pos": "動詞",
+      "meaning": "寄送、傳送",
+      "forms": "eu envio；eu enviei（已寄出）",
+      "note": "原形 enviar；現在 envio 與過去 enviei 要分清。",
+      "related": [
+        {
+          "pt": "envio",
+          "zh": "寄送、傳送",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "enviar por e-mail",
+          "zh": "透過電子郵件寄送",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "orçamento": {
+      "term": "orçamento",
+      "pos": "陽性名詞",
+      "meaning": "預算；本課為供應商報價",
+      "forms": "o orçamento；os orçamentos",
+      "note": "索取 orçamento 不等於已接受條件或簽約。",
+      "related": [
+        {
+          "pt": "orçar",
+          "zh": "估價、編列預算",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "orçamento detalhado",
+          "zh": "詳細報價",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "proposta": {
+      "term": "proposta",
+      "pos": "陰性名詞",
+      "meaning": "提案、建議；商務報價方案",
+      "forms": "a proposta；as propostas",
+      "note": "範圍可比 orçamento 廣，可能含技術和商業條件。",
+      "related": [
+        {
+          "pt": "propor",
+          "zh": "提出",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "proposta comercial",
+          "zh": "商業提案",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "valor": {
+      "term": "valor",
+      "pos": "陽性名詞",
+      "meaning": "金額、價值",
+      "forms": "o valor；os valores",
+      "note": "本課指金額，不一定等於所有費用已包含。",
+      "related": [
+        {
+          "pt": "preço",
+          "zh": "價格",
+          "type": "相關詞"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "valor total",
+          "zh": "總金額",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "incluir": {
+      "term": "incluir",
+      "pos": "動詞",
+      "meaning": "包含、納入",
+      "forms": "eu incluo；você inclui；incluído",
+      "note": "incluído／incluída 須依被描述名詞配合性數。",
+      "related": [
+        {
+          "pt": "excluir",
+          "zh": "排除、不包含",
+          "type": "反義詞"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "incluir o transporte",
+          "zh": "包含運輸費用",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "transporte": {
+      "term": "transporte",
+      "pos": "陽性名詞",
+      "meaning": "運輸、交通；此處指運輸費用",
+      "forms": "o transporte",
+      "note": "問價格是否含 transporte 時，可依情境理解為運費。",
+      "related": [
+        {
+          "pt": "transportar",
+          "zh": "運送、搬運",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "custo de transporte",
+          "zh": "運輸成本",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "prazo": {
+      "term": "prazo",
+      "pos": "陽性名詞",
+      "meaning": "期限、約定期間",
+      "forms": "o prazo；os prazos",
+      "note": "與 preço（價格）區分；應確認起算日與截止日。",
+      "related": [
+        {
+          "pt": "prorrogar",
+          "zh": "延長期限",
+          "type": "相關動詞"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "prazo de pagamento",
+          "zh": "付款期限",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "entrega": {
+      "term": "entrega",
+      "pos": "陰性名詞",
+      "meaning": "交付、交貨、送達",
+      "forms": "a entrega；as entregas",
+      "note": "交貨和出貨不是同一時間點，實務需確認。",
+      "related": [
+        {
+          "pt": "entregar",
+          "zh": "交付、送交",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "data de entrega",
+          "zh": "交貨日期",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "novamente": {
+      "term": "novamente",
+      "pos": "副詞",
+      "meaning": "再次、再一次",
+      "forms": "固定形式，不隨性數改變",
+      "note": "表示某動作再次發生。",
+      "related": [
+        {
+          "pt": "de novo",
+          "zh": "再一次",
+          "type": "近義片語"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "entrar em contato novamente",
+          "zh": "再次聯絡",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "saber": {
+      "term": "saber",
+      "pos": "動詞",
+      "meaning": "知道、了解",
+      "forms": "eu sei；você sabe；原形 saber",
+      "note": "gostaria de saber 中保留原形 saber。",
+      "related": [
+        {
+          "pt": "conhecer",
+          "zh": "認識、熟悉；與 saber 不可任意互換",
+          "type": "相關動詞"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "saber se",
+          "zh": "了解是否",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "atualização": {
+      "term": "atualização",
+      "pos": "陰性名詞",
+      "meaning": "更新、最新進展",
+      "forms": "a atualização；as atualizações",
+      "note": "投資跟催中常指新進展，不只軟體更新。",
+      "related": [
+        {
+          "pt": "atualizar",
+          "zh": "更新",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "atualização do projeto",
+          "zh": "專案進度更新",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "ainda": {
+      "term": "ainda",
+      "pos": "副詞",
+      "meaning": "仍然、還；ainda não 表示尚未",
+      "forms": "固定形式",
+      "note": "ainda 與 já（已經）在進度問答中常形成對比。",
+      "related": [
+        {
+          "pt": "já",
+          "zh": "已經",
+          "type": "相對詞"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "ainda não",
+          "zh": "還沒有",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "definir": {
+      "term": "definir",
+      "pos": "動詞",
+      "meaning": "確定、訂定、界定",
+      "forms": "eu defino；vocês definiram（已訂定）",
+      "note": "definiram 是簡單過去式的第三人稱複數。",
+      "related": [
+        {
+          "pt": "definição",
+          "zh": "定義、界定、確定",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "definir uma data",
+          "zh": "訂定日期",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "cronograma": {
+      "term": "cronograma",
+      "pos": "陽性名詞",
+      "meaning": "進度表、時程表",
+      "forms": "o cronograma；os cronogramas",
+      "note": "雖然結尾是 a，仍是陽性名詞；常含多項工作與日期。",
+      "related": [
+        {
+          "pt": "calendário",
+          "zh": "日曆、日程；不完全等同專案進度表",
+          "type": "相關詞"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "cronograma de implantação",
+          "zh": "建置／落地時程表",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "agendar": {
+      "term": "agendar",
+      "pos": "動詞",
+      "meaning": "安排、預約",
+      "forms": "eu agendo；nós agendamos",
+      "note": "巴西商務常用於安排會議或通話。",
+      "related": [
+        {
+          "pt": "agenda",
+          "zh": "行程表、議程",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "agendar uma reunião",
+          "zh": "安排會議",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "conversa": {
+      "term": "conversa",
+      "pos": "陰性名詞",
+      "meaning": "談話、交談",
+      "forms": "a conversa；as conversas",
+      "note": "可比 reunião 較輕鬆，不必是正式會議。",
+      "related": [
+        {
+          "pt": "conversar",
+          "zh": "交談",
+          "type": "同字族"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "conversa por telefone",
+          "zh": "電話交談",
+          "type": "常用搭配"
+        }
+      ]
+    },
+    "próxima": {
+      "term": "próxima",
+      "pos": "形容詞陰性形式",
+      "meaning": "下一個的、接近的；本課為下週",
+      "forms": "próximo／próxima；複數 próximos／próximas",
+      "note": "配合陰性 semana 用 próxima；配合陽性 mês 用 próximo。",
+      "related": [
+        {
+          "pt": "seguinte",
+          "zh": "接下來的、下一個的",
+          "type": "相關詞"
+        }
+      ],
+      "associated": [
+        {
+          "pt": "na próxima semana",
+          "zh": "在下週",
+          "type": "常用搭配"
+        }
+      ]
+    }
+  },
+  "references": {
+    "conditional": {
+      "label": "Ciberdúvidas：條件式與禮貌用途（巴西名稱為 futuro do pretérito）",
+      "url": "https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/condicional-simples-e-condicional-composto/38090"
+    },
+    "voce": {
+      "label": "Ciberdúvidas：巴西葡語 você 與動詞人稱",
+      "url": "https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/pronomes-pessoais-brasil/19843"
+    },
+    "precisar": {
+      "label": "Ciberdúvidas：precisar 的介詞及巴西用法",
+      "url": "https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/a-regencia-de-precisar-novamente/29947"
+    },
+    "haver": {
+      "label": "Ciberdúvidas：haver 表示存在時用單數",
+      "url": "https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/haver--existir--3-pessoa-do-singular/30583"
+    }
+  }
+}

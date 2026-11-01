@@ -1,0 +1,12 @@
+{
+  "version": "2.3.0",
+  "rounds": 18,
+  "examples": 36,
+  "keywords": 54,
+  "new_texts": 197,
+  "new_mp3_files": 394,
+  "total_texts": 419,
+  "curriculum_sha256": "e48d5be8e60edf3dd7ea8a98c9a101801fd61bfe0db41699fe13589be6bda810",
+  "validation": "Every new MP3 passed full decoding, duration, finite/non-silent waveform and checksum checks. Not native-speaker review or physical-phone listening.",
+  "privacy": "Only original public curriculum was synthesized locally on the runner; no learner data or cloud TTS API."
+}
