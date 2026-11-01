@@ -1,0 +1,51 @@
+name: Publish verified natural pronunciation
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ['Generate Brazilian natural audio']
+    types: [completed]
+permissions:
+  contents: write
+concurrency:
+  group: bora-natural-audio-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Apply source-guarded upgrade and check all asset hashes
+        run: python tools/upgrade_natural_audio.py
+      - name: Install browser testing tools
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Test actual neural audio playback and storage
+        run: python tools/test_natural_audio.py
+      - name: Commit only validated website outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html audio-sample.mp3 audio-sample-slow.mp3 audio-test.html AUDIO_CREDITS.md audio-quality-report.json audio-browser-tests.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Upgrade Bora to v2.2 with Brazilian neural normal and slow pronunciation'
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bora-v22-clear-voice
+          path: |
+            .build/Bora-v2.2-Clear-Voice.html
+            .build/Bora-v2.2-Mobile.png
+            audio-quality-report.json
+            audio-browser-tests.json
+            audio-sample.mp3
+            audio-sample-slow.mp3
+          retention-days: 14
