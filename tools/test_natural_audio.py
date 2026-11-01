@@ -74,9 +74,11 @@ def main():
             page.goto(url + '#' + route)
             page.wait_for_timeout(80)
             check('Route renders: ' + route, len(page.locator('#main').inner_text()) > 20)
-        check('No JavaScript errors', not errors)
-        page.goto(url + '#pronunciation')
+        page.goto(url + '#home')
+        page.locator('[data-action="pron-open"]').first.click()
         page.wait_for_selector('.pron-sentence')
+        check('Pronunciation tab opens through navigation', page.locator('.pron-sentence').count() == 6)
+        check('No JavaScript errors', not errors)
         export = ROOT / '.build'
         export.mkdir(exist_ok=True)
         page.screenshot(path=str(export / 'Bora-v2.2-Mobile.png'), full_page=True)
