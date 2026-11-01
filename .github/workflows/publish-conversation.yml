@@ -1,0 +1,52 @@
+name: Publish conversation grammar and vocabulary
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/publish-conversation.yml
+      - tools/publish_conversation.py
+      - tools/test_conversation.py
+permissions:
+  contents: write
+concurrency:
+  group: bora-conversation-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Source guard, all new audio hashes and JavaScript checks
+        run: python tools/publish_conversation.py
+      - name: Install browser testing tools
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Test all conversations, vocabulary, audio and native storage
+        run: python -u tools/test_conversation.py
+      - name: Commit only the verified application entry and reports
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html conversation-release-report.json conversation-browser-tests.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Release Bora v2.3 with contextual grammar, examples and linked vocabulary'
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: bora-v23-conversation-validation
+          path: |
+            .build/Bora-v2.3-*.png
+            conversation-release-report.json
+            conversation-browser-tests.json
+          retention-days: 14
+          if-no-files-found: warn
