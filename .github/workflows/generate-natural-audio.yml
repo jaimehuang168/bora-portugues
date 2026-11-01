@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - tools/generate_natural_audio.py
+      - tools/generate_kokoro_audio.py
       - .github/workflows/generate-natural-audio.yml
 permissions:
   contents: write
@@ -14,19 +14,22 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 35
+    env:
+      OMP_NUM_THREADS: '2'
+      OPENBLAS_NUM_THREADS: '2'
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-      - name: Install synthesis and codec tools
+      - name: Install local neural synthesis and codec tools
         run: |
-          python -m pip install 'edge-tts==7.2.8'
+          python -m pip install 'kokoro-onnx==0.6.1' soundfile
           sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg
-      - name: Generate normal and slow files, fail closed on errors
-        run: python -u tools/generate_natural_audio.py
+          sudo apt-get install -y -qq ffmpeg espeak-ng libsndfile1
+      - name: Generate and validate normal and slow neural files
+        run: python -u tools/generate_kokoro_audio.py
       - name: Commit only the verified public audio pack
         run: |
           git config user.name 'github-actions[bot]'
