@@ -28,7 +28,7 @@
 
 首頁：https://jaimehuang168.github.io/bora-portugues/?v=2.3.0#home
 
-請以 Safari／Chrome 開啟；首頁與頁尾應顯示 v2.3.0。不要繼續開啟手機下載的舊 HTML。重新整理即可，不要清除網站資料。
+請以 Safari／Chrome 開啟；頁尾應顯示 v2.5.0。不要繼續開啟手機下載的舊 HTML。重新整理即可，不要清除網站資料。
 
 ## 會話中的文法、例句與詞彙
 
