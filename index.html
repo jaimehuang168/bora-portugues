@@ -586,7 +586,7 @@ function create(config) {
     if(queue.some(x=>!x.engine)){
       setStatus('error', engine==='builtin'
         ? '這句沒有內建音檔。請切換「自動」並在手機安裝 pt-BR 語音；先用下方音效測試確認手機能播 MP3。'
-        : '這句沒有內建音檔，手機也沒有可用的 pt-BR 語音。先試下方 MP3；若能聽見，請在手機語音設定安裝巴西葡語並重新開啟瀏覽器。');
+        : '這句沒有內建音檔，手機也沒有可用的 pt-BR 語音。先試頁面上方的 MP3；若能聽見，請在手機語音設定安裝巴西葡語並重新開啟瀏覽器。');
       config.onNotice?.(message);return false;
     }
     if(queue.some(x=>x.engine==='system'&&!x.voice.localService)&&!consent){
@@ -914,6 +914,7 @@ function updateSpeechDock(s){
  $('#speech-toggle').disabled=s.status==='error'&&!s.source;
  const retry=['blocked','ready','error'].includes(s.status);
  if(retry)$('#speech-toggle').innerHTML=icon('play')+'點此播放';
+ if(s.status==='error'&&!s.source)$('#speech-toggle').innerHTML='此句無可用語音';
  let nativeWrap=$('#bora-native-wrap');
  if(!nativeWrap){
   nativeWrap=document.createElement('div');nativeWrap.id='bora-native-wrap';nativeWrap.className='bora-native-wrap';
