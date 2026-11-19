@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#17694f">
   <meta name="description" content="Bora! 巴西葡語練習室：繁體中文與西班牙文輔助，222 段內建合成發音、18 個月招商葡文、訪客十句與講稿逐句朗讀。">
-  <title>Bora! v2.1｜巴西葡語發音版</title>
+  <title>Bora! v2.4｜每日巴西葡語練習</title>
   <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTYiIGZpbGw9IiMxNzY5NGYiLz48cGF0aCBmaWxsPSIjZTVlZGIxIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNDEgMTA5aDU3djk0YzE4LTIxIDQzLTMzIDc0LTMzIDYxIDAgMTA0IDQ1IDEwNCAxMTFzLTQ1IDExMi0xMDcgMTEyYy0zMiAwLTU4LTEzLTc0LTMzdjI2aC01NFYxMDl6bTU3IDE3MmMwIDM3IDI0IDYzIDU4IDYzczYwLTI2IDYwLTYzLTI1LTYyLTYwLTYyLTU4IDI1LTU4IDYyeiIvPjxjaXJjbGUgY3g9IjQwMCIgY3k9IjM3MyIgcj0iMjMiIGZpbGw9IiNmNWNmNmEiLz48L3N2Zz4K" type="image/svg+xml">
   <style>
 :root{--green:#17694f;--green-dark:#104d3a;--green-light:#e8f2eb;--lime:#daeeab;--gold:#f5cf6a;--ink:#20372f;--muted:#65766e;--line:#e4eae2;--bg:#f6f8f3;--white:#fff;--red:#a13b3b;--amber:#8a5c10;--shadow:0 12px 35px #233b2f06;--radius:22px;--sidebar:236px;--font:Inter,"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,-apple-system,sans-serif}
@@ -37,6 +37,10 @@
 <style>
 .bora-native-wrap{border-top:1px solid #d7e2d5;margin-top:12px;padding-top:9px}.bora-native-wrap p{font-size:12px;line-height:1.6;color:#496453;margin:0 0 6px}.bora-native-wrap audio{display:block;width:100%;height:44px}.speech-dock{max-height:65dvh;overflow-y:auto;overscroll-behavior:contain}@media(max-width:650px){.pron-entry{flex-wrap:wrap}.pron-entry>.row.wrap{width:100%}.speech-dock-actions>.row{flex-wrap:wrap}.speech-dock{max-height:60vh}}</style>
 <link rel="stylesheet" href="assets/conversation-learning.css?v=2.3.0">
+<style>
+.daily-card{margin:18px 0}.daily-card h2{margin-bottom:12px}.daily-words{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.daily-word{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fafcf8;min-width:0}.daily-word .pt{font-size:20px;font-weight:700;overflow-wrap:anywhere}.daily-word p{margin:4px 0 12px;color:var(--muted)}.daily-audio{display:flex;gap:8px;flex-wrap:wrap}.daily-audio .btn{font-size:14px;min-height:42px}.daily-sentence{font-size:26px;font-weight:700;line-height:1.5}.daily-sentence-zh{font-size:17px;color:var(--muted);margin:7px 0 15px}.daily-caption{white-space:pre-wrap;overflow-wrap:anywhere;background:#f6f8f3;border-left:4px solid var(--gold);padding:14px 17px;margin:12px 0}.daily-list{padding-left:24px;line-height:1.9}.daily-list li{margin:5px 0}.daily-pattern{border-left:4px solid var(--green);padding:10px 14px;background:var(--green-light);margin-top:12px}.daily-pattern .pt{font-size:18px}.daily-pattern p{color:var(--muted)}.daily-hero{background:linear-gradient(110deg,#14543f,#29815e);color:white;border-radius:18px;padding:22px;margin:14px 0 20px}.daily-hero p{color:#e1f4e9}.daily-hero .pill{background:#fff2;color:inherit}.daily-complete{margin-top:20px}
+@media(max-width:700px){.daily-words{grid-template-columns:1fr}.daily-word{padding:14px}.daily-sentence{font-size:22px}.daily-audio .btn{flex:1}.daily-hero{padding:17px}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main" data-action="skip-main">跳至主要內容</a>
@@ -653,6 +657,8 @@ global.BoraSpeech={create,splitText,normalize};
 <script src="assets/conversation-content.js?v=2.3.0"></script>
 <script src="assets/conversation-audio.js?v=2.3.0"></script>
 <script src="assets/conversation-learning.js?v=2.3.0"></script>
+<script src="assets/subtitles.js?v=2.4.0"></script>
+<script src="assets/daily-learning.js?v=2.4.0"></script>
 <script>
 /* Bora! 2.1 — 無框架、無後端。所有進度在本機，錄音不會由本 App 上傳。
    教材與使用者字串一律轉義；JSON 匯入採白名單驗證；不執行匯入內容。
@@ -758,18 +764,18 @@ let pronLesson='hello',pronDraft='Oi, tudo bem?\nPode falar mais devagar?\nVocê
 
 function toast(message){const t=$('#toast');t.textContent=message;t.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.hidden=true,4700);}
 function go(path){if(location.hash.slice(1)===path){render();window.scrollTo(0,0);}else location.hash=path;}
-function navData(){return [['home','home','今日學習','今天'],['plan','map','18 個月計畫','18月'],['courses','book','課程路線','課程'],['cards','cards','單字與複習','單字'],['speak','mic','聽力與口說','口說'],['grammar','document','文法與易混字','文法'],['progress','chart','學習進度','進度'],['settings','settings','偏好與備份','設定']];}
+function navData(){return [['home','home','今日學習','今天'],['daily','calendar','每日短練習','日課'],['plan','map','18 個月計畫','18月'],['courses','book','課程路線','課程'],['cards','cards','單字與複習','單字'],['speak','mic','聽力與口說','口說'],['grammar','document','文法與易混字','文法'],['progress','chart','學習進度','進度'],['settings','settings','偏好與備份','設定']];}
 function section(){const root=route.split('/')[0];if(root==='conversation')return 'speak';if(root==='lesson'||root==='quiz')return 'courses';return navData().some(n=>n[0]===root)?root:'home';}
 function heading(title,sub,extra=''){return `<div class="page-heading"><div><h1>${title}</h1><p>${sub}</p></div>${extra}</div>`;}
 function shell(content){
  const sec=section(),nav=navData();
  return `<aside class="sidebar"><a class="brand" href="#home" aria-label="Bora 首頁"><div class="brandmark">b.</div><div><div class="brand-name">Bora!</div><div class="brand-sub">巴西葡語練習室</div></div></a><div class="nav-section">YOUR LEARNING SPACE</div><nav aria-label="主要選單">${nav.slice(0,-1).map(n=>`<button class="nav-link ${sec===n[0]?'active':''}" data-action="go" data-route="${n[0]}" ${sec===n[0]?'aria-current="page"':''}>${icon(n[1])}${n[2]}${n[0]==='cards'&&dueCards().length?`<span class="badge">${dueCards().length}</span>`:''}</button>`).join('')}</nav><div class="sidebar-bottom"><div class="coach-card">${icon('leaf')}<h3>一點一滴，也是在前進。</h3><p>App 內每天 ${state.profile.dailyMinutes} 分鐘；外部聽力另計 30 分鐘。</p></div><button class="nav-link ${sec==='settings'?'active':''}" data-action="go" data-route="settings">${icon('settings')}偏好與備份</button><div class="local-profile"><div class="avatar">${esc(state.profile.name.slice(0,1).toUpperCase())}</div><div><div class="profile-name">${esc(state.profile.name)}</div><div class="profile-sub">本機個人學習空間</div></div></div></div></aside>
- <div class="shell"><header class="topbar"><div class="breadcrumbs"><span>學習空間</span>${icon('chevron')}<b>${nav.find(n=>n[0]===sec)?.[2]||'今日學習'}</b></div><div class="top-info"><div class="top-language"><span class="flag-br" aria-label="巴西"></span><span>Português do Brasil</span></div><span class="saved" id="save-status"><i class="dot"></i>${storageOK&&!storageLocked?'本機儲存':'暫存模式'}</span><button class="icon-btn" data-action="pron-open" aria-label="開啟發音練習">${icon('volume')}</button><button class="icon-btn" data-action="go" data-route="settings" aria-label="開啟偏好與語音設定">${icon('settings')}</button></div></header>${storageMessage?`<div class="notice-banner">${esc(storageMessage)}</div>`:''}<main id="main" class="main" tabindex="-1">${content}<div class="footer-note">${icon('shield')}Bora! v2.3.0 · 會話文法與詞彙 · 18 個月招商葡文 · 原創練習教材 · 進度儲存在本機 · 非語言能力認證</div></main></div><nav class="mobile-nav" aria-label="行動版選單">${nav.map(n=>`<button class="${sec===n[0]?'active':''}" data-action="go" data-route="${n[0]}" ${sec===n[0]?'aria-current="page"':''}>${icon(n[1])}<span>${n[3]}</span></button>`).join('')}</nav>`;
+ <div class="shell"><header class="topbar"><div class="breadcrumbs"><span>學習空間</span>${icon('chevron')}<b>${nav.find(n=>n[0]===sec)?.[2]||'今日學習'}</b></div><div class="top-info"><div class="top-language"><span class="flag-br" aria-label="巴西"></span><span>Português do Brasil</span></div><span class="saved" id="save-status"><i class="dot"></i>${storageOK&&!storageLocked?'本機儲存':'暫存模式'}</span><button class="icon-btn" data-action="pron-open" aria-label="開啟發音練習">${icon('volume')}</button><button class="icon-btn" data-action="go" data-route="settings" aria-label="開啟偏好與語音設定">${icon('settings')}</button></div></header>${storageMessage?`<div class="notice-banner">${esc(storageMessage)}</div>`:''}<main id="main" class="main" tabindex="-1">${content}<div class="footer-note">${icon('shield')}Bora! v2.4.0 · 每日短練習 · 會話文法與詞彙 · 18 個月招商葡文 · 本機進度 · 非語言能力認證</div></main></div><nav class="mobile-nav" aria-label="行動版選單">${nav.map(n=>`<button class="${sec===n[0]?'active':''}" data-action="go" data-route="${n[0]}" ${sec===n[0]?'aria-current="page"':''}>${icon(n[1])}<span>${n[3]}</span></button>`).join('')}</nav>`;
 }
 function render(){
  route=location.hash.slice(1)||'home';document.body.classList.toggle('large-type',state.profile.large);
  const [root,arg]=route.split('/');let html='';
- if(root==='home')html=homePage();else if(root==='plan')html=board.page(arg);else if(root==='courses')html=coursesPage();else if(root==='lesson')html=lessonPage(arg);else if(root==='cards')html=cardsPage();else if(root==='conversation')html=conversationNotes.page(arg,route.split('/')[2]);else if(root==='speak')html=speakPage();else if(root==='grammar')html=grammarPage();else if(root==='progress')html=progressPage();else if(root==='settings')html=settingsPage();else if(root==='quiz')html=quizPage();else html=homePage();
+ if(root==='home')html=homePage();else if(root==='daily')html=dailyPage();else if(root==='plan')html=board.page(arg);else if(root==='courses')html=coursesPage();else if(root==='lesson')html=lessonPage(arg);else if(root==='cards')html=cardsPage();else if(root==='conversation')html=conversationNotes.page(arg,route.split('/')[2]);else if(root==='speak')html=speakPage();else if(root==='grammar')html=grammarPage();else if(root==='progress')html=progressPage();else if(root==='settings')html=settingsPage();else if(root==='quiz')html=quizPage();else html=homePage();
  $('#app').innerHTML=shell(html);updateVoiceUI();updateSaveStatus();updateSpeechDock(speech.snapshot());
  if(root==='speak'&&rec.url)showRecording();
 }
@@ -866,8 +872,22 @@ async function speak(text,slow=false){loadVoices();return speech.play(text,speec
 async function speakPlaylist(texts,options={}){loadVoices();return speech.play(texts,speechOptions(options));}
 function stopSpeech(){speech.stop();}
 function conversationEntry(){return `<section class="cg-entry"><div class="row between wrap"><div><b>新增：會話文法與詞彙 v2.3.0</b><p>18 輪解析 · 每輪 2 個例句 · 單字、相關字與情境搭配</p></div><a class="btn small" href="#conversation">會話解析與單字 ${icon('arrow')}</a></div></section>`;}
-function pronunciationEntry(){return `<section class="pron-entry"><div class="row"><span class="pron-entry-icon">${icon('volume')}</span><div><b>會話文法與詞彙版 v2.3.0</b><p>Dora 巴西葡語 · 正常／慢速獨立音檔 · 非真人錄音。</p></div></div><div class="row wrap gap8"><button class="btn small" data-action="pron-test">${icon('volume')}試聽清晰發音</button><button class="btn outline small" data-action="pron-open">開始發音練習${icon('arrow')}</button></div></section>`;}
+function pronunciationEntry(){return dailyEntry()+`<section class="pron-entry"><div class="row"><span class="pron-entry-icon">${icon('volume')}</span><div><b>會話文法與詞彙版 v2.3.0</b><p>Dora 巴西葡語 · 正常／慢速獨立音檔 · 非真人錄音。</p></div></div><div class="row wrap gap8"><button class="btn small" data-action="pron-test">${icon('volume')}試聽清晰發音</button><button class="btn outline small" data-action="pron-open">開始發音練習${icon('arrow')}</button></div></section>`;}
 function engineOptions(){return [['auto','推薦：固定教材用神經語音，自訂稿用系統'],['builtin','Dora 巴葡神經語音：固定教材'],['system','系統 pt-BR：可朗讀自訂講稿']].map(([v,t])=>`<option value="${v}" ${state.profile.speechEngine===v?'selected':''}>${t}</option>`).join('');}
+function dailyEntry(){const l=window.BoraDaily.lesson();return `<section class="pron-entry"><div class="row"><span class="pron-entry-icon">${icon('calendar')}</span><div><b>今日 5–10 分鐘 · 第 ${l.number} 天</b><p>${esc(l.title)} · ${l.special?'字幕分段教學':'循序練習'} · 詞彙、句型與文法</p></div></div><button class="btn small" data-action="go" data-route="daily">開啟今日短練習</button></section>`;}
+function dailyAudioButton(pt,slow=false){return `<button type="button" class="btn ${slow?'outline':'secondary'} small" data-action="daily-speak" data-text="${esc(pt)}" data-slow="${slow?'1':'0'}" aria-label="${slow?'慢速':'正常速度'}朗讀 ${esc(pt)}">${icon(slow?'clock':'volume')}${slow?'慢速':'正常速度'}</button>`;}
+function dailyPage(){
+ const l=window.BoraDaily.lesson(),done=!!state.days[l.date]?.awards?.includes('daily-'+l.date);
+ const words=l.words.map(([pt,zh])=>`<article class="daily-word"><div class="pt" lang="pt-BR">${esc(pt)}</div><p>${esc(zh)}</p><div class="daily-audio">${dailyAudioButton(pt)}${dailyAudioButton(pt,true)}</div></article>`).join('');
+ const subtitle=l.special?(l.caption?`<section class="panel daily-card"><h2>字幕第 ${l.caption.n} 段 · ${esc(l.caption.time)}</h2><p class="small muted">宣傳字幕原文（不代表現況）${l.review?' · 情境複習':''}</p><div class="daily-caption" lang="pt-BR">${esc(l.caption.text)}</div><p class="small">下方為安全的練習改寫句；設施、價格、企業或法規敘述須另查核。字幕檔不含原影片聲音，無法對照旁白。</p></section>`:`<section class="note warning">字幕暫不可用：僅複習此主題的安全練習句。</section>`):'';
+ return heading('今日巴西葡語短練習',`第 ${l.number} 天 · ${l.date} · 第 ${l.phase} 階段 · ${l.special?'影片字幕分段教學':'工作情境'}`)+
+ `<section class="daily-hero"><span class="pill">${l.special?'SUBTITLE PRACTICE':'DAILY PRACTICE'}</span><h2 class="mt12">${esc(l.title)}</h2><p>唯一任務：用 5–10 分鐘聽、說並改寫這一句。</p></section>`+subtitle+
+ `<section class="panel daily-card"><h2>三個關鍵詞／片語</h2><div class="daily-words">${words}</div></section>
+ <section class="panel daily-card"><h2>${l.special?'練習改寫句':'今日示範句'}</h2><p class="daily-sentence" lang="pt-BR">${esc(l.pt)}</p><p class="daily-sentence-zh">${esc(l.zh)}</p><div class="daily-audio">${dailyAudioButton(l.pt)}${dailyAudioButton(l.pt,true)}</div><p class="small muted mt12">裝置 pt-BR 系統語音以 1.0× 與 0.75× 兩種速度播放，不是字幕原旁白；若裝置沒有 pt-BR 語音，請安裝後重試或自行跟讀。</p></section>
+ <section class="panel daily-card"><h2>發音、文法與句型</h2><p><b>發音：</b>${esc(l.tip)}</p><p class="mt12"><b>文法：</b>${esc(l.grammar)}</p><div class="daily-pattern"><div class="pt" lang="pt-BR">${esc(l.swap[0])}</div><p>${esc(l.swap[1])}</p></div><p class="small muted mt12">第二個例句：指出替換後的單字或詞形如何改變。</p></section>
+ <section class="panel daily-card"><h2>實作步驟</h2><ol class="daily-list"><li>逐一聽三個詞／片語的正常與慢速示範，各跟讀兩次。</li><li>完整句正常、慢速各聽一次，留意發音提示。</li><li><b>慢速分段跟讀（自行放慢）：</b>${l.chunks.map(x=>`<span lang="pt-BR">${esc(x)}</span>`).join(' ／ ')}。每段自行慢唸、停約 2 秒，再連成完整句；分段不等於降低音訊速度。</li><li>不看中文說主句，再換成第二個例句。</li></ol><h3 class="mt16">自我檢查</h3><ul class="daily-list"><li>能說出三個詞／片語的意思嗎？</li><li>能用文法提示正確換句且讀清重音嗎？</li><li>${l.special?'能區分字幕原文與安全改寫嗎？':'能在接待或招商情境自然說出這句嗎？'}</li></ul><button class="btn daily-complete" data-action="daily-done" ${done?'disabled':''}>${icon('check')}${done?'今日已自評完成':'標記今日自評完成'}</button></section>
+ <section class="note warning">靜態教材不會自動查核園區、稅務、法律或租賃資訊。任何對外條件都須依最新書面來源確認；完成標記只是個人練習紀錄。</section>`;
+}
 function pronunciationPage(){
  const list=lphrases(pronLesson),selected=lessonMap.get(pronLesson)||LESSONS[0];
  return `<div class="pron-hero"><div><div class="kicker">OUÇA. REPITA. CONVERSE.</div><h2>先聽清楚，再說自然。</h2><p>一句一句來。正常聽、慢速聽，留一點時間給自己開口。</p><div class="row wrap mt16"><span class="pill">pt-BR 巴西葡語</span><span class="pill gold">${window.BORA_AUDIO.meta.count} 句 × 正常／慢速</span></div></div><div class="pron-wave" aria-hidden="true">${Array.from({length:23},(_,i)=>`<i style="height:${22+((i*37)%69)}px"></i>`).join('')}</div></div>
@@ -957,6 +977,8 @@ document.addEventListener('click',async event=>{
 
   case 'skip-main':event.preventDefault();$('#main')?.focus({preventScroll:true});$('#main')?.scrollIntoView({block:'start'});break;
   case 'go':go(b.dataset.route);break;
+  case 'daily-speak':await speech.play(b.dataset.text,{engine:'system',rate:b.dataset.slow==='1'?0.75:1,label:'每日短練習 · 裝置 pt-BR 語音'});break;
+  case 'daily-done':{const l=window.BoraDaily.lesson(),k='daily-'+l.date;const d=state.days[l.date]||(state.days[l.date]={seconds:0,practiced:[],reviews:0,spoken:[],quizzes:0,xp:0,awards:[]});if(!d.awards.includes(k)){d.awards.push(k);d.xp+=10;save();render();toast('已記錄今日自評完成；不代表語言能力認證。');}break;}
   case 'open-lesson':openLesson(id);break;
   case 'daily-next':{const d=today();if(d.practiced.length<6)openLesson(nextLesson().id);else if(d.reviews<5)startReview(dueCards().length?'due':PHRASES.some(p=>!state.srs[p.id])?'new':'practice');else if(!d.spoken.length){speakId=d.practiced[0]||PHRASES[0].id;speakTab='shadow';go('speak');}else go('courses');break;}
   case 'course-level':courseFilter.level=value;render();break;
@@ -1019,7 +1041,7 @@ window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installProm
 document.addEventListener('visibilitychange',()=>{if(document.hidden){stopRecording();stopSpeech();}lastTick=Date.now();save();});
 window.addEventListener('pagehide',()=>{clearRecording();stopSpeech();save();});
 // Cap each tick and suspend idle/background tracking; dates use device local calendar.
-setInterval(()=>{const now=Date.now(),elapsed=Math.min(15,Math.floor((now-lastTick)/1000));lastTick=now;const root=route.split('/')[0];if(!document.hidden&&now-lastInteraction<60000&&['lesson','cards','speak','grammar','quiz','conversation'].includes(root)&&elapsed>0){today().seconds=Math.min(86400,today().seconds+elapsed);save();}},15000);
+setInterval(()=>{const now=Date.now(),elapsed=Math.min(15,Math.floor((now-lastTick)/1000));lastTick=now;const root=route.split('/')[0];if(!document.hidden&&now-lastInteraction<60000&&['daily','lesson','cards','speak','grammar','quiz','conversation'].includes(root)&&elapsed>0){today().seconds=Math.min(86400,today().seconds+elapsed);save();}},15000);
 if('speechSynthesis' in window){speechSynthesis.addEventListener('voiceschanged',loadVoices);loadVoices();}
 render();
 // Enabled only when the full project contains sw.js. The portable build removes this block.
