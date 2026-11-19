@@ -102,5 +102,5 @@ window.BoraDaily = (() => {
     const group=bank.slice(tier*4,tier*4+4);
     return {...group[days%group.length],date:s,number:elapsed+1,phase,special:false,finished:s>=END};
   }
-  return {lesson,key,phase1,phase2,phase3};
+  return {lesson,key,phase1,phase2,phase3,audioSpecials:[...Object.values(special),...Object.values(openingCaptions)]};
 })();
