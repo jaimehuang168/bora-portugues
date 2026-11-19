@@ -1,0 +1,9 @@
+{
+  "version": "2.7.0",
+  "targets": 371,
+  "existing_clips_reused": 37,
+  "new_clips": 334,
+  "new_mp3_files": 668,
+  "validation": "All new MP3s decoded and passed duration, non-silence and SHA-256 checks. Not physical-phone listening.",
+  "privacy": "Synthesized public teaching text only; no learner or microphone data."
+}
