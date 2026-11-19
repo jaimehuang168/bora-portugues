@@ -1,5 +1,12 @@
 <!-- BORA-PAGES-MANAGED-V1 -->
-# Bora! 巴西葡語練習室 v2.4.0
+# Bora! 巴西葡語練習室 v2.5.0
+
+## 文法與單字擴充（v2.5.0）
+
+- [文法重點](https://jaimehuang168.github.io/bora-portugues/?v=2.5.0#grammar)：新增 12 個 A1–B1 單元，目前共 20 個；每單元有兩句葡中／西對照、說明、發音及檢核。
+- [句型拓展](https://jaimehuang168.github.io/bora-portugues/?v=2.5.0#grammar/patterns)：原本只在日課輪替出現的 36 組句型，現在可一次瀏覽示範、文法提示與替換例句。
+- [工作單字](https://jaimehuang168.github.io/bora-portugues/?v=2.5.0#cards/words)：新增 36 個 A1–B1 詞條，可搜尋；每條有中文、形式／用法、例句、相關字與正常／慢速的 pt-BR 裝置發音。這些新詞卡尚未納入舊版的間隔複習排程。
+- 固有的 96 句句型庫、54 詞會話單字和舊進度仍保留。新詞和新增例句沒有預製 MP3，需裝置提供 pt-BR 系統語音；語音未安裝時不應以其他語言代替。沒有改動本機資料鍵或備份格式。
 
 繁體中文介面、18 個月招商葡文計畫、每日短練習、Dora 巴西葡語神經合成音，以及逐輪會話文法與詞彙解析。
 
