@@ -1,0 +1,1104 @@
+{
+  "meta": {
+    "version": "2.8.0",
+    "language": "pt-BR",
+    "voice": "Kokoro pf_dora",
+    "type": "neural-synthesis",
+    "count": 121,
+    "files": 242,
+    "normalRate": 1,
+    "slowRate": 0.75,
+    "model_sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a"
+  },
+  "clips": {
+    "você mora aqui perto?": {
+      "text": "Você mora aqui perto?",
+      "src": "audio/more-v1/47f52bb57c5c2eaab35c-normal.mp3",
+      "duration": 1.994,
+      "sha256": "1be50d7327a81e14ba0bcf60c46196c6d2636c6b4ac53b594fed58f4741f3557",
+      "slowSrc": "audio/more-v1/47f52bb57c5c2eaab35c-slow.mp3",
+      "slowDuration": 2.666,
+      "slowSha256": "560e64b6276ab4ebe9e103e7668672a8f274727ed1b76d134dfffa3c0ac2f04b"
+    },
+    "moro com a minha família.": {
+      "text": "Moro com a minha família.",
+      "src": "audio/more-v1/f35fdc63cf20c051a3fb-normal.mp3",
+      "duration": 2.005,
+      "sha256": "a5b7c1d51aa8f184be6de99c64524f561ebccc6359a3bedd323774b469c2f611",
+      "slowSrc": "audio/more-v1/f35fdc63cf20c051a3fb-slow.mp3",
+      "slowDuration": 2.57,
+      "slowSha256": "50bbaadc8472ad046cb90b0d69207c195ddd2ae4bb5923fb07ba985e814ce5ee"
+    },
+    "tenho um filho.": {
+      "text": "Tenho um filho.",
+      "src": "audio/more-v1/3e929c80d1f3ce8c6c2c-normal.mp3",
+      "duration": 1.483,
+      "sha256": "8c3d41dd90b1f8bab66d0e3192d8171c3e47dc3645a135b4c42bdb19e730bcad",
+      "slowSrc": "audio/more-v1/3e929c80d1f3ce8c6c2c-slow.mp3",
+      "slowDuration": 1.875,
+      "slowSha256": "4930fd686ccd03b0feba35353b27a5c113b3e2de1e6572ae2d38c23dc79c92a9"
+    },
+    "vamos tomar um café no sábado?": {
+      "text": "Vamos tomar um café no sábado?",
+      "src": "audio/more-v1/b8e9410d4a992088171d-normal.mp3",
+      "duration": 2.399,
+      "sha256": "e71c1e95e7a07c1939377a0d683ef109d35429c77b3176a1aaf4ae4eeedbcf25",
+      "slowSrc": "audio/more-v1/b8e9410d4a992088171d-slow.mp3",
+      "slowDuration": 3.095,
+      "slowSha256": "9a70483d7d167c3019576ae5d3ff49d3ee73fecacf2171450fc5f8c5a61c4deb"
+    },
+    "obrigado pelo convite.": {
+      "text": "Obrigado pelo convite.",
+      "src": "audio/more-v1/d525012950fdca88cca0-normal.mp3",
+      "duration": 2.131,
+      "sha256": "5389681b456ea2e69e90de910f9bb00d8fe9d649d34d4ac10de007ea6688b324",
+      "slowSrc": "audio/more-v1/d525012950fdca88cca0-slow.mp3",
+      "slowDuration": 2.783,
+      "slowSha256": "22c419cfd077a1bdb5c58ba35f2ad50ce243df2c03a6af2cff9d8723c1bfc4e3"
+    },
+    "até a próxima!": {
+      "text": "Até a próxima!",
+      "src": "audio/more-v1/3ef5f45750adf2124883-normal.mp3",
+      "duration": 1.608,
+      "sha256": "eedd8f39b3a07011380bd1d52224e3e22edac04b164b3017c94b5fcf92eff90f",
+      "slowSrc": "audio/more-v1/3ef5f45750adf2124883-slow.mp3",
+      "slowDuration": 2.025,
+      "slowSha256": "744908f974f126d66a3013c5e1033890adacbd20980bf17bdecf0f7ad63b8140"
+    },
+    "onde encontro arroz?": {
+      "text": "Onde encontro arroz?",
+      "src": "audio/more-v1/b38ecfd44ec4e52ac900-normal.mp3",
+      "duration": 2.026,
+      "sha256": "3b9f577cc633b147d418415f5d5aaf62dba6482894f58a59be51f027ca723aa4",
+      "slowSrc": "audio/more-v1/b38ecfd44ec4e52ac900-slow.mp3",
+      "slowDuration": 2.602,
+      "slowSha256": "a0d46ff284666e2269df783ec97e65835cd78347e4490142fa5a8665803b4908"
+    },
+    "quero meio quilo de tomates.": {
+      "text": "Quero meio quilo de tomates.",
+      "src": "audio/more-v1/d24850e36bd0adc7e3b4-normal.mp3",
+      "duration": 2.387,
+      "sha256": "2e1945058534770b6e22f515fca4d5a043740abe9e8f245e6e8885a22b2cea2d",
+      "slowSrc": "audio/more-v1/d24850e36bd0adc7e3b4-slow.mp3",
+      "slowDuration": 3.157,
+      "slowSha256": "4dddbb4c05a2436b517d44004dd68990aa23d9c08f2ceb6a6e1cdc6c2d34ae13"
+    },
+    "tem uma opção sem açúcar?": {
+      "text": "Tem uma opção sem açúcar?",
+      "src": "audio/more-v1/393d29189ded905f2166-normal.mp3",
+      "duration": 2.323,
+      "sha256": "c2965f922da2809580501cf6f250e06b2089e0025377539c763684e275ada70f",
+      "slowSrc": "audio/more-v1/393d29189ded905f2166-slow.mp3",
+      "slowDuration": 2.923,
+      "slowSha256": "4c961a40fa3f4090f4b1e11a5c5bde0a2cc97b370742b4f7cf9f55ec77b940c7"
+    },
+    "posso levar duas unidades?": {
+      "text": "Posso levar duas unidades?",
+      "src": "audio/more-v1/6971fa121771a66b74a5-normal.mp3",
+      "duration": 2.463,
+      "sha256": "7a75de9ef62860d7afc82bc2ee340d2ecfb1addb1f1d28d6610a294ddafe4fee",
+      "slowSrc": "audio/more-v1/6971fa121771a66b74a5-slow.mp3",
+      "slowDuration": 3.168,
+      "slowSha256": "165c1db024e438fc951f02003970a1d672b9fa09f862e9801f19177a3353b065"
+    },
+    "quanto fica no total?": {
+      "text": "Quanto fica no total?",
+      "src": "audio/more-v1/ba2035c15a778a40bc2d-normal.mp3",
+      "duration": 1.983,
+      "sha256": "89c3c8a9e41f5bb11be02e8c617af6dcb4b494038380674702e007076c130369",
+      "slowSrc": "audio/more-v1/ba2035c15a778a40bc2d-slow.mp3",
+      "slowDuration": 2.494,
+      "slowSha256": "eabfdfc02f1e825cd76ecb31f198ad580e4b24e3a4203dc19c3895b99db767bb"
+    },
+    "pode me dar uma sacola?": {
+      "text": "Pode me dar uma sacola?",
+      "src": "audio/more-v1/08b17f2f6fd561e033c5-normal.mp3",
+      "duration": 2.228,
+      "sha256": "df3162d95570a72c5c20bdeb1b02f123b2e66123f98074047eb66f00e9442e0e",
+      "slowSrc": "audio/more-v1/08b17f2f6fd561e033c5-slow.mp3",
+      "slowDuration": 2.817,
+      "slowSha256": "d6de9afe2f143281b26d4728c96f9bb44196d53c33dee6f4e8e2ecc6a50adb2d"
+    },
+    "onde compro a passagem?": {
+      "text": "Onde compro a passagem?",
+      "src": "audio/more-v1/d6c69b7867f5f5c66c47-normal.mp3",
+      "duration": 2.067,
+      "sha256": "fccd8350364e8e89f0f5fe4ecbca76dde332c095faea346942c14a99ccb034e5",
+      "slowSrc": "audio/more-v1/d6c69b7867f5f5c66c47-slow.mp3",
+      "slowDuration": 2.709,
+      "slowSha256": "aec7b7ca51690546753e254e245c57f7e9ca4b9a3043216a3ec70d6746f1d08b"
+    },
+    "quero uma passagem para foz do iguaçu.": {
+      "text": "Quero uma passagem para Foz do Iguaçu.",
+      "src": "audio/more-v1/afc492dd4390233c84d7-normal.mp3",
+      "duration": 2.825,
+      "sha256": "3ea1cbaae111e3656166144a729563d94a019666be18329a1131969b451a8f57",
+      "slowSrc": "audio/more-v1/afc492dd4390233c84d7-slow.mp3",
+      "slowDuration": 3.703,
+      "slowSha256": "322f4caaac99ba8d681165ce08854dec0cec40008eed6da234a26fff181771f2"
+    },
+    "a que horas sai o ônibus?": {
+      "text": "A que horas sai o ônibus?",
+      "src": "audio/more-v1/1f0a861f65d35dd8d559-normal.mp3",
+      "duration": 2.121,
+      "sha256": "7e106dfa3e5a18e55105430ae56d906f0a64acc6ae1e961cfe0e2d283adf1098",
+      "slowSrc": "audio/more-v1/1f0a861f65d35dd8d559-slow.mp3",
+      "slowDuration": 2.741,
+      "slowSha256": "e308bea8160d881cfc0e3c53397a2d8a0c81465d9aa7b0f5fc5ddea3985c1546"
+    },
+    "esta é a plataforma certa?": {
+      "text": "Esta é a plataforma certa?",
+      "src": "audio/more-v1/45bc73eeaa77d7bf36b6-normal.mp3",
+      "duration": 2.207,
+      "sha256": "35d8b6f89320c577295aa16a62ae72ac0b81628b6e09d9243fb99f77e688431d",
+      "slowSrc": "audio/more-v1/45bc73eeaa77d7bf36b6-slow.mp3",
+      "slowDuration": 3.007,
+      "slowSha256": "3dd3a3db18c46809d41a0e42aecaef1e61bdb198165a81be84e3f48441e43bda"
+    },
+    "onde devo descer?": {
+      "text": "Onde devo descer?",
+      "src": "audio/more-v1/6dc208bc31e9a9be08da-normal.mp3",
+      "duration": 1.908,
+      "sha256": "2650b41ab462bae4f51addc90cf1f2a2ad56e1689fcd93fb61869bb7a7634d4b",
+      "slowSrc": "audio/more-v1/6dc208bc31e9a9be08da-slow.mp3",
+      "slowDuration": 2.39,
+      "slowSha256": "7c4841a72714662327bb71035c1e6181ac03e16afa17604308dd29fb8014012f"
+    },
+    "pode me avisar na próxima parada?": {
+      "text": "Pode me avisar na próxima parada?",
+      "src": "audio/more-v1/0e6d10e58194540ec256-normal.mp3",
+      "duration": 2.719,
+      "sha256": "7759aabd057d6654fd517eb030163435e79331b02bdfdf51a5fea032c991a183",
+      "slowSrc": "audio/more-v1/0e6d10e58194540ec256-slow.mp3",
+      "slowDuration": 3.554,
+      "slowSha256": "a5ac54e1ee0e33275a3884a6e9658b42306951f40f090f036a9de70061601013"
+    },
+    "preciso marcar um horário para o conserto.": {
+      "text": "Preciso marcar um horário para o conserto.",
+      "src": "audio/more-v1/974be3fa376c5b2a5a1f-normal.mp3",
+      "duration": 2.909,
+      "sha256": "77b5914b42dd1bb5c6f3acd7a854d7772a5e802522f51690fd8cd99d3f6f2d7e",
+      "slowSrc": "audio/more-v1/974be3fa376c5b2a5a1f-slow.mp3",
+      "slowDuration": 3.853,
+      "slowSha256": "2835005910b6835f0b31ff15f405e8e6893d46fe12663101f77f69071bf0b94f"
+    },
+    "a torneira está vazando.": {
+      "text": "A torneira está vazando.",
+      "src": "audio/more-v1/31cc917424e0781e8667-normal.mp3",
+      "duration": 2.079,
+      "sha256": "de0e8256b41d4d50cfa4431116b3813a4032a8b47ce18a09379d5e1177550389",
+      "slowSrc": "audio/more-v1/31cc917424e0781e8667-slow.mp3",
+      "slowDuration": 2.751,
+      "slowSha256": "c602924ab704c2b344d7a417c7056dbead5df1a9b33d7b267217b88b5fc0a925"
+    },
+    "você pode vir amanhã de manhã?": {
+      "text": "Você pode vir amanhã de manhã?",
+      "src": "audio/more-v1/ea3018942ac78329de74-normal.mp3",
+      "duration": 2.656,
+      "sha256": "529249e6614de1710eba377766df3d3430ea08176bcbcc5baaa899b31e45899f",
+      "slowSrc": "audio/more-v1/ea3018942ac78329de74-slow.mp3",
+      "slowDuration": 3.501,
+      "slowSha256": "a9144bef1b3f1dfb1d646353be7c8eb2f3e4e5327c7ac81384fdecf192b14aea"
+    },
+    "quanto tempo o conserto vai levar?": {
+      "text": "Quanto tempo o conserto vai levar?",
+      "src": "audio/more-v1/b1c4b7072c1d86e854d7-normal.mp3",
+      "duration": 2.666,
+      "sha256": "ca84594c8bb5673acc728992d0fe89cebf8e8e5a456be8d6a6bff0fe88d4578b",
+      "slowSrc": "audio/more-v1/b1c4b7072c1d86e854d7-slow.mp3",
+      "slowDuration": 3.415,
+      "slowSha256": "e61f6a7614ca80429a8d1205fc15e201d2f384c5adf4d6cac53dde9743751d84"
+    },
+    "pode me enviar o orçamento antes?": {
+      "text": "Pode me enviar o orçamento antes?",
+      "src": "audio/more-v1/97cea07c862754690c33-normal.mp3",
+      "duration": 2.666,
+      "sha256": "a04e7bd47312c8f90ce5fa1f384703e11d868e9b4075a51cc9dca1e0fc9bf706",
+      "slowSrc": "audio/more-v1/97cea07c862754690c33-slow.mp3",
+      "slowDuration": 3.425,
+      "slowSha256": "420952a27c7aeb2666257deb36e2f0f077e4f9c83ba3fb5a622d9b5b2ca5f13e"
+    },
+    "vou confirmar depois de comparar os valores.": {
+      "text": "Vou confirmar depois de comparar os valores.",
+      "src": "audio/more-v1/ae2220887aa9bb313ea8-normal.mp3",
+      "duration": 3.253,
+      "sha256": "83ed924b3b63ea6f4892c4b667d5b728a574631e1c11cfaedd0ca8b00bc3500a",
+      "slowSrc": "audio/more-v1/ae2220887aa9bb313ea8-slow.mp3",
+      "slowDuration": 4.333,
+      "slowSha256": "ecfc21675578dc6215fc5c89ae1952877d3aae7956aa8d15c631ae07e3ea31ba"
+    },
+    "estou com dor de cabeça desde ontem.": {
+      "text": "Estou com dor de cabeça desde ontem.",
+      "src": "audio/more-v1/613a8b87f34abb8d7d6f-normal.mp3",
+      "duration": 2.943,
+      "sha256": "4bc7b4f51de8b9c2c2468d78d36045676f70adc16222006e48c9bd450f0591fc",
+      "slowSrc": "audio/more-v1/613a8b87f34abb8d7d6f-slow.mp3",
+      "slowDuration": 3.989,
+      "slowSha256": "c5e1b4d7853cca5522aa018a2303f8b33fffc9309418128b8ab1f4697c6dba5a"
+    },
+    "preciso falar com um farmacêutico.": {
+      "text": "Preciso falar com um farmacêutico.",
+      "src": "audio/more-v1/a352966b0f463545e186-normal.mp3",
+      "duration": 2.707,
+      "sha256": "24b7f035a0f633566ed2dc4e813b86d96b95de79bb5c763bf7d42f18fec97d2f",
+      "slowSrc": "audio/more-v1/a352966b0f463545e186-slow.mp3",
+      "slowDuration": 3.563,
+      "slowSha256": "d96343ce69600cbbd4746970f9fdb40f42768cfb5880674326d79cd7629c694e"
+    },
+    "este medicamento precisa de receita?": {
+      "text": "Este medicamento precisa de receita?",
+      "src": "audio/more-v1/3f2f282a99d38047feed-normal.mp3",
+      "duration": 2.911,
+      "sha256": "df071ace888461933014af565a8c07b4481254d7a1b99385feabeaf249b3f222",
+      "slowSrc": "audio/more-v1/3f2f282a99d38047feed-slow.mp3",
+      "slowDuration": 3.886,
+      "slowSha256": "8ee3d6d53fae5aef589780c190c16588e555f38bce5ebc0fc284cdfc968ba889"
+    },
+    "onde fica a clínica mais próxima?": {
+      "text": "Onde fica a clínica mais próxima?",
+      "src": "audio/more-v1/68db212fc6cd42d1f2a7-normal.mp3",
+      "duration": 2.74,
+      "sha256": "b6b0660a848aaca517c94f60f92e7efeaf0f243479146ae24bf0f40a427216f9",
+      "slowSrc": "audio/more-v1/68db212fc6cd42d1f2a7-slow.mp3",
+      "slowDuration": 3.703,
+      "slowSha256": "4334bbe83b4ab58d7d809160773e82a0ad21f271dd925d4a4fc82876fb95f7f3"
+    },
+    "pode escrever as instruções para mim?": {
+      "text": "Pode escrever as instruções para mim?",
+      "src": "audio/more-v1/1ce3229b02276435b1a4-normal.mp3",
+      "duration": 2.719,
+      "sha256": "c23a39c3b15528caeab62a5d7baa35e1b7cfdca31f565c5cc4ed47ce2d9e4ae3",
+      "slowSrc": "audio/more-v1/1ce3229b02276435b1a4-slow.mp3",
+      "slowDuration": 3.469,
+      "slowSha256": "6091511f217ad5ec0acefa43635d7bb68865fbe65e6617cd765f48b671a751a7"
+    },
+    "vou confirmar com meu médico antes de tomar.": {
+      "text": "Vou confirmar com meu médico antes de tomar.",
+      "src": "audio/more-v1/928a0f2b4b4115f5e61d-normal.mp3",
+      "duration": 3.242,
+      "sha256": "3c74c373991bd9a3f5bb8acfc2f295d9bfeddb410f8e50683ca85f5b7a24b6ee",
+      "slowSrc": "audio/more-v1/928a0f2b4b4115f5e61d-slow.mp3",
+      "slowDuration": 4.408,
+      "slowSha256": "2d443f763c1a2da37a901040028612076e0e0a100e2e5bd9a0e757e850179901"
+    },
+    "onde fica o balcão de check-in?": {
+      "text": "Onde fica o balcão de check-in?",
+      "src": "audio/more-v1/04c6e74cf30cf64a0382-normal.mp3",
+      "duration": 2.453,
+      "sha256": "08b3727a9104c8cfaf2fa9fefb38a136d1c84d3b12e08cf768624a7b9d8a646c",
+      "slowSrc": "audio/more-v1/04c6e74cf30cf64a0382-slow.mp3",
+      "slowDuration": 3.243,
+      "slowSha256": "5cb36c25664169c9a260ff004ae34f47ec30e830dfdd90cb953efca1bfb0f2d2"
+    },
+    "preciso despachar esta mala.": {
+      "text": "Preciso despachar esta mala.",
+      "src": "audio/more-v1/8117944690526a4be474-normal.mp3",
+      "duration": 2.399,
+      "sha256": "9e7ebb0b7b2df73bb0f5f4b79b10152097c50c7516f6fc6dc605373366a92133",
+      "slowSrc": "audio/more-v1/8117944690526a4be474-slow.mp3",
+      "slowDuration": 3.105,
+      "slowSha256": "893110b5a68dc848b08a5e561edf412960c741530c83d27fde358ec60e5f68b6"
+    },
+    "a que horas começa o embarque?": {
+      "text": "A que horas começa o embarque?",
+      "src": "audio/more-v1/2b445e3e8b0dde258e29-normal.mp3",
+      "duration": 2.302,
+      "sha256": "36ad870338f1164408d3c7d1c2420a07d1389e7820ca808a898b58ba3f1c25bc",
+      "slowSrc": "audio/more-v1/2b445e3e8b0dde258e29-slow.mp3",
+      "slowDuration": 2.986,
+      "slowSha256": "5935603a0f147ba1205d73525a54664c09db7efb1dfbca38aff18994cfd33e68"
+    },
+    "meu voo está atrasado?": {
+      "text": "Meu voo está atrasado?",
+      "src": "audio/more-v1/bc0cdc93349ad6ef8903-normal.mp3",
+      "duration": 2.003,
+      "sha256": "9ba74abfad07c70d62f005adbfc927ea0db991553bded406f353c8b6edc25d5f",
+      "slowSrc": "audio/more-v1/bc0cdc93349ad6ef8903-slow.mp3",
+      "slowDuration": 2.602,
+      "slowSha256": "4f4e31aa9527c1541f3bb7dae4537da9001e265837628af7ddf4f94f65d57309"
+    },
+    "onde retiro a bagagem?": {
+      "text": "Onde retiro a bagagem?",
+      "src": "audio/more-v1/3aa4143a2647187ebfeb-normal.mp3",
+      "duration": 2.1,
+      "sha256": "f1b77b69e8f637b4e105c8e789781b6cdfb194fe9f414fcda5e8cec1e8e4baac",
+      "slowSrc": "audio/more-v1/3aa4143a2647187ebfeb-slow.mp3",
+      "slowDuration": 2.721,
+      "slowSha256": "88aad8fde6172af8159ae1707949c7e8374a290ca2ad4ccf24a4957006160632"
+    },
+    "perdi a conexão. onde posso pedir ajuda?": {
+      "text": "Perdi a conexão. Onde posso pedir ajuda?",
+      "src": "audio/more-v1/bc6afa044ee38a17cdbd-normal.mp3",
+      "duration": 3.325,
+      "sha256": "19673bd606ea1ba7db6d2e1ca484a461372096f9110c5f8d908e57c102d43461",
+      "slowSrc": "audio/more-v1/bc6afa044ee38a17cdbd-slow.mp3",
+      "slowDuration": 4.313,
+      "slowSha256": "6af058f89b86786e2b2bc55a57575eed32e7b2842c639c8a005f8fac07e7c519"
+    },
+    "gostaria de visitar o centro histórico.": {
+      "text": "Gostaria de visitar o centro histórico.",
+      "src": "audio/more-v1/8672e3efa118f04a2dfb-normal.mp3",
+      "duration": 2.909,
+      "sha256": "8e66e6098321fae414e9b5a795eb166083c6553ebc45b227b4506931846399ac",
+      "slowSrc": "audio/more-v1/8672e3efa118f04a2dfb-slow.mp3",
+      "slowDuration": 3.788,
+      "slowSha256": "ecd81aa2ababe2a1db72d3b403fd1e0e61549db46b8e04347e71d8fc5a675c1e"
+    },
+    "qual é o horário de funcionamento?": {
+      "text": "Qual é o horário de funcionamento?",
+      "src": "audio/more-v1/fc8fa36965f6a10bdb6d-normal.mp3",
+      "duration": 2.505,
+      "sha256": "887c321fdfdddd2e003f4cf9ca9cb7dfe44c547149212863c7a077484ed8597a",
+      "slowSrc": "audio/more-v1/fc8fa36965f6a10bdb6d-slow.mp3",
+      "slowDuration": 3.384,
+      "slowSha256": "c44c29489cf756489b29d9f8166da804b4fef944592545196665d4e3724a5b41"
+    },
+    "preciso comprar ingresso com antecedência?": {
+      "text": "Preciso comprar ingresso com antecedência?",
+      "src": "audio/more-v1/b46f8781e97d16e433b4-normal.mp3",
+      "duration": 3.114,
+      "sha256": "b114da90688b28c9c4f9fbaa26cc6e807532db04f6da56c6ffe0836456c125d3",
+      "slowSrc": "audio/more-v1/b46f8781e97d16e433b4-slow.mp3",
+      "slowDuration": 4.067,
+      "slowSha256": "d4101ae8864a5aad96cd25e23bd27a3194df243bd1c89e7c39c5c9def68322e5"
+    },
+    "quanto tempo dura a visita?": {
+      "text": "Quanto tempo dura a visita?",
+      "src": "audio/more-v1/349da7763bccbc7fd296-normal.mp3",
+      "duration": 2.271,
+      "sha256": "069a85b0dacd18bd8c8ba4757d65f6f0e66145d7ce0dce00f4d2d400eb914665",
+      "slowSrc": "audio/more-v1/349da7763bccbc7fd296-slow.mp3",
+      "slowDuration": 2.889,
+      "slowSha256": "455a727dc5038cc45f1df634315288f024f70e30a41cf9122e5515859765b369"
+    },
+    "podemos fazer uma pausa aqui?": {
+      "text": "Podemos fazer uma pausa aqui?",
+      "src": "audio/more-v1/356ab25be2c295e12d13-normal.mp3",
+      "duration": 2.409,
+      "sha256": "6e7f1e55c1a310dfd9a5ce9ed52fc3e09b303e50952afb8a58baae4d2090b019",
+      "slowSrc": "audio/more-v1/356ab25be2c295e12d13-slow.mp3",
+      "slowDuration": 3.083,
+      "slowSha256": "cc6080a39ae875363b235796ab42a6cd829a4f72c76e0fe56466b3426cf5e090"
+    },
+    "onde encontro informações em português?": {
+      "text": "Onde encontro informações em português?",
+      "src": "audio/more-v1/81c9e411b687f6f48c14-normal.mp3",
+      "duration": 2.965,
+      "sha256": "7a54a953d66e5e69b3b73ef978bc5212983291344c4a51ef67fa0f2095980597",
+      "slowSrc": "audio/more-v1/81c9e411b687f6f48c14-slow.mp3",
+      "slowDuration": 3.768,
+      "slowSha256": "accebca3b1ce152aa750ebce301bf1f4bfc57d03d702a1468455ab4b1630fa21"
+    },
+    "meu plano mudou. posso remarcar a visita?": {
+      "text": "Meu plano mudou. Posso remarcar a visita?",
+      "src": "audio/more-v1/9d8143c8771aa9b718ed-normal.mp3",
+      "duration": 2.963,
+      "sha256": "623741741477fdf5113a737052d41d6d2028233993ada4b263da18f9d7e14dce",
+      "slowSrc": "audio/more-v1/9d8143c8771aa9b718ed-slow.mp3",
+      "slowDuration": 3.999,
+      "slowSha256": "9be93c0398b7482ed3f8d0564e952531314c333cd4eacb80880989c4dc9fb98d"
+    },
+    "há alguma alternativa de transporte?": {
+      "text": "Há alguma alternativa de transporte?",
+      "src": "audio/more-v1/b61cb0cf4106069551a1-normal.mp3",
+      "duration": 2.707,
+      "sha256": "b036183ddcbfca420489a374d9711b144bf918afdc4a30ff6cce94c3081683ea",
+      "slowSrc": "audio/more-v1/b61cb0cf4106069551a1-slow.mp3",
+      "slowDuration": 3.616,
+      "slowSha256": "04eddd48a11e14fcf33f0e64e4dc1d62f935392420bda64e10c5ecb5e1e2386b"
+    },
+    "qual é a política de cancelamento?": {
+      "text": "Qual é a política de cancelamento?",
+      "src": "audio/more-v1/fb547f9a7958e331d780-normal.mp3",
+      "duration": 2.74,
+      "sha256": "3537b4e08666f5000d17f788d46f4357e98ffd2ae264c36e7384cd1ff51b8922",
+      "slowSrc": "audio/more-v1/fb547f9a7958e331d780-slow.mp3",
+      "slowDuration": 3.617,
+      "slowSha256": "782ab5425c970aab204fc0b4b5fcdc6f72e2269aa5f417cea4023689bc6f3bcb"
+    },
+    "pode confirmar o custo total antes de eu decidir?": {
+      "text": "Pode confirmar o custo total antes de eu decidir?",
+      "src": "audio/more-v1/9da351e67febeb9ebdae-normal.mp3",
+      "duration": 3.606,
+      "sha256": "641a48b9fb6eae45b0a2f06acac3b210308cf5f4a5c142d3fdff255d9ff5c161",
+      "slowSrc": "audio/more-v1/9da351e67febeb9ebdae-slow.mp3",
+      "slowDuration": 4.697,
+      "slowSha256": "7531fde9bec7bf71244e936281f5c97389e0faf75973bf144e9a3ae79bd91738"
+    },
+    "se houver atraso, aviso por mensagem.": {
+      "text": "Se houver atraso, aviso por mensagem.",
+      "src": "audio/more-v1/d9fb64ca637b3615ede9-normal.mp3",
+      "duration": 2.993,
+      "sha256": "4e37e9a072f3a383b9aa57012fb6747699132f5bf605fd3cee75054ff8da0af7",
+      "slowSrc": "audio/more-v1/d9fb64ca637b3615ede9-slow.mp3",
+      "slowDuration": 3.969,
+      "slowSha256": "7c67e215f8efcfe00c5428be9a5faf439b2ab85413ed5b555b894ebf80af87e9"
+    },
+    "prefiro uma opção que seja mais acessível.": {
+      "text": "Prefiro uma opção que seja mais acessível.",
+      "src": "audio/more-v1/378e5a5e347dd93283e8-normal.mp3",
+      "duration": 3.135,
+      "sha256": "a2efba947a745a54eb277ebc5a037060b5803d4be1a0a4d0b69153b47f639b94",
+      "slowSrc": "audio/more-v1/378e5a5e347dd93283e8-slow.mp3",
+      "slowDuration": 4.004,
+      "slowSha256": "b7a63a1a9049e01cba8c5049e25948329c58f11fcb0833412da06afbaa81e0c9"
+    },
+    "qual é o principal objetivo da sua visita?": {
+      "text": "Qual é o principal objetivo da sua visita?",
+      "src": "audio/more-v1/035232bc9874d644476b-normal.mp3",
+      "duration": 3.083,
+      "sha256": "ea386c1f84487c5b93e800d05b82509aa4ac78b65e5d7644e44c2c305227751c",
+      "slowSrc": "audio/more-v1/035232bc9874d644476b-slow.mp3",
+      "slowDuration": 4.111,
+      "slowSha256": "276086ae33ef9d419b5c6ed3b34bb107e904af826601b788a7b900ac8e744e64"
+    },
+    "em que fase está o projeto da empresa?": {
+      "text": "Em que fase está o projeto da empresa?",
+      "src": "audio/more-v1/618b3c27cd3650b90849-normal.mp3",
+      "duration": 2.847,
+      "sha256": "0fbe3516b86e0f86d91388020693e3375eb90d57026e3d083d3acb44f93a783e",
+      "slowSrc": "audio/more-v1/618b3c27cd3650b90849-slow.mp3",
+      "slowDuration": 3.607,
+      "slowSha256": "5445c9e417eba6c32ffbeff7f95db3028afa355e6cb73188756c2d712399b222"
+    },
+    "qual é a estimativa de área necessária?": {
+      "text": "Qual é a estimativa de área necessária?",
+      "src": "audio/more-v1/196aa5d942e56b7281f2-normal.mp3",
+      "duration": 2.901,
+      "sha256": "b41d379436ac016294c1324c4448b3467078b90850cad3769a58d65214847430",
+      "slowSrc": "audio/more-v1/196aa5d942e56b7281f2-slow.mp3",
+      "slowDuration": 3.789,
+      "slowSha256": "4c5db259692775a46c760e6798d0bee2e291054b55582f7ca759c65c4d55ba20"
+    },
+    "vocês já definiram um prazo para implantação?": {
+      "text": "Vocês já definiram um prazo para implantação?",
+      "src": "audio/more-v1/436fbc6cea9e6c5e615d-normal.mp3",
+      "duration": 3.232,
+      "sha256": "5081172266d48eb5fd699b68c980444a36889548f870e87d314856f02f3c887a",
+      "slowSrc": "audio/more-v1/436fbc6cea9e6c5e615d-slow.mp3",
+      "slowDuration": 4.111,
+      "slowSha256": "3c282d33fb47f245d21a7060236e218411f77889ccde47ea36b0d4c079e63d85"
+    },
+    "podemos registrar os pontos que precisam de confirmação?": {
+      "text": "Podemos registrar os pontos que precisam de confirmação?",
+      "src": "audio/more-v1/3e635033eb20abd4b96e-normal.mp3",
+      "duration": 3.839,
+      "sha256": "00ce2e37fd775c12d57661f450bcf8d670aab3c3135553f09992132f35012819",
+      "slowSrc": "audio/more-v1/3e635033eb20abd4b96e-slow.mp3",
+      "slowDuration": 4.911,
+      "slowSha256": "13c96816c74ade502cbbaf04fc377d49924169fcbfd9febfeac7df294a7d7adb"
+    },
+    "vou encaminhar suas perguntas à equipe responsável.": {
+      "text": "Vou encaminhar suas perguntas à equipe responsável.",
+      "src": "audio/more-v1/9818f5d64cc71c784ceb-normal.mp3",
+      "duration": 3.531,
+      "sha256": "f1707a290227360e67d5dd0c60778be28ec7acd4c994cf5654151e7b7b8ba80d",
+      "slowSrc": "audio/more-v1/9818f5d64cc71c784ceb-slow.mp3",
+      "slowDuration": 4.634,
+      "slowSha256": "c330238d36349f6f6bc2f428a84202402008f3acded998d9bead20ab12d40290"
+    },
+    "poderia detalhar o escopo da proposta?": {
+      "text": "Poderia detalhar o escopo da proposta?",
+      "src": "audio/more-v1/981016b60c0350a4b9a4-normal.mp3",
+      "duration": 2.899,
+      "sha256": "e57e29d9120b12e74190f638239d3798d3912f6c74bea283b47d99044e19e173",
+      "slowSrc": "audio/more-v1/981016b60c0350a4b9a4-slow.mp3",
+      "slowDuration": 3.617,
+      "slowSha256": "04d337a59fe2b2888f9274653c7c3d529907630d3251d28c469a519e92962c0a"
+    },
+    "o preço inclui transporte e instalação?": {
+      "text": "O preço inclui transporte e instalação?",
+      "src": "audio/more-v1/3419820425a6be3437ed-normal.mp3",
+      "duration": 2.943,
+      "sha256": "2edab9212c5df1346d6f3dd15c80baa3ad85aaa7e76d5572fc6d7f2299d971de",
+      "slowSrc": "audio/more-v1/3419820425a6be3437ed-slow.mp3",
+      "slowDuration": 3.853,
+      "slowSha256": "31ff97b0d97171dd516ae5e9b0ae53ad4c8b8fa0eabf3366f6f3ba2d7733902e"
+    },
+    "qual é o prazo estimado de entrega?": {
+      "text": "Qual é o prazo estimado de entrega?",
+      "src": "audio/more-v1/e1c76c21e0def08d19a4-normal.mp3",
+      "duration": 2.645,
+      "sha256": "5692946127262ba7a413f2d423c8ebf80bd10f71bf576fa0e51c49a3a8ab27cc",
+      "slowSrc": "audio/more-v1/e1c76c21e0def08d19a4-slow.mp3",
+      "slowDuration": 3.469,
+      "slowSha256": "d57ce067716a9b80e5c814c4e7eb058079f2f8cd2207f16c502f7c78f02e2e54"
+    },
+    "precisamos comparar propostas com o mesmo escopo.": {
+      "text": "Precisamos comparar propostas com o mesmo escopo.",
+      "src": "audio/more-v1/e8396dafabf28ee3cfb2-normal.mp3",
+      "duration": 3.444,
+      "sha256": "692aae71340474f617bfa8615350354cd90f197ab84394f6dc3b4f65640cdcc6",
+      "slowSrc": "audio/more-v1/e8396dafabf28ee3cfb2-slow.mp3",
+      "slowDuration": 4.663,
+      "slowSha256": "7857716896501d32013ef3ff85460a96e693a1f4a447e2813fd035ca06bdb6ee"
+    },
+    "se houver custos adicionais, por favor, destaque-os.": {
+      "text": "Se houver custos adicionais, por favor, destaque-os.",
+      "src": "audio/more-v1/84a297742558afbd54b1-normal.mp3",
+      "duration": 3.629,
+      "sha256": "9d366fdf662d3197c253332ad507df0c06fc0327973ae86d66108640c366b9a0",
+      "slowSrc": "audio/more-v1/84a297742558afbd54b1-slow.mp3",
+      "slowDuration": 4.812,
+      "slowSha256": "9379b10ab65a28ff9d56739fd5169d9bf1d0be3890809e8b0f9f6839f01be37f"
+    },
+    "depois da análise, enviaremos nossas dúvidas.": {
+      "text": "Depois da análise, enviaremos nossas dúvidas.",
+      "src": "audio/more-v1/1e9bae6b9b42bad898ea-normal.mp3",
+      "duration": 3.391,
+      "sha256": "75134310590323560cfcce3016bfecc5237a3cc931b9ac445c860e698e1a8753",
+      "slowSrc": "audio/more-v1/1e9bae6b9b42bad898ea-slow.mp3",
+      "slowDuration": 4.525,
+      "slowSha256": "8774550da7d467bf1473b93c47218361c1d9fc8108521a2bfd07ca4d002eeeff"
+    },
+    "agradeço sua participação na reunião.": {
+      "text": "Agradeço sua participação na reunião.",
+      "src": "audio/more-v1/aedca3e7247c68863ef8-normal.mp3",
+      "duration": 2.943,
+      "sha256": "deb38612e3bff268353173eb00580c65c868b4b52fb74d6bfeb9f313a201bbcf",
+      "slowSrc": "audio/more-v1/aedca3e7247c68863ef8-slow.mp3",
+      "slowDuration": 3.862,
+      "slowSha256": "0316ff8eee68e0f84cffa869d80dabc757904bb790f04002671fd18bade5084e"
+    },
+    "segue um resumo dos pontos discutidos.": {
+      "text": "Segue um resumo dos pontos discutidos.",
+      "src": "audio/more-v1/5b0c32310f6affa77e11-normal.mp3",
+      "duration": 2.847,
+      "sha256": "4c44a6ab92a0ff98e21b5ee8790fb2978c3c05ec7333c9494e200db6b9264cdd",
+      "slowSrc": "audio/more-v1/5b0c32310f6affa77e11-slow.mp3",
+      "slowDuration": 3.66,
+      "slowSha256": "55625c01e2bea284ae56afdd47c16ef0877fee210d9a6e0c705386df81b48f54"
+    },
+    "poderia confirmar se entendi sua necessidade corretamente?": {
+      "text": "Poderia confirmar se entendi sua necessidade corretamente?",
+      "src": "audio/more-v1/a1694e52c9a86096d4d8-normal.mp3",
+      "duration": 4.151,
+      "sha256": "aa021626228f4c6e427bce7479e1930dc992bcce48733ec0e92d8b2e147619e9",
+      "slowSrc": "audio/more-v1/a1694e52c9a86096d4d8-slow.mp3",
+      "slowDuration": 5.614,
+      "slowSha256": "0ea74b7324170e75fe5387562df5c71d22b9e67a24d578442d96436372fc0481"
+    },
+    "ainda estamos verificando os dados técnicos.": {
+      "text": "Ainda estamos verificando os dados técnicos.",
+      "src": "audio/more-v1/ebaaf72e6d85380e1318-normal.mp3",
+      "duration": 3.081,
+      "sha256": "fdb42b00b6498e32aafc87fa81a8673306a3477672c338ea33abed8d25d89f85",
+      "slowSrc": "audio/more-v1/ebaaf72e6d85380e1318-slow.mp3",
+      "slowDuration": 4.236,
+      "slowSha256": "976a299187e35ff8222208a99e14e018dcc57ecec82d29459bd3fdef6f64c1a5"
+    },
+    "assim que tivermos uma resposta, entraremos em contato.": {
+      "text": "Assim que tivermos uma resposta, entraremos em contato.",
+      "src": "audio/more-v1/f2156dd9ca2760817540-normal.mp3",
+      "duration": 3.763,
+      "sha256": "511a7bc2551e89433d9083e5ba526b5d4cd769e5b73dada68bead5d5c43f231d",
+      "slowSrc": "audio/more-v1/f2156dd9ca2760817540-slow.mp3",
+      "slowDuration": 4.983,
+      "slowSha256": "d2c6a1ce2240de465a312429eda71be13df59d3454f0d4595b8f2f8e43f135d4"
+    },
+    "fico à disposição para esclarecimentos.": {
+      "text": "Fico à disposição para esclarecimentos.",
+      "src": "audio/more-v1/ea0e74db02fc6051a882-normal.mp3",
+      "duration": 2.985,
+      "sha256": "0caf88568b9f08318a09351ec292097711be8fc8ff7fc967f66ea1ffb1270ab0",
+      "slowSrc": "audio/more-v1/ea0e74db02fc6051a882-slow.mp3",
+      "slowDuration": 3.788,
+      "slowSha256": "24d79444c3db1d6c0d5b2bfe50e6b63dea47827ec5dde3d7f29dfcaa5bb1a3b3"
+    },
+    "esta publicação apresenta uma tendência do setor.": {
+      "text": "Esta publicação apresenta uma tendência do setor.",
+      "src": "audio/more-v1/ff2f975c79733074ba3d-normal.mp3",
+      "duration": 3.563,
+      "sha256": "7d2aab0ac8249c609682f314f5fdf121a820eabc7fec9657901e49f05f8a65a3",
+      "slowSrc": "audio/more-v1/ff2f975c79733074ba3d-slow.mp3",
+      "slowDuration": 4.826,
+      "slowSha256": "f418b468c664d10a32061dda863be757ac56f8c990de8684c28898b375ad12b1"
+    },
+    "segundo o relatório, a demanda pode variar.": {
+      "text": "Segundo o relatório, a demanda pode variar.",
+      "src": "audio/more-v1/1344b802876a37500348-normal.mp3",
+      "duration": 3.123,
+      "sha256": "6a6e5e9c2556ad106aae0dabe7f170368c6db17793c1d55399a6772fb9bc4f46",
+      "slowSrc": "audio/more-v1/1344b802876a37500348-slow.mp3",
+      "slowDuration": 4.097,
+      "slowSha256": "ffd8224c78da73c88926beea26e7b1c7c231cb44d26b11a97749a2df8b1c9527"
+    },
+    "qual é a data e a fonte desses dados?": {
+      "text": "Qual é a data e a fonte desses dados?",
+      "src": "audio/more-v1/1e53113c43d7bcafda40-normal.mp3",
+      "duration": 2.911,
+      "sha256": "0b21e91e980585b41b0db81c9bd3eea7034dec488395ae3753d75c0f1bb16212",
+      "slowSrc": "audio/more-v1/1e53113c43d7bcafda40-slow.mp3",
+      "slowDuration": 3.789,
+      "slowSha256": "e508a3b4aafae4027dd8c9bc7d917407e2e872677f64537b93ee5581a2cbc80d"
+    },
+    "os números precisam ser verificados antes da divulgação.": {
+      "text": "Os números precisam ser verificados antes da divulgação.",
+      "src": "audio/more-v1/33bf984a62fb9f91e079-normal.mp3",
+      "duration": 4.031,
+      "sha256": "8483674d86fdbe3786354d625aabdc6e29ed4b456018520cb7748a5810a996ba",
+      "slowSrc": "audio/more-v1/33bf984a62fb9f91e079-slow.mp3",
+      "slowDuration": 5.409,
+      "slowSha256": "96459051b6e3ea1b599e6ed10edd0ae41b028901740395ceb5e06ce749d810c6"
+    },
+    "na minha avaliação, vale acompanhar o tema.": {
+      "text": "Na minha avaliação, vale acompanhar o tema.",
+      "src": "audio/more-v1/e43fb95983ebf3b3bbf8-normal.mp3",
+      "duration": 3.129,
+      "sha256": "03c65e73ade52b93b687f4384b80fa63189504afd97c276cb3ea04ae83c54a53",
+      "slowSrc": "audio/more-v1/e43fb95983ebf3b3bbf8-slow.mp3",
+      "slowDuration": 4.044,
+      "slowSha256": "4876e9430cdebbab998c05342f8c162e7429310ac87bae13740a486d61c96cda"
+    },
+    "gostaria de ouvir a experiência de outras empresas.": {
+      "text": "Gostaria de ouvir a experiência de outras empresas.",
+      "src": "audio/more-v1/4e6613b7a9bc495d1035-normal.mp3",
+      "duration": 3.734,
+      "sha256": "db739b5a995ce44be6a5696d5824b9513e32ab557724119df16cb6e57077b4bc",
+      "slowSrc": "audio/more-v1/4e6613b7a9bc495d1035-slow.mp3",
+      "slowDuration": 4.931,
+      "slowSha256": "f7915af8dfe1a4481a05eb00d317e128b9cf90f8268b647dbe24f7c04c42a4de"
+    },
+    "família": {
+      "text": "família",
+      "src": "audio/more-v1/cbc873e598ab0df40833-normal.mp3",
+      "duration": 1.282,
+      "sha256": "87b820206a6c92308dfe399a2ce91b083d85f38f30e79225e436a7d53e531f3e",
+      "slowSrc": "audio/more-v1/cbc873e598ab0df40833-slow.mp3",
+      "slowDuration": 1.555,
+      "slowSha256": "0353d9719011e13f2644c323c2760e288d8366d0cd8c8d25d48e73d664175aa8"
+    },
+    "perto": {
+      "text": "perto",
+      "src": "audio/more-v1/113e9fa07f2fec7b8957-normal.mp3",
+      "duration": 1.195,
+      "sha256": "e5e0f248acfa2f285ac8a1ec90228fb3dbf4560a2c36d88be40619a5479f2fb3",
+      "slowSrc": "audio/more-v1/113e9fa07f2fec7b8957-slow.mp3",
+      "slowDuration": 1.427,
+      "slowSha256": "c09afcc40d1665f0b70db752b452735bca02bc00fa7a619e2908de14d512601a"
+    },
+    "arroz": {
+      "text": "arroz",
+      "src": "audio/more-v1/b4441a9b8bc3f080c6d5-normal.mp3",
+      "duration": 1.161,
+      "sha256": "5c14a3cf2ae45312e9c2d33551971cedc32c9afda6176214f187ffdc5a79e540",
+      "slowSrc": "audio/more-v1/b4441a9b8bc3f080c6d5-slow.mp3",
+      "slowDuration": 1.322,
+      "slowSha256": "32b766dffa9f2d23b3e7814844cf4c59f251c1e947de06946e686b53d6bbd19f"
+    },
+    "unidade": {
+      "text": "unidade",
+      "src": "audio/more-v1/a9959d28d9598c1b0f6c-normal.mp3",
+      "duration": 1.406,
+      "sha256": "1b9469944e99fc06cd198abd987051c5f1dc5458e11c81ff850fe6ea0401bd8c",
+      "slowSrc": "audio/more-v1/a9959d28d9598c1b0f6c-slow.mp3",
+      "slowDuration": 1.726,
+      "slowSha256": "bddb3e0d9d8d0162719d1a1a47032f63c0a9221999547059953e56cc182a3019"
+    },
+    "total": {
+      "text": "total",
+      "src": "audio/more-v1/11239872d178729acc9e-normal.mp3",
+      "duration": 1.215,
+      "sha256": "08a363ab6fc8399d3b61e2e1479dc83a7aef7d8b54ff40c927ef9cfd945c685e",
+      "slowSrc": "audio/more-v1/11239872d178729acc9e-slow.mp3",
+      "slowDuration": 1.406,
+      "slowSha256": "64c0ff3158ffcf8c6fe0c33e0e12cef352c957e9de7ed9c7159c3e281e883581"
+    },
+    "passagem": {
+      "text": "passagem",
+      "src": "audio/more-v1/5772a7e05009e190fa7c-normal.mp3",
+      "duration": 1.418,
+      "sha256": "ffd8fdc367b4b25b96c8bb8381ba6611f4596be241908fa14bec7ddcee80ba71",
+      "slowSrc": "audio/more-v1/5772a7e05009e190fa7c-slow.mp3",
+      "slowDuration": 1.673,
+      "slowSha256": "0197806dbd8cd94193ded5bbd197589f75146ebd9752fc6e2dbf1f5992dded27"
+    },
+    "ônibus": {
+      "text": "ônibus",
+      "src": "audio/more-v1/9fc1d0ed13f7fa7a4c3f-normal.mp3",
+      "duration": 1.226,
+      "sha256": "b6e955573148a4bcdbb06bfd920e8a6b982d61d0e1ffbfdbb03203fb31da532d",
+      "slowSrc": "audio/more-v1/9fc1d0ed13f7fa7a4c3f-slow.mp3",
+      "slowDuration": 1.503,
+      "slowSha256": "4d0be4989253b66595843614a33c86adf7a4d72b60a66ded29cc4c1f1628720a"
+    },
+    "plataforma": {
+      "text": "plataforma",
+      "src": "audio/more-v1/f7cb38b143627020f578-normal.mp3",
+      "duration": 1.484,
+      "sha256": "0aa57de0bd503273ab47008666fc4e1e63af1eb50ed44b135498145056eca928",
+      "slowSrc": "audio/more-v1/f7cb38b143627020f578-slow.mp3",
+      "slowDuration": 1.875,
+      "slowSha256": "cec31e95279fa8e0604e36581f1c2dc68e88627396d1aed98db1fe0b1f773436"
+    },
+    "conserto": {
+      "text": "conserto",
+      "src": "audio/more-v1/03de66ee424b217ab56f-normal.mp3",
+      "duration": 1.427,
+      "sha256": "20b3c5dadcf4bdf444071d2c917843768151d603878e7c11df3cebe2417c4a58",
+      "slowSrc": "audio/more-v1/03de66ee424b217ab56f-slow.mp3",
+      "slowDuration": 1.77,
+      "slowSha256": "2ed46c8b6bd6b9b90484c83153ab090cb818500f3f8ce3c1a21e4495cf0a7918"
+    },
+    "torneira": {
+      "text": "torneira",
+      "src": "audio/more-v1/d00c26035e9428a02221-normal.mp3",
+      "duration": 1.323,
+      "sha256": "4fbb534f5c8920130985fe2e9a277c9e7b3f8cd99b939ce7884cc1c65ee1b8e6",
+      "slowSrc": "audio/more-v1/d00c26035e9428a02221-slow.mp3",
+      "slowDuration": 1.621,
+      "slowSha256": "5104061f6198d5c04437c91fddb50a6057da20de06f8669333f62d29786e3dcf"
+    },
+    "farmacêutico": {
+      "text": "farmacêutico",
+      "src": "audio/more-v1/3506475cd33a80ffd827-normal.mp3",
+      "duration": 1.673,
+      "sha256": "fa0d5a9aae5918f61b4536130a87caa415777e19ffcc5085a6602f9c42420f29",
+      "slowSrc": "audio/more-v1/3506475cd33a80ffd827-slow.mp3",
+      "slowDuration": 2.046,
+      "slowSha256": "e7b0dfc342fb43051e3a370d4f6b0c554db840dab013a4d7e2d4f868280710b4"
+    },
+    "receita": {
+      "text": "receita",
+      "src": "audio/more-v1/1c26852dc0195c36089d-normal.mp3",
+      "duration": 1.439,
+      "sha256": "49c7a59665dd5d7a0909a3bf9e2e468400d01a7d2a000a0ebf98f9d48015f231",
+      "slowSrc": "audio/more-v1/1c26852dc0195c36089d-slow.mp3",
+      "slowDuration": 1.726,
+      "slowSha256": "9e21b392cedb8e8094c26358d351146eb14185f60f8438dea07a3bb1011665ee"
+    },
+    "instruções": {
+      "text": "instruções",
+      "src": "audio/more-v1/ead211622c6195dc0da0-normal.mp3",
+      "duration": 1.577,
+      "sha256": "10320ff243ba082575fa648defd58c4c0bf22ff987e9a204046f657b05b2cc91",
+      "slowSrc": "audio/more-v1/ead211622c6195dc0da0-slow.mp3",
+      "slowDuration": 1.941,
+      "slowSha256": "6628a2e727b17d4c14b06825e936a0768a3dd707f8222aeaa6c628b31031bc44"
+    },
+    "bagagem": {
+      "text": "bagagem",
+      "src": "audio/more-v1/1c20e90c1a0a34d31bdc-normal.mp3",
+      "duration": 1.386,
+      "sha256": "6432608a9f5b9caaa1d2bbb10ab319535d48a466b268b90c201723ae13b9378b",
+      "slowSrc": "audio/more-v1/1c20e90c1a0a34d31bdc-slow.mp3",
+      "slowDuration": 1.791,
+      "slowSha256": "600b98bdc9e8167391b7dd76d5f2161629eeaf8fcce7a959fa10d509a9b0b7aa"
+    },
+    "embarque": {
+      "text": "embarque",
+      "src": "audio/more-v1/cbf664f99047bbf4805b-normal.mp3",
+      "duration": 1.389,
+      "sha256": "f266c792caf36e066dd81b2f415989167536322a80985a7dc754871323ccf860",
+      "slowSrc": "audio/more-v1/cbf664f99047bbf4805b-slow.mp3",
+      "slowDuration": 1.706,
+      "slowSha256": "285e616f2e888afd62db9d507132df14a60294b2867903029fd0875797381b92"
+    },
+    "conexão": {
+      "text": "conexão",
+      "src": "audio/more-v1/d294f71aa498914ebf7a-normal.mp3",
+      "duration": 1.439,
+      "sha256": "ffcdccf603e020fc8d2e5c297a0388991ae1f7d017baa2b97a326751a9553176",
+      "slowSrc": "audio/more-v1/d294f71aa498914ebf7a-slow.mp3",
+      "slowDuration": 1.759,
+      "slowSha256": "82c6c6ff76924eab210d21793d9e2184c87ef6332998158c43686301a83b9fc4"
+    },
+    "perdi a conexão.": {
+      "text": "Perdi a conexão.",
+      "src": "audio/more-v1/f8c940f9ec05b0e3a9d0-normal.mp3",
+      "duration": 1.823,
+      "sha256": "3291c5203505bc8c48a9dc95f797523d9c7a76c1fab0efa1ef31746004f0d16e",
+      "slowSrc": "audio/more-v1/f8c940f9ec05b0e3a9d0-slow.mp3",
+      "slowDuration": 2.345,
+      "slowSha256": "020734014a9c7c47cb2c85cb13111a9a4377610ba99eeac263249014daa98ad2"
+    },
+    "ingresso": {
+      "text": "ingresso",
+      "src": "audio/more-v1/3ef62019e2ff1b73a0b8-normal.mp3",
+      "duration": 1.386,
+      "sha256": "089ea80418fbeb934b33026b48c33d639e3ba0fb1b9833a99969c8eabd65388e",
+      "slowSrc": "audio/more-v1/3ef62019e2ff1b73a0b8-slow.mp3",
+      "slowDuration": 1.706,
+      "slowSha256": "0e09cf4da22f91abf233ebcac7254e0ad5f03d6a55b6650eb1123a0696b0f437"
+    },
+    "antecedência": {
+      "text": "antecedência",
+      "src": "audio/more-v1/aa56a67c6054d1407d74-normal.mp3",
+      "duration": 1.642,
+      "sha256": "1590f4f2bf969db55e7e3a19a4e592200c1bd7473df70f2093e462e0d04f6f37",
+      "slowSrc": "audio/more-v1/aa56a67c6054d1407d74-slow.mp3",
+      "slowDuration": 2.046,
+      "slowSha256": "d2d1b26fe824f816978ad6c05f6f5f65555c9e2286e1d664c96386b2de01f7cc"
+    },
+    "pausa": {
+      "text": "pausa",
+      "src": "audio/more-v1/a04f890b2c4261ad71c3-normal.mp3",
+      "duration": 1.247,
+      "sha256": "97eb56e38b778dafcdfd9710431b6981e61ec7e420da3cb674c92f4a6e7a0b1b",
+      "slowSrc": "audio/more-v1/a04f890b2c4261ad71c3-slow.mp3",
+      "slowDuration": 1.45,
+      "slowSha256": "22ab5bff91e639b7d14c1d9bdacb30c87a92d306d35ced790a0a3faed488e27f"
+    },
+    "cancelamento": {
+      "text": "cancelamento",
+      "src": "audio/more-v1/394a759a89acceca871e-normal.mp3",
+      "duration": 1.706,
+      "sha256": "a206176e7c9c6de32b331287b68a935710bf19bc27a615fd3efa812d8f41b796",
+      "slowSrc": "audio/more-v1/394a759a89acceca871e-slow.mp3",
+      "slowDuration": 2.079,
+      "slowSha256": "114ba4c841e34593790b008ec63e520b4a8c6130c34c7d3fedb11e1677f21462"
+    },
+    "alternativa": {
+      "text": "alternativa",
+      "src": "audio/more-v1/d282ead8a7297e086c31-normal.mp3",
+      "duration": 1.621,
+      "sha256": "7d29cc3c6e588dd308f0d22fc30ef24565a766ae723329a6dd70d5f23a637104",
+      "slowSrc": "audio/more-v1/d282ead8a7297e086c31-slow.mp3",
+      "slowDuration": 2.003,
+      "slowSha256": "8f7074c86cfcc4d850a3a353fc8e96acf9fc334bc237ca5405ee05f3086383d6"
+    },
+    "atraso": {
+      "text": "atraso",
+      "src": "audio/more-v1/60eb136ab26ad043f21e-normal.mp3",
+      "duration": 1.343,
+      "sha256": "845d2cdec52198f8c13ab74d64f301bd3eea816f359c6ffc29b8050a0c26cd8b",
+      "slowSrc": "audio/more-v1/60eb136ab26ad043f21e-slow.mp3",
+      "slowDuration": 1.621,
+      "slowSha256": "2d07f63b2d75c5bf81b91e14606b56d813bfbf22d45ed254029ed16bb8302d82"
+    },
+    "estimativa": {
+      "text": "estimativa",
+      "src": "audio/more-v1/20c308d7062d582393e8-normal.mp3",
+      "duration": 1.577,
+      "sha256": "0588828c80fc940b44f7e25fce380086f383490aea4458fb2105c7257c5bb9d5",
+      "slowSrc": "audio/more-v1/20c308d7062d582393e8-slow.mp3",
+      "slowDuration": 1.994,
+      "slowSha256": "56eadd3020c3301dea26dbcfd410efa715730a085b702f11c4fba8ad8962c2ba"
+    },
+    "fase": {
+      "text": "fase",
+      "src": "audio/more-v1/40686fbcc2624e78f1ec-normal.mp3",
+      "duration": 1.205,
+      "sha256": "5289e2bfd2eff79ab6383a339412288d34913bc47aca302d81c12d471f942f15",
+      "slowSrc": "audio/more-v1/40686fbcc2624e78f1ec-slow.mp3",
+      "slowDuration": 1.45,
+      "slowSha256": "9688ab833c828010ed22f5705b03ed032c2af376c5dea7bc77e3302f34b43a8b"
+    },
+    "responsável": {
+      "text": "responsável",
+      "src": "audio/more-v1/72f12545d2b699dbc786-normal.mp3",
+      "duration": 1.61,
+      "sha256": "1b9f0133c9f0de153826a62c631d940d5a91448a21254dfb0388b0afc0855075",
+      "slowSrc": "audio/more-v1/72f12545d2b699dbc786-slow.mp3",
+      "slowDuration": 1.994,
+      "slowSha256": "911f133658963839834833c1051193bfe8e104b423188eaabf726e8f8d383f19"
+    },
+    "escopo": {
+      "text": "escopo",
+      "src": "audio/more-v1/476f5fc7735915510517-normal.mp3",
+      "duration": 1.311,
+      "sha256": "1e10f36e5673158ad001df8d9d37790d5691b63cc37b382048d5ec3ed40c593d",
+      "slowSrc": "audio/more-v1/476f5fc7735915510517-slow.mp3",
+      "slowDuration": 1.545,
+      "slowSha256": "f3384b2a749a9cc142960797b5a0c4a8bce7841af054b85ebe5204ccd1fbdf37"
+    },
+    "instalação": {
+      "text": "instalação",
+      "src": "audio/more-v1/eeaeb7f9fc0933cd4686-normal.mp3",
+      "duration": 1.504,
+      "sha256": "81df42c2bc84a7b5dea923398b925fb105fa258482ef58aaff2663cbc1e47ea3",
+      "slowSrc": "audio/more-v1/eeaeb7f9fc0933cd4686-slow.mp3",
+      "slowDuration": 1.907,
+      "slowSha256": "249187c8d4da73e9dbf312900ae62ba9b42ef8966a1e2e56cce630c5ff45cff3"
+    },
+    "resumo": {
+      "text": "resumo",
+      "src": "audio/more-v1/c19ee8d419e73b1d497d-normal.mp3",
+      "duration": 1.333,
+      "sha256": "82a8a4be6c0c608fb4c534c530f1ef9ab9007c9ee2d43efa0ac3990dc10a8cdf",
+      "slowSrc": "audio/more-v1/c19ee8d419e73b1d497d-slow.mp3",
+      "slowDuration": 1.557,
+      "slowSha256": "7ac017560703c135496d4e60b58079b496a61551d11f2644fa80a688ec4a6a30"
+    },
+    "disposição": {
+      "text": "disposição",
+      "src": "audio/more-v1/68818c249c3b7611deb2-normal.mp3",
+      "duration": 1.483,
+      "sha256": "61a8c914ece4efde921795705bf70b3e8aef9ef389d86682c179cbb851401205",
+      "slowSrc": "audio/more-v1/68818c249c3b7611deb2-slow.mp3",
+      "slowDuration": 1.951,
+      "slowSha256": "1cd5854fb86420e62121cb534a545377b568811df8c46d983f003db378bc3299"
+    },
+    "corretamente": {
+      "text": "corretamente",
+      "src": "audio/more-v1/65cfa8352c4b861137d7-normal.mp3",
+      "duration": 1.652,
+      "sha256": "fe49d46b439ed886aac34e5f3b7308a92f9ea8b238dea2e5d382f08e60f3f918",
+      "slowSrc": "audio/more-v1/65cfa8352c4b861137d7-slow.mp3",
+      "slowDuration": 2.047,
+      "slowSha256": "85d8f1f955064566eadf30d5e4a6f4abc654b2177d4a4846daadf377aac94464"
+    },
+    "fonte": {
+      "text": "fonte",
+      "src": "audio/more-v1/3e303c336a58c084f16e-normal.mp3",
+      "duration": 1.237,
+      "sha256": "a7eb203ef897c762c54f3fa515a11e46fec45c810e6c66de6846a32021099ee9",
+      "slowSrc": "audio/more-v1/3e303c336a58c084f16e-slow.mp3",
+      "slowDuration": 1.427,
+      "slowSha256": "e6c9a93672e72a3d41d2b02e92582c7b40902e9cb4bf82c896d0b26bf1142859"
+    },
+    "divulgação": {
+      "text": "divulgação",
+      "src": "audio/more-v1/04acc928bf1d73706e18-normal.mp3",
+      "duration": 1.503,
+      "sha256": "147c804a731e1c186135ed06f7c57299ac229c0a0d0c3d4233650b6a187258bb",
+      "slowSrc": "audio/more-v1/04acc928bf1d73706e18-slow.mp3",
+      "slowDuration": 1.941,
+      "slowSha256": "82dee59c4caff292c5a0a08d78e15270dcabb19f4241b89048618ccc1cd0dbc0"
+    },
+    "tendência": {
+      "text": "tendência",
+      "src": "audio/more-v1/994171d90948515945a1-normal.mp3",
+      "duration": 1.471,
+      "sha256": "26aa0b558f1beeab03a9b14222489daf76e6710dba5eee003e816d8a68638cd2",
+      "slowSrc": "audio/more-v1/994171d90948515945a1-slow.mp3",
+      "slowDuration": 1.844,
+      "slowSha256": "e7589907a4e713782450e163c290baf6a350c6aa2a8f9780c77b1a9b82a2532b"
+    },
+    "meu filho mora comigo.": {
+      "text": "Meu filho mora comigo.",
+      "src": "audio/more-v1/40be16529cd345dcf288-normal.mp3",
+      "duration": 2.057,
+      "sha256": "e25e2a95f416e8656cc88b650cd52536200de8899e01cd4e12db4b19b8a7e5df",
+      "slowSrc": "audio/more-v1/40be16529cd345dcf288-slow.mp3",
+      "slowDuration": 2.687,
+      "slowSha256": "0ecac7bfac8f5ba7c9ce9c48667c010ef7f9685856275a377eba4aa2f96250f4"
+    },
+    "minha família mora perto.": {
+      "text": "Minha família mora perto.",
+      "src": "audio/more-v1/709aa9db3e1bae97ef4a-normal.mp3",
+      "duration": 2.131,
+      "sha256": "2c4cfba1659e681958557e588b294e674e824b1589d118595c1c43e9e58a05a8",
+      "slowSrc": "audio/more-v1/709aa9db3e1bae97ef4a-slow.mp3",
+      "slowDuration": 2.74,
+      "slowSha256": "b3512e791cd3f553e1f3f05a45b3556c5b0d067f0d12e2c371f2161b1697b458"
+    },
+    "o ônibus vai até o centro?": {
+      "text": "O ônibus vai até o centro?",
+      "src": "audio/more-v1/c509acd8e273ba9028e0-normal.mp3",
+      "duration": 2.228,
+      "sha256": "4fc48764cecadc31a830c651207678d873047e235bf6c306bcc1f45646676566",
+      "slowSrc": "audio/more-v1/c509acd8e273ba9028e0-slow.mp3",
+      "slowDuration": 2.849,
+      "slowSha256": "a8d8006242b9304aaa0c95f61e8744ede6c25a5bb9fbfa41a48dd7baba64389b"
+    },
+    "estamos verificando o orçamento.": {
+      "text": "Estamos verificando o orçamento.",
+      "src": "audio/more-v1/3e38d760d821bf060793-normal.mp3",
+      "duration": 2.601,
+      "sha256": "1eb714a57de87e2f412b9250bd74f21bdd5748cb70d211e1be9c0de0024b311e",
+      "slowSrc": "audio/more-v1/3e38d760d821bf060793-slow.mp3",
+      "slowDuration": 3.33,
+      "slowSha256": "898cfebabd0474ba9f0d8b9fba225772ae229089a602e2fbd44cd9f79a89860f"
+    },
+    "trabalho aqui desde janeiro.": {
+      "text": "Trabalho aqui desde janeiro.",
+      "src": "audio/more-v1/669349decc83d414f47f-normal.mp3",
+      "duration": 2.42,
+      "sha256": "7a2a21ba3dd1df7e225242cff425dee42ddf38755d33d107a0a9bb896710fc52",
+      "slowSrc": "audio/more-v1/669349decc83d414f47f-slow.mp3",
+      "slowDuration": 3.159,
+      "slowSha256": "2731c01a18af09d75fb8d2ea3f0af984f60f530384afa42be75ada12601e8e5f"
+    },
+    "o embarque começa às nove.": {
+      "text": "O embarque começa às nove.",
+      "src": "audio/more-v1/8ed7c74e43aa14d73118-normal.mp3",
+      "duration": 2.325,
+      "sha256": "f77a05a7e46fe2dc86a85aca7e4a77eb6c9e7310f5a04311ee2df991d03fdb61",
+      "slowSrc": "audio/more-v1/8ed7c74e43aa14d73118-slow.mp3",
+      "slowDuration": 3.009,
+      "slowSha256": "6789191089579c80368d4688e8d5c454e9c38dec455083525e8d47b7236d2c26"
+    },
+    "gostaria de saber o horário.": {
+      "text": "Gostaria de saber o horário.",
+      "src": "audio/more-v1/8be253ecc6a3c26d4238-normal.mp3",
+      "duration": 2.346,
+      "sha256": "2764d794910510306702744d17da49a6768bf7665c1607acd648699f1de4ba25",
+      "slowSrc": "audio/more-v1/8be253ecc6a3c26d4238-slow.mp3",
+      "slowDuration": 3.031,
+      "slowSha256": "bad09b215eacf4c80afd34794c209f137177b7359e69ef0bdd4d3542ab0bd77d"
+    },
+    "confirme o custo antes de eu decidir.": {
+      "text": "Confirme o custo antes de eu decidir.",
+      "src": "audio/more-v1/e90afe751d787441acb6-normal.mp3",
+      "duration": 2.837,
+      "sha256": "6766a494408be8e4a362e2ac837820970d4b36ad93f8d049fbb53c4d70604d01",
+      "slowSrc": "audio/more-v1/e90afe751d787441acb6-slow.mp3",
+      "slowDuration": 3.661,
+      "slowSha256": "155fc5a517dc8f4c4b3ead9cfdb27f582ce9aff1bded4dc376c430affde0608e"
+    },
+    "vamos sair depois de eles chegarem.": {
+      "text": "Vamos sair depois de eles chegarem.",
+      "src": "audio/more-v1/5cd7ffd92a73c70dc02f-normal.mp3",
+      "duration": 2.57,
+      "sha256": "27c3471a73356c9bba88647f6fcb2484d4d00574348aaa499dbfae0466f23f61",
+      "slowSrc": "audio/more-v1/5cd7ffd92a73c70dc02f-slow.mp3",
+      "slowDuration": 3.34,
+      "slowSha256": "efba61db452986696250eafcef5bd5a9607215265ddba9154c34d7788c56a601"
+    },
+    "estes são os pontos que precisam de confirmação.": {
+      "text": "Estes são os pontos que precisam de confirmação.",
+      "src": "audio/more-v1/5f535aa5b34a1ecea1b7-normal.mp3",
+      "duration": 3.347,
+      "sha256": "424809062af5b65f5b8e0613cdd5445e177f54f2f0f403ab36b101b57ab90ad3",
+      "slowSrc": "audio/more-v1/5f535aa5b34a1ecea1b7-slow.mp3",
+      "slowDuration": 4.215,
+      "slowSha256": "8b2abfbf6d6d1e2f5edf257aa98c10df4f0c589392785820901c1c4fc3f7fcd9"
+    },
+    "esta é a pergunta que recebemos.": {
+      "text": "Esta é a pergunta que recebemos.",
+      "src": "audio/more-v1/2868efb681629c244d9b-normal.mp3",
+      "duration": 2.623,
+      "sha256": "90a9620e14e9ef3aa38b6d21e168472eb3a02c210581be2d09856218c22a6300",
+      "slowSrc": "audio/more-v1/2868efb681629c244d9b-slow.mp3",
+      "slowDuration": 3.36,
+      "slowSha256": "4e0ebb3ad8964a36e216c0c8c61ef08520077550b7648306550dffd62c65b628"
+    },
+    "se houver custos adicionais, avise-me.": {
+      "text": "Se houver custos adicionais, avise-me.",
+      "src": "audio/more-v1/c31be593cf28734f591a-normal.mp3",
+      "duration": 3.007,
+      "sha256": "95619d0c770eaf0b4d223f08a63d8d99a5efacf50f942b60e7600c6e4942b123",
+      "slowSrc": "audio/more-v1/c31be593cf28734f591a-slow.mp3",
+      "slowDuration": 4.04,
+      "slowSha256": "17ad9dbf49e42e79fb3211015c99fb47d2915e55c9536b25912129dc7f576319"
+    },
+    "se houver atraso, enviarei uma mensagem.": {
+      "text": "Se houver atraso, enviarei uma mensagem.",
+      "src": "audio/more-v1/a4321cd5dc1d93bdef40-normal.mp3",
+      "duration": 3.091,
+      "sha256": "9c253d1992bda49854d7129f605205ac46a2ab3db6c8480f031562aa1b056a9b",
+      "slowSrc": "audio/more-v1/a4321cd5dc1d93bdef40-slow.mp3",
+      "slowDuration": 4.173,
+      "slowSha256": "01f81465c4c0a53d13f75f420798a846b30d4e7a9e32e4713f5d7331bb967d79"
+    },
+    "poderia confirmar se entendi corretamente?": {
+      "text": "Poderia confirmar se entendi corretamente?",
+      "src": "audio/more-v1/f8e94ec7f6c30a459e08-normal.mp3",
+      "duration": 3.359,
+      "sha256": "897638de15122c066ffe18fc08f9fa1b8ffcc5388c46e336ccd033546db2b9ed",
+      "slowSrc": "audio/more-v1/f8e94ec7f6c30a459e08-slow.mp3",
+      "slowDuration": 4.408,
+      "slowSha256": "7474c66764c4b3610de2c50ecd593db212f2e9f478c243dc9ebc1acdab068f00"
+    },
+    "vamos verificar se os dados estão corretos.": {
+      "text": "Vamos verificar se os dados estão corretos.",
+      "src": "audio/more-v1/df5add37dbb4dd987ab7-normal.mp3",
+      "duration": 3.071,
+      "sha256": "f51aa3978035ab7c945a4ea38e75d1d812df12939f0c91c36cfa5c01d95412c5",
+      "slowSrc": "audio/more-v1/df5add37dbb4dd987ab7-slow.mp3",
+      "slowDuration": 4.065,
+      "slowSha256": "f0cf84fe2d73f4eeea08de38c216c10b7eb02b66b702b7f5d61bdf79add710c9"
+    }
+  }
+}

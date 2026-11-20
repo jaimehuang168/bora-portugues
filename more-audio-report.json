@@ -1,0 +1,8 @@
+{
+  "version": "2.8.0",
+  "targets": 124,
+  "reused": 3,
+  "new_clips": 121,
+  "new_mp3_files": 242,
+  "validation": "Every MP3 decoded and passed duration, non-silence and SHA-256 checks; physical-phone listening not tested."
+}
