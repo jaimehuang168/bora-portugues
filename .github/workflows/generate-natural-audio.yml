@@ -1,46 +1,17 @@
-name: Generate Brazilian natural audio
-on:
-  workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - tools/generate_kokoro_audio.py
-      - .github/workflows/generate-natural-audio.yml
+# Historical one-shot writer. Current releases must not patch live HTML back to v2.1–v2.3.
+name: Legacy base voice pack — verify only
+on: workflow_dispatch
 permissions:
-  contents: write
-concurrency:
-  group: bora-natural-audio-generation
-  cancel-in-progress: false
+  contents: read
 jobs:
-  generate:
+  check:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
-    env:
-      OMP_NUM_THREADS: '2'
-      OPENBLAS_NUM_THREADS: '2'
+    timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
-          python-version: '3.12'
-      - name: Install local neural synthesis and codec tools
+          persist-credentials: false
+      - name: Verify current and historical media without changing a branch
         run: |
-          python -m pip install 'kokoro-onnx==0.6.1' soundfile
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg espeak-ng libsndfile1
-      - name: Generate and validate normal and slow neural files
-        run: python -u tools/generate_kokoro_audio.py
-      - name: Commit only the verified public audio pack
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add audio/natural-v1 audio/natural-manifest.json audio/natural-generation-report.json
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'Add 222 Brazilian neural phrases in normal and slow versions'
-          git pull --rebase origin main
-          git push origin HEAD:main
-      - uses: actions/upload-artifact@v4
-        with:
-          name: bora-natural-audio
-          path: audio/
-          retention-days: 7
+          node tools/build_audio_catalog.mjs --verify-audio
+          node tools/check_entry_assets.mjs

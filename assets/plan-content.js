@@ -1,0 +1,65 @@
+/* Bora! v2: original task-based syllabus. Timings and rubrics are proposed practice targets,
+   not CEFR certification, employment claims, or verified park/legal facts. */
+window.BORA_PLAN = {
+  phases: [
+    {id:1,from:1,to:3,name:'打底',pt:'A base da conversa',goal:'巴西廠商來訪時，用葡文寒暄並介紹園區。',rhythm:'每週兩堂老師課，重點放在發音與聽力；每天聽 30 分鐘巴西商業新聞或 podcast。',deliverable:'2–3 分鐘園區基本介紹＋5 個基本問答',color:'green'},
+    {id:2,from:4,to:9,name:'工作葡文',pt:'Português no trabalho',goal:'用葡文應付問答；沒聽懂時，先用葡文請對方重複或澄清。',rhythm:'園區講稿交老師修改；每次訪客前準備十句產業用語，訪後記下沒聽懂的地方。',deliverable:'8–10 分鐘簡報＋10 分鐘問答',color:'gold'},
+    {id:3,from:10,to:18,name:'專業葡文',pt:'Conduzir uma reunião',goal:'全程用葡文主持一場招商會議。',rhythm:'閱讀巴西產業與稅務報導，練寫 email、LinkedIn 短文與會議紀錄。',deliverable:'30 分鐘招商會議＋葡文後續紀錄',color:'purple'}
+  ],
+  months:[
+    {n:1,title:'把第一句說清楚',focus:'母音、鼻音、招呼與自我介紹',output:'60 秒自我介紹',courses:['hello','intro','clarify'],tasks:['找一位 Foz 老師（面對面或線上），討論每週兩堂發音與聽力課。','準備並練熟 60 秒自我介紹，讓老師指出三個發音重點。','選一段短音訊反覆聽，記下三個聽懂的詞。']},
+    {n:2,title:'把來訪者接待好',focus:'時間、數字、職稱、方位與需求',output:'90 秒迎賓＋3 個需求問題',courses:['schedule','directions','visit'],tasks:['用葡文確認日期、時間及人數，不猜測沒聽清楚的數字。','練習 90 秒迎賓，清楚介紹自己的角色。','問三個需求問題，並用自己的話複述訪客的答案。']},
+    {n:3,title:'第一次完整介紹',focus:'寒暄、園區基本介紹、溝通補救',output:'2–3 分鐘介紹＋5 個基本問答',courses:['intro','visit','clarify'],tasks:['完成 2–3 分鐘園區介紹，不依賴西文逐句翻譯。','回答五個基本問題；至少練習一次請對方重複。','將介紹交給老師檢查發音、可理解度與事實用語。'],gate:true},
+    {n:4,title:'建立自己的園區講稿',focus:'開場、定位、服務與需求訪談',output:'老師修訂過的 3–5 分鐘講稿',courses:['visit','meeting','expo'],tasks:['在專業作品頁建立園區簡報講稿，只放已核實且獲准公開的資料。','保留原稿與老師修訂稿，標示易錯的重音與停頓。','背熟講稿架構，再用不同順序練習，不只背固定句序。']},
+    {n:5,title:'聽懂廠商在找什麼',focus:'面積、電力、產量、時程與單位',output:'6 題需求訪談＋葡文摘要',courses:['analysis','visit','clarify'],tasks:['準備六題需求訪談，區分現況與未來需求。','聽到面積、功率與日期時，複述單位並請對方確認。','用三句葡文摘要需求，交老師檢查意思是否一致。']},
+    {n:6,title:'把報價與條件說清楚',focus:'規格、交期、比較與保留答覆',output:'兩個假設方案的口頭比較',courses:['quote','negotiate','clarify'],tasks:['用練習用假設資料比較兩個方案，清楚標明是假設。','練習詢問報價是否包含指定項目與有效期限。','不知道價格或條件時，明確說需確認後再回覆。']},
+    {n:7,title:'每次訪客，累積十句',focus:'產業詞彙與訪前準備',output:'一份完整訪客十句卡',courses:['expo','analysis','visit'],tasks:['在訪客十句頁選擇產業，修改成該次會談真正會用的十句。','逐句跟讀並請老師抽問，不只照順序朗讀。','來訪後記錄沒聽懂的內容與下一次的改進句。']},
+    {n:8,title:'不切西文，也能接話',focus:'重述、澄清、確認與爭取思考時間',output:'10 分鐘突發問答練習',courses:['clarify','analysis','negotiate'],tasks:['請老師打亂問題順序並加入一個追問。','練習至少五種葡文澄清或確認句。','用葡文應對 10 分鐘問答；關鍵事實不確定時不猜、不承諾。']},
+    {n:9,title:'簡報後的問答也接得住',focus:'講稿、需求問答與跟催',output:'8–10 分鐘簡報＋10 分鐘問答',courses:['meeting','follow','clarify'],tasks:['完成 8–10 分鐘園區簡報，允許查看關鍵字提綱。','進行 10 分鐘非固定順序問答，使用葡文澄清與確認。','記錄待查問題、回覆期限與老師的具體修正建議。'],gate:true},
+    {n:10,title:'從報導學產業語言',focus:'標題、數據、觀點與來源',output:'一篇產業報導的 5 句摘要',courses:['analysis','email','clarify'],tasks:['選一篇產業報導，記錄來源、發布日期與閱讀日期。','以自己的話寫五句摘要，區分資料與作者觀點。','挑五個可用在工作上的詞，請老師協助造句。']},
+    {n:11,title:'寫得出專業跟催信',focus:'主旨、目的、請求與下一步',output:'一封經老師修訂的葡文 email',courses:['email','follow','schedule'],tasks:['寫一封 100–150 字跟催信，明確說明回覆需求。','比較原稿與老師修訂稿，整理三個常見錯誤。','演練回覆延期、需補資料及尚未決策三種情況。']},
+    {n:12,title:'把會議結果寫下來',focus:'決議、待辦、負責人與期限',output:'一頁葡文會議摘要',courses:['meeting','email','follow'],tasks:['聽一段模擬會議，區分已決定與尚待確認的事項。','寫出五項摘要或待辦，包含負責人與期限。','以葡文口頭確認摘要，再請老師檢查。']},
+    {n:13,title:'讀稅務，不亂下結論',focus:'適用範圍、條件、期間與原始來源',output:'一份稅務詞彙筆記＋待確認問題',courses:['analysis','clarify','email'],tasks:['選官方資料或可信報導，記下適用對象、日期與原始連結。','整理五個詞彙，不把練習摘要當成稅務建議。','用葡文列出需向當地專業人員確認的三個問題。']},
+    {n:14,title:'用葡文建立專業表達',focus:'LinkedIn 短文、語氣與公開資訊',output:'80–120 字葡文專業短文',courses:['email','expo','analysis'],tasks:['選一個不涉及未公開商業資訊的工作主題。','寫 80–120 字短文，以具體觀察代替誇大承諾。','請老師修訂；發布前另確認數據、授權與保密範圍。']},
+    {n:15,title:'切換不同產業情境',focus:'電子、食品、塑膠或物流',output:'兩個產業的需求問答卡',courses:['analysis','visit','negotiate'],tasks:['選兩個產業，各準備一份十句卡。','為每個產業練習一段 3 分鐘需求摘要。','請老師切換角色與問題，避免只會一套固定台詞。']},
+    {n:16,title:'第一次主持模擬會議',focus:'議程、邀請發言、轉場與總結',output:'20 分鐘主持練習',courses:['meeting','schedule','follow'],tasks:['準備議程並用葡文說明會議目的與時間。','主持 20 分鐘練習，包括邀請發言與一次打斷後的接話。','以葡文確認下一步，事後寫五句摘要。']},
+    {n:17,title:'把突發狀況練進去',focus:'追問、沒聽懂、不同意與時間管理',output:'30 分鐘全流程彩排',courses:['meeting','negotiate','clarify'],tasks:['請老師加入不熟悉的提問或需要查證的事項。','用葡文澄清、保留答覆並把討論帶回議程。','完成 30 分鐘彩排，找出三個最需要加練的環節。']},
+    {n:18,title:'用葡文主持招商會議',focus:'迎賓、需求、回應、確認與會後信',output:'30 分鐘招商會議＋葡文會後摘要',courses:['meeting','follow','email'],tasks:['主持一場 30 分鐘實際或模擬招商會議：開場 5 分鐘、需求 10 分鐘、回應 10 分鐘、結尾 5 分鐘。','全程先用葡文處理澄清與確認；涉及關鍵事實時明確保留答覆。','寫出葡文會後摘要，請老師確認可理解度、互動與任務完成度。'],gate:true}
+  ],
+  rescue:[
+    ['Você poderia repetir a última parte, por favor?','您可以再說一次最後那一段嗎？'],
+    ['Você poderia falar um pouco mais devagar?','您可以說慢一點嗎？'],
+    ['Quando você diz isso, o que exatamente quer dizer?','您這樣說，具體指的是什麼？'],
+    ['Deixe-me confirmar se entendi corretamente.','讓我確認一下是否理解正確。'],
+    ['Preciso confirmar essa informação antes de responder.','回答之前，我需要先確認這項資訊。']
+  ],
+  industries:[{id:'general',name:'一般招商'},{id:'electronics',name:'電子與科技'},{id:'food',name:'食品加工'},{id:'plastics',name:'塑膠與零組件'},{id:'logistics',name:'物流與倉儲'}],
+  ten:{
+    general:[
+      ['Em que setor a sua empresa atua?','貴公司從事哪個產業？'],['Qual é o principal objetivo deste investimento?','這項投資的主要目的是什麼？'],['Que tipo de operação vocês pretendem instalar?','你們計畫設立什麼類型的營運據點？'],['De quanto espaço vocês precisam inicialmente?','初期需要多大的空間？'],['Qual é a demanda estimada de energia elétrica?','預估電力需求是多少？'],['Quantas pessoas vocês pretendem contratar?','你們計畫雇用多少人？'],['Quais mercados vocês pretendem atender?','你們計畫服務哪些市場？'],['Qual é o prazo previsto para iniciar a operação?','預計何時開始營運？'],['Quais informações vocês precisam para avançar na avaliação?','為了進一步評估，你們還需要哪些資訊？'],['Podemos combinar os próximos passos por e-mail?','我們可以透過電子郵件確認下一步嗎？']
+    ],
+    electronics:[
+      ['Quais produtos eletrônicos vocês pretendem fabricar ou montar?','你們計畫製造或組裝哪些電子產品？'],['A operação será de montagem, testes ou fabricação de componentes?','營運項目會是組裝、測試，還是零組件製造？'],['Qual é a capacidade de produção mensal prevista?','預估每月產能是多少？'],['A linha de produção exige controle de temperatura ou umidade?','生產線需要控制溫度或濕度嗎？'],['Quais são os requisitos de proteção contra descargas eletrostáticas?','靜電放電防護有哪些要求？'],['Qual é a potência elétrica necessária para os equipamentos?','設備需要多大的電力功率？'],['Os componentes serão importados ou adquiridos localmente?','零組件會進口還是在當地採購？'],['Como será feito o controle de qualidade dos produtos?','產品將如何進行品質管制？'],['Quais qualificações técnicas vocês exigem da equipe?','你們要求團隊具備哪些技術資格？'],['Quando vocês pretendem iniciar a produção piloto?','你們計畫何時開始試產？']
+    ],
+    food:[
+      ['Que tipos de alimentos vocês pretendem processar?','你們計畫加工哪些食品？'],['Qual é o volume de produção diário previsto?','預估每日產量是多少？'],['A operação precisa de armazenamento refrigerado ou congelado?','營運需要冷藏或冷凍儲存嗎？'],['Quais são as exigências de temperatura em cada etapa?','每個階段的溫度要求是什麼？'],['Qual é o consumo estimado de água no processo?','製程預估用水量是多少？'],['Que tipo de tratamento de efluentes será necessário?','需要什麼類型的廢水處理？'],['Como vocês controlam a rastreabilidade dos lotes?','你們如何管理批次追溯？'],['Quais requisitos sanitários precisam ser confirmados?','哪些衛生要求需要進一步確認？'],['Que tipo de embalagem será utilizado?','將使用什麼類型的包裝？'],['Quais mercados vocês pretendem atender com esses produtos?','你們計畫用這些產品服務哪些市場？']
+    ],
+    plastics:[
+      ['Vocês trabalham com injeção, extrusão ou outro processo?','你們採用射出、押出，還是其他製程？'],['Quais resinas serão utilizadas na produção?','生產將使用哪些樹脂？'],['Qual é a capacidade das máquinas que serão instaladas?','將安裝的機台產能規格是什麼？'],['Quais são as dimensões e o peso dos moldes?','模具的尺寸與重量是多少？'],['A operação precisa de um sistema de resfriamento específico?','營運需要特定冷卻系統嗎？'],['Qual é a demanda elétrica total da linha?','整條生產線的總電力需求是多少？'],['Quais tolerâncias dimensionais as peças precisam atender?','零件需要符合哪些尺寸公差？'],['Vocês pretendem utilizar material reciclado?','你們計畫使用再生材料嗎？'],['Como será feita a manutenção dos moldes e equipamentos?','模具與設備將如何維護？'],['Quais serão os principais destinos das peças produzidas?','製成零件的主要銷售地區會是哪些？']
+    ],
+    logistics:[
+      ['Que tipos de mercadorias serão armazenados?','將儲存哪些類型的貨物？'],['Qual é a movimentação mensal prevista?','預估每月貨物進出量是多少？'],['Quantas posições de paletes vocês precisam?','你們需要多少個棧板儲位？'],['Qual é a altura livre necessária no armazém?','倉庫需要多少淨高？'],['Quantas docas de carga e descarga serão necessárias?','需要多少個裝卸月台？'],['Há necessidade de armazenamento com temperatura controlada?','是否需要溫控倉儲？'],['Quais rotas de transporte serão utilizadas?','將使用哪些運輸路線？'],['Qual é o tempo médio de permanência das mercadorias?','貨物平均停留多久？'],['Quais sistemas de rastreamento vocês utilizam?','你們使用哪些追蹤系統？'],['Quais procedimentos aduaneiros precisam ser verificados?','哪些海關程序需要查證？']
+    ]
+  },
+  templates:[
+    {id:'intro',name:'園區基本介紹',hint:'第 1–3 個月。先練這個短版，再加入已核實的園區資訊。',text:'Bom dia! Sejam bem-vindos.\n\nMeu nome é [nome] e trabalho na equipe de atração de investimentos de um parque tecnológico no Paraguai.\n\nHoje, gostaria de apresentar o parque e entender melhor as necessidades da sua empresa. Podemos conversar sobre o espaço, a infraestrutura e o cronograma do projeto.\n\nAs condições específicas serão confirmadas com a equipe responsável.\n\nAntes de começar, vocês poderiam nos contar um pouco sobre a empresa e seus planos?\n\nMuito obrigado pela visita.'},
+    {id:'presentation',name:'園區簡報講稿',hint:'第 4–9 個月。這是講稿架構，不是經核准的對外簡報；方括號請補入查核過的內容。',text:'1. ABERTURA\nBom dia a todos. Obrigado pela presença. Hoje vamos apresentar [nome oficial do parque] e conversar sobre o projeto de vocês.\n\n2. LOCALIZAÇÃO E PERFIL\nO parque está localizado em [localização confirmada]. Nossa atuação inclui [serviços confirmados e autorizados para divulgação].\n\n3. INFRAESTRUTURA\nEm relação à infraestrutura, os dados disponíveis são [informações técnicas confirmadas, com data de referência]. Os itens ainda em análise são [itens a confirmar].\n\n4. NECESSIDADES DA EMPRESA\nGostaria de entender a área necessária, os requisitos técnicos e o cronograma de implantação. Quais são as prioridades da empresa?\n\n5. CONDIÇÕES E DOCUMENTAÇÃO\nAs condições comerciais e os requisitos aplicáveis precisam ser confirmados por escrito com os responsáveis.\n\n6. PRÓXIMOS PASSOS\nPodemos organizar uma visita técnica e uma reunião de acompanhamento. Quais informações vocês precisam receber primeiro?\n\n7. PERGUNTAS\nAgora, vamos abrir espaço para perguntas. Se alguma informação exigir verificação, vamos confirmar e responder posteriormente.'},
+    {id:'email',name:'投資進度跟催 email',hint:'第 10–18 個月。只存草稿，不會寄送；回覆日期請協議後再填入。',text:'Assunto: Acompanhamento do projeto de investimento — [empresa]\n\nPrezado(a) [nome],\n\nEspero que esteja bem.\n\nGostaria de saber se há alguma atualização sobre a avaliação do projeto de investimento. Vocês já definiram um cronograma ou identificaram informações adicionais necessárias para avançar?\n\nPodemos organizar uma conversa para esclarecer dúvidas e alinhar os próximos passos.\n\nCaso seja possível, agradeço um retorno até [data a combinar].\n\nFico à disposição.\n\nAtenciosamente,\n[nome]\n[cargo e contato autorizados]'},
+    {id:'linkedin',name:'LinkedIn 專業短文',hint:'第 10–18 個月。先寫 80–120 個葡文詞；發布前檢查授權、事實及保密範圍。',text:'[Título sobre um tema profissional]\n\nAo conversar com empresas do setor de [setor], uma pergunta importante é: [pergunta relevante].\n\nNa minha experiência, vale a pena analisar [ponto 1], [ponto 2] e [ponto 3] antes de definir os próximos passos.\n\n[Acrescente uma observação concreta, sem divulgar dados confidenciais nem fazer promessas não verificadas.]\n\nQuais desafios sua equipe considera mais importantes nessa etapa?'},
+    {id:'meeting',name:'30 分鐘招商會議主持稿',hint:'第 16–18 個月。時間為練習分配；不是 App 自動評分或自動會議錄音。',text:'0–5 MIN | ABERTURA\nBom dia a todos. Obrigado pela presença. O objetivo desta reunião é entender o projeto e alinhar os próximos passos. Temos cerca de trinta minutos. Podemos começar com uma breve apresentação de cada participante?\n\n5–15 MIN | NECESSIDADES\nQuais são as prioridades da empresa neste momento?\nQual é o cronograma previsto para o investimento?\nQue requisitos técnicos e operacionais precisamos considerar?\nDeixe-me confirmar se entendi corretamente: [resumo do que foi dito].\n\n15–25 MIN | RESPOSTAS E ALINHAMENTO\nVou responder primeiro sobre [tema confirmado].\nQuanto a esse ponto, preciso confirmar a informação antes de responder.\nGostaria de ouvir a opinião de [nome].\nPara mantermos o horário, podemos registrar esse assunto e retomá-lo depois?\n\n25–30 MIN | ENCERRAMENTO\nVou resumir o que ficou combinado.\nA equipe de [responsável] vai preparar [entrega] até [data acordada].\nO ponto que ainda precisa de confirmação é [pendência].\nTodos estão de acordo com esse encaminhamento?\nMuito obrigado pela participação. Enviarei um resumo por e-mail.'}
+  ],
+  resources:[
+    {name:'Agência de Notícias da Indústria',kind:'產業閱讀／podcast 入口',url:'https://noticias.portaldaindustria.com.br/',note:'CNI 產業新聞入口，可找 Economia em 60 segundos、Indústria de A a Z 等內容；原文觀點屬各作者或機構。'},
+    {name:'Receita Federal — Notícias',kind:'第 10–18 月稅務閱讀',url:'https://www.gov.br/receitafederal/pt-br/assuntos/noticias/ultimas-noticias',note:'官方新聞入口。記錄文章日期與適用對象；閱讀練習不等於稅務建議。'}
+  ]
+};

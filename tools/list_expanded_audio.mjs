@@ -3,10 +3,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 
 const context = vm.createContext({window: {}});
-const html = fs.readFileSync('index.html', 'utf8');
-const contentScript = [...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)]
-  .map(x => x[1]).find(x => x.includes('window.BORA_CONTENT ='));
-if (!contentScript) throw new Error('Original grammar catalog missing');
+const contentScript = fs.readFileSync('assets/core-content.js', 'utf8');
 for (const source of [contentScript, fs.readFileSync('assets/daily-learning.js', 'utf8'), fs.readFileSync('assets/expanded-learning.js', 'utf8')]) {
   vm.runInContext(source, context, {timeout: 1000});
 }

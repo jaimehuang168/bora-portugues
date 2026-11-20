@@ -4,7 +4,7 @@ import json
 import re
 import subprocess
 import tempfile
-import urllib.request
+from model_assets import download_verified
 from datetime import datetime, timezone
 from pathlib import Path
 import numpy as np
@@ -14,7 +14,7 @@ from kokoro_onnx import Kokoro
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = 'e8cb9850a544e78dd60836bf7bf068f978b47314167a0468b7ea74762d112efd'
 VOICE = 'pf_dora'
-BASE = 'https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/'
+
 
 
 def main():
@@ -30,10 +30,7 @@ def main():
     count = 0
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
-        for name in ['kokoro-v1.0.onnx', 'voices-v1.0.bin']:
-            print('Downloading public model asset: ' + name, flush=True)
-            urllib.request.urlretrieve(BASE + name, tmp / name)
-        model_hash = hashlib.sha256((tmp / 'kokoro-v1.0.onnx').read_bytes()).hexdigest()
+        model_hash = download_verified(tmp)
         kokoro = Kokoro(str(tmp / 'kokoro-v1.0.onnx'), str(tmp / 'voices-v1.0.bin'))
         for key, item in original.items():
             text = item['text']

@@ -3,10 +3,10 @@ import hashlib
 import json
 import subprocess
 import tempfile
-import urllib.request
+from model_assets import download_verified
 from pathlib import Path
 
-from generate_more_audio import BASE, ROOT, normalized
+from generate_more_audio import ROOT, normalized
 
 def sha(path):
     with path.open('rb') as stream:
@@ -44,9 +44,7 @@ def main():
         from kokoro_onnx import Kokoro
         with tempfile.TemporaryDirectory() as tmp:
             tmp=Path(tmp)
-            for name in ('kokoro-v1.0.onnx','voices-v1.0.bin'):
-                urllib.request.urlretrieve(BASE+name,tmp/name)
-            if sha(tmp/'kokoro-v1.0.onnx') != model_sha:
+            if download_verified(tmp) != model_sha:
                 raise RuntimeError('Unexpected model hash; no audio was published')
             synth=Kokoro(str(tmp/'kokoro-v1.0.onnx'),str(tmp/'voices-v1.0.bin'))
             for i,text in enumerate(missing,1):

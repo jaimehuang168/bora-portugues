@@ -1,36 +1,17 @@
-name: Apply reviewed mobile audio fix
-on:
-  push:
-    branches: [main]
-    paths:
-      - tools/fix_mobile_audio.py
-      - .github/workflows/apply-mobile-audio-fix.yml
-  workflow_dispatch:
+# Historical one-shot writer. Current releases must not patch live HTML back to v2.1–v2.3.
+name: Legacy mobile repair — verify only
+on: workflow_dispatch
 permissions:
-  contents: write
-concurrency:
-  group: reviewed-mobile-audio-fix
-  cancel-in-progress: false
+  contents: read
 jobs:
-  apply:
-    if: github.repository == 'jaimehuang168/bora-portugues'
+  check:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
-          ref: main
-      - name: Apply deterministic patch and validate JavaScript
-        run: python3 tools/fix_mobile_audio.py
-      - name: Commit only reviewed static outputs
+          persist-credentials: false
+      - name: Verify current and historical media without changing a branch
         run: |
-          set -euo pipefail
-          git add -- index.html audio-test.html audio-sample.mp3 audio-fix-report.json
-          if git diff --cached --quiet; then
-            echo 'No changes to apply.'
-            exit 0
-          fi
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Fix mobile audio playback and add native diagnostic player (v2.1.1)'
-          git push origin HEAD:main
+          node tools/build_audio_catalog.mjs --verify-audio
+          node tools/check_entry_assets.mjs

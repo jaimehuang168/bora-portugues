@@ -10,12 +10,12 @@ import re
 import subprocess
 import tempfile
 import unicodedata
-import urllib.request
+from model_assets import download_verified
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_SHA = 'e48d5be8e60edf3dd7ea8a98c9a101801fd61bfe0db41699fe13589be6bda810'
-BASE = 'https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/'
+
 
 def normalized(s):
     return re.sub(r'\s+', ' ', unicodedata.normalize('NFC', s)).strip().lower()
@@ -50,9 +50,7 @@ def main():
     results = {}
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
-        for name in ['kokoro-v1.0.onnx', 'voices-v1.0.bin']:
-            urllib.request.urlretrieve(BASE + name, tmp / name)
-        model_hash = hashlib.sha256((tmp / 'kokoro-v1.0.onnx').read_bytes()).hexdigest()
+        model_hash = download_verified(tmp)
         if model_hash != old['meta']['model_sha256']:
             raise ValueError('Model changed; review before synthesis')
         kokoro = Kokoro(str(tmp / 'kokoro-v1.0.onnx'), str(tmp / 'voices-v1.0.bin'))

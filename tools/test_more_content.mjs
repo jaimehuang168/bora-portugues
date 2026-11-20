@@ -2,9 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 
-const html=fs.readFileSync('index.html','utf8');
-const content=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)]
-  .map(x=>x[1]).find(s=>s.includes('window.BORA_CONTENT ='));
+const content=fs.readFileSync('assets/core-content.js','utf8');
 assert.ok(content,'Base lesson catalog');
 const context=vm.createContext({window:{}});
 for(const source of [content,fs.readFileSync('assets/expanded-learning.js','utf8'),fs.readFileSync('assets/more-content.js','utf8')])

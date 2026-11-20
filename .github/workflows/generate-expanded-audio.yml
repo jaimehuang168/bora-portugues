@@ -1,53 +1,19 @@
-name: Generate daily sentence and word audio
+name: Daily and vocabulary audio
 on:
   push:
     branches: [main]
     paths:
-      - tools/generate_expanded_audio.py
-      - tools/list_expanded_audio.mjs
       - assets/daily-learning.js
       - assets/expanded-learning.js
-      - .github/workflows/generate-expanded-audio.yml
+      - assets/core-content.js
   workflow_dispatch:
 permissions:
-  contents: write
-concurrency:
-  group: bora-expanded-audio
-  cancel-in-progress: false
+  contents: read
 jobs:
-  generate:
-    if: github.repository == 'jaimehuang168/bora-portugues'
-    runs-on: ubuntu-latest
-    timeout-minutes: 60
-    env:
-      OMP_NUM_THREADS: '2'
-      OPENBLAS_NUM_THREADS: '2'
-    steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-python@v6
-        with:
-          python-version: '3.12'
-      - name: Install local neural synthesis and codec
-        run: |
-          python -m pip install 'kokoro-onnx==0.6.1' soundfile
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg espeak-ng libsndfile1
-      - name: Synthesize and validate public teaching audio
-        run: python -u tools/generate_expanded_audio.py
-      - name: Publish only validated lesson audio
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/expanded-audio.js audio/expanded-v1 audio/expanded-manifest.json expanded-audio-report.json
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'Add normal and slow audio for daily words and sentences'
-          git pull --rebase origin main
-          git push origin HEAD:main
-      - uses: actions/upload-artifact@v7
-        with:
-          name: bora-expanded-audio-report
-          path: |
-            audio/expanded-manifest.json
-            expanded-audio-report.json
-          retention-days: 7
-          if-no-files-found: error
+  audio:
+    if: github.repository == 'jaimehuang168/bora-portugues' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: write # Maximum for the isolated publisher; synthesis overrides to read-only.
+    uses: ./.github/workflows/audio-pipeline.yml
+    with:
+      pack: expanded

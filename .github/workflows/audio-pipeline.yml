@@ -1,0 +1,84 @@
+name: Isolated audio generation and publication
+on:
+  workflow_call:
+    inputs:
+      pack:
+        required: true
+        type: string
+permissions: {}
+concurrency:
+  group: bora-audio-release-${{ inputs.pack }}
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.repository == 'jaimehuang168/bora-portugues' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    permissions:
+      contents: read
+    env:
+      PACK: ${{ inputs.pack }}
+      OMP_NUM_THREADS: '2'
+      OPENBLAS_NUM_THREADS: '2'
+    outputs:
+      needed: ${{ steps.check.outputs.needed }}
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - id: check
+        name: Skip synthesis if reviewed assets already match
+        run: |
+          set -euo pipefail
+          case "$PACK" in expanded|more|c1) ;; *) exit 1;; esac
+          node tools/build_audio_catalog.mjs --verify-audio
+          needed="$(node tools/promote_audio.mjs needed "$PACK")"
+          case "$needed" in true|false) ;; *) exit 1;; esac
+          echo "needed=$needed" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        if: steps.check.outputs.needed == 'true'
+        with:
+          python-version: '3.12'
+      - name: Generate audio in a read-only job
+        if: steps.check.outputs.needed == 'true'
+        run: |
+          python -m pip install 'kokoro-onnx==0.6.1' 'soundfile==0.13.1'
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng libsndfile1
+          python -u "tools/generate_${PACK}_audio.py"
+          node tools/promote_audio.mjs stage "$PACK" "$RUNNER_TEMP/bora-audio"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        if: steps.check.outputs.needed == 'true'
+        with:
+          name: reviewed-audio-${{ inputs.pack }}
+          path: ${{ runner.temp }}/bora-audio/
+          retention-days: 3
+          if-no-files-found: error
+  publish:
+    needs: build
+    if: needs.build.outputs.needed == 'true' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    env:
+      PACK: ${{ inputs.pack }}
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
+        with:
+          name: reviewed-audio-${{ inputs.pack }}
+          path: ${{ runner.temp }}/bora-audio/
+      - name: Validate data on a fresh runner and publish a fast-forward only
+        run: |
+          set -euo pipefail
+          node tools/promote_audio.mjs apply "$PACK" "$RUNNER_TEMP/bora-audio"
+          node tools/build_audio_catalog.mjs --write --verify-audio
+          node tools/check_entry_assets.mjs --write
+          node tools/test_release.mjs
+          git add -- "audio/${PACK}-v1" "audio/${PACK}-manifest.json" assets/audio-catalog.js index.html
+          if git diff --cached --quiet; then exit 0; fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Refresh verified $PACK audio"
+          git push origin HEAD:refs/heads/main

@@ -3,70 +3,33 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [README.md, index.html]
+    paths: ['index.html', 'audio-test.html', 'assets/**', 'audio/**', 'tools/**', '.github/workflows/**', 'README.md']
+  pull_request:
+    paths: ['index.html', 'audio-test.html', 'assets/**', 'audio/**', 'tools/**', '.github/workflows/**']
 permissions:
   contents: read
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 7
+    timeout-minutes: 8
     steps:
-      - uses: actions/checkout@v5
-      - name: Validate C1 and existing curricula against the checkout
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - name: Verify curricula, state/privacy tests, entry integrity and all MP3 digests
         run: |
-          node tools/test_more_content.mjs
+          node tools/test_release.mjs
+          node tools/test_audio_promotion.mjs
           node tools/test_c1.mjs
-      - name: Check live Pages content, curriculum and audio
-        env:
-          VERIFY_RUN: ${{ github.run_id }}
-        run: |
-          python - <<'PY'
-          import hashlib, json, os, re, time, urllib.request
-          from pathlib import Path
-          base = 'https://jaimehuang168.github.io/bora-portugues/'
-          # Historical release reports describe old HTML. Verify the revision
-          # being deployed, including every script directly loaded by it.
-          html = Path('index.html').read_text()
-          version = re.search(r'footer-note">[^\n]*?Bora! v(\d+\.\d+\.\d+)', html).group(1)
-          assets = re.findall(r'<script src="(assets/[A-Za-z0-9_./-]+)(?:\?[^"]*)?"', html)
-          files = {p: hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in ['index.html', *assets]}
-          def get(path, attempt=0):
-              url = base + path + '?verify=' + os.environ['VERIFY_RUN'] + '-' + str(attempt)
-              request = urllib.request.Request(url, headers={'User-Agent': 'Bora-Deployment-Check/' + version})
-              with urllib.request.urlopen(request, timeout=30) as response:
-                  if response.status != 200:
-                      raise ValueError('HTTP ' + str(response.status))
-                  return response.read()
-          for attempt in range(16):
-              try:
-                  for path, expected in files.items():
-                      body = get(path, attempt)
-                      if hashlib.sha256(body).hexdigest() != expected:
-                          raise ValueError('Pages serves a different revision: ' + path)
-                  break
-              except Exception as error:
-                  print('Pages check:', str(error), flush=True)
-                  if attempt == 15:
-                      raise
-                  time.sleep(15)
-          assert ('v' + version) in get('index.html', attempt).decode()
-          selected = []
-          for name in [f'audio/{pack}-manifest.json' for pack in ['natural','conversation','expanded','more','c1']]:
-              if Path(name).exists():
-                  manifest = json.loads(Path(name).read_text())
-                  items=list(manifest['clips'].values())
-                  if items: selected.extend([items[0],items[len(items)//2],items[-1]])
-          for item in selected:
-              for path_key, hash_key in [('src', 'sha256'), ('slowSrc', 'slowSha256')]:
-                  assert hashlib.sha256(get(item[path_key])).hexdigest() == item[hash_key], item[path_key]
-          for path in ['audio-sample.mp3', 'audio-sample-slow.mp3', 'audio-test.html']:
-              assert hashlib.sha256(get(path)).digest() == hashlib.sha256(Path(path).read_bytes()).digest(), path
-          report = {'version': version, 'site': base, 'verified_index_sha256': files['index.html'], 'application_assets_verified': list(files), 'public_neural_files_checked': len(selected)*2, 'sample_files_and_test_page_match': True, 'limits': 'HTTP byte verification, not a physical-phone listening test.'}
-          Path('live-verification.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
-          print(json.dumps(report, ensure_ascii=False), flush=True)
-          PY
-      - uses: actions/upload-artifact@v7
+          node tools/test_more_content.mjs
+          python3 tools/test_model_assets.py
+      - name: Check the public release
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        run: python3 tools/verify_live.py
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         with:
           name: bora-live-verification
           path: live-verification.json
+          if-no-files-found: error
           retention-days: 14

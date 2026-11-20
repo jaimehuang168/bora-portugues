@@ -5,11 +5,11 @@ import re
 import subprocess
 import tempfile
 import unicodedata
-import urllib.request
+from model_assets import download_verified
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-BASE='https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/'
+
 
 def normalized(text):
     return re.sub(r'\s+',' ',unicodedata.normalize('NFC',text)).strip().lower()
@@ -31,9 +31,7 @@ def main():
     clips={}
     with tempfile.TemporaryDirectory() as d:
         temp=Path(d)
-        for name in ('kokoro-v1.0.onnx','voices-v1.0.bin'):
-            urllib.request.urlretrieve(BASE+name,temp/name)
-        digest=hashlib.sha256((temp/'kokoro-v1.0.onnx').read_bytes()).hexdigest()
+        digest = download_verified(temp)
         if digest!=manifests[0]['meta']['model_sha256']: raise ValueError('Unreviewed model digest')
         synth=Kokoro(str(temp/'kokoro-v1.0.onnx'),str(temp/'voices-v1.0.bin'))
         for i,(key,text) in enumerate(missing.items(),1):

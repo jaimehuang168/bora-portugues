@@ -1,0 +1,12 @@
+.daily-card{margin:18px 0}.daily-card h2{margin-bottom:12px}.daily-words{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.daily-word{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fafcf8;min-width:0}.daily-word .pt{font-size:20px;font-weight:700;overflow-wrap:anywhere}.daily-word p{margin:4px 0 12px;color:var(--muted)}.daily-audio{display:flex;gap:8px;flex-wrap:wrap}.daily-audio .btn{font-size:14px;min-height:42px}.daily-sentence{font-size:26px;font-weight:700;line-height:1.5}.daily-sentence-zh{font-size:17px;color:var(--muted);margin:7px 0 15px}.daily-caption{white-space:pre-wrap;overflow-wrap:anywhere;background:#f6f8f3;border-left:4px solid var(--gold);padding:14px 17px;margin:12px 0}.daily-list{padding-left:24px;line-height:1.9}.daily-list li{margin:5px 0}.daily-pattern{border-left:4px solid var(--green);padding:10px 14px;background:var(--green-light);margin-top:12px}.daily-pattern .pt{font-size:18px}.daily-pattern p{color:var(--muted)}.daily-hero{background:linear-gradient(110deg,#14543f,#29815e);color:white;border-radius:18px;padding:22px;margin:14px 0 20px}.daily-hero p{color:#e1f4e9}.daily-hero .pill{background:#fff2;color:inherit}.daily-complete{margin-top:20px}
+@media(max-width:700px){.daily-words{grid-template-columns:1fr}.daily-word{padding:14px}.daily-sentence{font-size:22px}.daily-audio .btn{flex:1}.daily-hero{padding:17px}}
+.c1-case{margin:0 0 1.25rem;border-top:4px solid var(--green,#176548)}
+  .c1-case h2{margin:0 0 .6rem}.c1-case p{margin:.5rem 0}
+  .c1-sources{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr));gap:.9rem;margin:1rem 0}
+  .c1-source{background:var(--bg,#f5f7f4);border-radius:.75rem;padding:1rem;min-width:0}
+  .c1-source .pt{font-size:1rem;line-height:1.65}
+  .c1-case summary{cursor:pointer;font-weight:650;line-height:1.5;padding:.4rem 0}
+  .c1-case ol{margin:.5rem 0;padding-inline-start:1.5rem}.c1-case li+li{margin-top:.4rem}
+  .c1-tools{display:flex;gap:.65rem;align-items:center;flex-wrap:wrap;margin:.75rem 0}
+  .c1-tools a{text-decoration:underline;text-underline-offset:.15em}
+  .c1-draft{width:100%;box-sizing:border-box;margin:.4rem 0;font:inherit;line-height:1.55}

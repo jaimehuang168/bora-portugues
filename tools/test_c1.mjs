@@ -89,10 +89,11 @@ if(!dataOnly){
   for(const t of texts){
     const key=keyFor(t);
     const c=ctx.BORA_AUDIO.clips[key];assert.ok(c,'Missing runtime audio for '+t);
-    if(manifest.clips[key])assert.equal(JSON.stringify(c),JSON.stringify(manifest.clips[key]));
-    assert.notEqual(c.src,c.slowSrc);assert.notEqual(c.sha256,c.slowSha256);
+    const full=manifest.clips[key]||['natural','conversation','expanded','more'].map(p=>JSON.parse(fs.readFileSync('audio/'+p+'-manifest.json','utf8')).clips[key]).find(Boolean);
+    assert.ok(full);for(const prop of ['src','slowSrc','duration','slowDuration'])assert.equal(c[prop],full[prop]);
+    assert.notEqual(c.src,c.slowSrc);assert.notEqual(full.sha256,full.slowSha256);
     assert.ok(c.duration>0&&c.slowDuration>c.duration,'Slow must be slower: '+t);
-    for(const [p,h] of [[c.src,c.sha256],[c.slowSrc,c.slowSha256]]){
+    for(const [p,h] of [[c.src,full.sha256],[c.slowSrc,full.slowSha256]]){
       assert.match(p,/^audio\/[a-z0-9-]+\/[a-zA-Z0-9._-]+\.mp3$/);
       assert.equal(createHash('sha256').update(fs.readFileSync(p)).digest('hex'),h);
     }

@@ -1,5 +1,9 @@
 <!-- BORA-PAGES-MANAGED-V1 -->
-# Bora! 巴西葡語練習室 v2.9.0
+# Bora! 巴西葡語練習室 v2.9.1
+
+[開啟 Bora!](https://jaimehuang168.github.io/bora-portugues/?v=2.9.1#home) · [C1 選修](https://jaimehuang168.github.io/bora-portugues/?v=2.9.1#courses/C1) · [本版程式審核與驗證方法](docs/audit-2026-11-20.md)
+
+本版修正備份匯入／重設的失敗回報、舊分頁覆寫進度及背景錄音授權競態；縮小手機載入的音檔索引。原有進度鍵、教材 ID、日課和 945 組不同播放文字的正常＋慢速 MP3 均保留。遇到「另一個分頁已變更進度」，先匯出手上的草稿，再重整；無須清除網站資料。
 
 ## C1 高階情境選修（v2.9.0）
 
@@ -57,7 +61,7 @@
 
 首頁：https://jaimehuang168.github.io/bora-portugues/?v=2.3.0#home
 
-請以 Safari／Chrome 開啟；頁尾應顯示 v2.9.0。不要繼續開啟手機下載的舊 HTML。重新整理即可，不要清除網站資料。
+請以 Safari／Chrome 開啟；頁尾應顯示 v2.9.1。不要繼續開啟手機下載的舊 HTML。重新整理即可，不要清除網站資料。
 
 ## 會話中的文法、例句與詞彙
 

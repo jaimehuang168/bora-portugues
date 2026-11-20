@@ -1,41 +1,17 @@
-name: Generate C1 case audio
+name: C1 case audio
 on:
   push:
     branches: [main]
     paths:
       - assets/c1-content.js
-      - tools/list_c1_audio.mjs
-      - tools/generate_c1_audio.py
-      - .github/workflows/generate-c1-audio.yml
   workflow_dispatch:
 permissions:
-  contents: write
-concurrency:
-  group: bora-c1-audio
-  cancel-in-progress: false
+  contents: read
 jobs:
   audio:
-    if: github.repository == 'jaimehuang168/bora-portugues'
-    runs-on: ubuntu-latest
-    timeout-minutes: 50
-    env:
-      OMP_NUM_THREADS: '2'
-      OPENBLAS_NUM_THREADS: '2'
-    steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-python@v6
-        with:
-          python-version: '3.12'
-      - name: Install the same pt-BR voice and codecs as the other courses
-        run: |
-          python -m pip install 'kokoro-onnx==0.6.1' soundfile
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg espeak-ng libsndfile1
-      - name: Synthesize and validate both speeds
-        run: python -u tools/generate_c1_audio.py
-      - name: Save C1 audio only
-        run: |
-          git add -- assets/c1-audio.js audio/c1-manifest.json audio/c1-v1
-          if git diff --cached --quiet; then exit 0; fi
-          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Add verified normal and slow Brazilian Portuguese C1 audio'
-          git push origin HEAD:main
+    if: github.repository == 'jaimehuang168/bora-portugues' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: write # Maximum for the isolated publisher; synthesis overrides to read-only.
+    uses: ./.github/workflows/audio-pipeline.yml
+    with:
+      pack: c1
