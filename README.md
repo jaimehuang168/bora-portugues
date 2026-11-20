@@ -1,5 +1,12 @@
 <!-- BORA-PAGES-MANAGED-V1 -->
-# Bora! 巴西葡語練習室 v2.7.0
+# Bora! 巴西葡語練習室 v2.8.0
+
+## 商務、生活及旅行擴充（v2.8.0）
+
+- [課程路線](https://jaimehuang168.github.io/bora-portugues/?v=2.8.0#courses)：從 16 課／96 句增至 28 課／168 句。新增 12 課、72 個原創句型，涵蓋社交、採買、巴士、居家報修、藥局、機場、觀光、行程變動、招商接待、供應商報價、商務郵件及產業閱讀／短貼文。每課六句、繁中與西文對照、逐句用法、實作任務、測驗及正常／慢速發音。課程可按 A1–B2、生活／旅行／商務篩選。
+- [主題單字](https://jaimehuang168.github.io/bora-portugues/?v=2.8.0#cards/words)：新增 36 詞，合計 72 詞卡，附詞形／搭配、例句與搜尋。文法新增 12 個 A1–B1 單元，合計 32 個，附兩個例句及檢核。
+- 新教材的固定播放文字另有正常與慢速的 Dora pt-BR 合成 MP3；自訂文字仍需裝置 pt-BR 語音。保留既有本機進度、備份格式和每日 18 個月主線，不把練習句當作園區現況、醫療指示或確定的旅行時刻。
+- 課程設計參照 [歐洲理事會 CEFR 的 can-do 描述](https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors) 與 [巴西 Inep 的 Celpe-Bras 溝通情境取向](https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/celpe-bras/celpe-bras)，但句子為本專案原創，A1–B2 僅為教材標籤，非官方認證或考試題庫。
 
 ## 單字與句子發音修復（v2.7.0）
 
@@ -25,7 +32,7 @@
 
 ## 新增：每日 5–10 分鐘短練習
 
-入口：https://jaimehuang168.github.io/bora-portugues/?v=2.4.0#daily
+入口：https://jaimehuang168.github.io/bora-portugues/?v=2.8.0#daily
 
 - 以巴拉圭日期、2026-09-25 第 1 天推進：第 1–3 個月發音、寒暄與園區簡介；第 4–9 個月招商問答與澄清；第 10–18 個月閱讀、電郵、貼文與會議。18 個月後仍輪替進階複習。
 - 36 個原創情境任務循序輪替；每課三個詞／短片語、一句示範、繁中翻譯、發音提示、簡短文法、第二個替換例句、清楚步驟及自我檢查。這是輪替教材，並非 18 個月每天都不重複的獨立文章。
@@ -41,7 +48,7 @@
 
 首頁：https://jaimehuang168.github.io/bora-portugues/?v=2.3.0#home
 
-請以 Safari／Chrome 開啟；頁尾應顯示 v2.7.0。不要繼續開啟手機下載的舊 HTML。重新整理即可，不要清除網站資料。
+請以 Safari／Chrome 開啟；頁尾應顯示 v2.8.0。不要繼續開啟手機下載的舊 HTML。重新整理即可，不要清除網站資料。
 
 ## 會話中的文法、例句與詞彙
 
