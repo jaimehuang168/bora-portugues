@@ -1,5 +1,14 @@
 <!-- BORA-PAGES-MANAGED-V1 -->
-# Bora! 巴西葡語練習室 v2.8.0
+# Bora! 巴西葡語練習室 v2.9.0
+
+## C1 高階情境選修（v2.9.0）
+
+- [直接開啟 C1 課程](https://jaimehuang168.github.io/bora-portugues/?v=2.9.0#courses/C1)：六個原創案例，適合每次 5–10 分鐘練一項任務。一起主持招商會議、比較不可直接比價的報價、閱讀產業展會資料後撰寫 LinkedIn 短文、更正商務回信中的誤解、協調鄰居施工時段、與航空櫃檯協商候補及訂位。
+- 每課兩段可聽的模擬原始訊息，六個帶用法說明的葡中／西示範句，一項口說或寫作任務、解讀線索、兩項自我檢核。可用暫存草稿區寫答案／口說提示，切換課程不消失，但重新整理即清除，不上傳或評分。
+- [18 個 C1 單字與搭配](https://jaimehuang168.github.io/bora-portugues/?v=2.9.0#cards/words/c1)；[6 個 C1 文法單元](https://jaimehuang168.github.io/bora-portugues/?v=2.9.0#grammar/c1)，每單元有兩例、語用辨析及選擇題。同一組句型也可從「句型拓展」練習。六課合計 36 個新示範句，現有課程庫共 34 課／204 句。
+- 正常（1.0）與慢速（0.75）各自合成為靜態 pt-BR MP3，含情境、示範句、單字或搭配、文法例句。使用既有 Dora 合成聲音，非真人錄音，不需雲端 TTS。新增內容不改既有進度 ID、儲存鍵、備份格式或 18 個月日課。
+- 設計參考：[歐洲理事會 CEFR C1 整體能力描述](https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale) 及 [CEFR Companion Volume](https://rm.coe.int/common-european-frameworkof-reference-for-languages-learning-teaching/16809ea0d4) 的語域調整與互動描述。這是選修難度，不是能力檢定。所有案例均為虛構練習，不是園區條件、採購決議、旅遊規定或時效資料。
+- 驗證：`node tools/test_c1.mjs` 檢查所有固定播放文字在真實音庫中的兩個檔案、SHA-256 及慢速時長，同時檢查升級時舊進度可讀。`node tools/test_more_content.mjs` 可回歸檢查上一批教材。
 
 ## 商務、生活及旅行擴充（v2.8.0）
 
@@ -48,7 +57,7 @@
 
 首頁：https://jaimehuang168.github.io/bora-portugues/?v=2.3.0#home
 
-請以 Safari／Chrome 開啟；頁尾應顯示 v2.8.0。不要繼續開啟手機下載的舊 HTML。重新整理即可，不要清除網站資料。
+請以 Safari／Chrome 開啟；頁尾應顯示 v2.9.0。不要繼續開啟手機下載的舊 HTML。重新整理即可，不要清除網站資料。
 
 ## 會話中的文法、例句與詞彙
 
