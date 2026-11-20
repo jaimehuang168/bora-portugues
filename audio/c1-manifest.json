@@ -1,0 +1,654 @@
+{
+  "meta": {
+    "version": "2.9.0",
+    "voice": "Kokoro pf_dora",
+    "language": "pt-BR",
+    "humanRecording": false,
+    "normalRate": 1,
+    "slowRate": 0.75,
+    "model_sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+    "count": 71,
+    "files": 142
+  },
+  "clips": {
+    "se sairmos daqui com uma data de referência, já consigo organizar a equipe. não preciso que ela conste do contrato, mas gostaria de levá-la à diretoria como sinal de que avançamos.": {
+      "text": "Se sairmos daqui com uma data de referência, já consigo organizar a equipe. Não preciso que ela conste do contrato, mas gostaria de levá-la à diretoria como sinal de que avançamos.",
+      "src": "audio/c1-v1/fccd4b60a60eb51a2920-normal.mp3",
+      "duration": 11.12,
+      "sha256": "b6cc8c69024363f8845334925ca8340b911dad17df2b34ddb3270823e44be542",
+      "slowSrc": "audio/c1-v1/fccd4b60a60eb51a2920-slow.mp3",
+      "slowDuration": 14.797,
+      "slowSha256": "97cd5d833b7e86f4915f09f5bb1f7874811444ddde2a3088bed09c884da3908d"
+    },
+    "podemos trabalhar com o mês sugerido para montar o cronograma. só não queria que uma hipótese de trabalho aparecesse na ata como se fosse um prazo aprovado.": {
+      "text": "Podemos trabalhar com o mês sugerido para montar o cronograma. Só não queria que uma hipótese de trabalho aparecesse na ata como se fosse um prazo aprovado.",
+      "src": "audio/c1-v1/057423d080f236dd3205-normal.mp3",
+      "duration": 9.389,
+      "sha256": "3efa4e38f2f3b6b94d492e0f4de5b82d52b4969efc2c85164f345e96868a0469",
+      "slowSrc": "audio/c1-v1/057423d080f236dd3205-slow.mp3",
+      "slowDuration": 12.301,
+      "slowSha256": "1ca66aeeb2d2e62aef80f244cf88656b3b7ddb0402c51a84021ae6205a2977ab"
+    },
+    "se entendi bem, vocês precisam de uma referência para se organizar, não de uma garantia.": {
+      "text": "Se entendi bem, vocês precisam de uma referência para se organizar, não de uma garantia.",
+      "src": "audio/c1-v1/9158d2b8622246af4602-normal.mp3",
+      "duration": 5.789,
+      "sha256": "5ed289b4c1b20d7b700e4f0abefbd6f754b82bf68d265546fc45886d72b1fbce",
+      "slowSrc": "audio/c1-v1/9158d2b8622246af4602-slow.mp3",
+      "slowDuration": 7.447,
+      "slowSha256": "67a4e8e05c6df94e5de0dca8f4dad444f04523be916b6a8f8b8e1f0e0fd073d8"
+    },
+    "minha ressalva diz respeito ao registro da data, não à discussão do cronograma.": {
+      "text": "Minha ressalva diz respeito ao registro da data, não à discussão do cronograma.",
+      "src": "audio/c1-v1/81311ee69ce65c00f9ff-normal.mp3",
+      "duration": 4.96,
+      "sha256": "94b3aa1e063576d71cee05d3736ab86a2158f12d1bdfa3b4f0fd55972132f03f",
+      "slowSrc": "audio/c1-v1/81311ee69ce65c00f9ff-slow.mp3",
+      "slowDuration": 6.413,
+      "slowSha256": "f0925f834aa2427624776e5a57158cb87b10ca5bce905da378fbe379ffa7106f"
+    },
+    "não é que falte interesse; o que falta é uma validação técnica.": {
+      "text": "Não é que falte interesse; o que falta é uma validação técnica.",
+      "src": "audio/c1-v1/b170af77347fa2c46f89-normal.mp3",
+      "duration": 4.154,
+      "sha256": "e42bf679dd0c10218c262e8fa6fa1e891c22061bc7b07f34840e8148a575ba37",
+      "slowSrc": "audio/c1-v1/b170af77347fa2c46f89-slow.mp3",
+      "slowDuration": 5.355,
+      "slowSha256": "15f0187e79b58a5acdc12b24e2031a6ae5e2ce21e74f01b38edf1bf4b529981a"
+    },
+    "tratar esse mês como hipótese de trabalho nos permite avançar sem assumir um compromisso.": {
+      "text": "Tratar esse mês como hipótese de trabalho nos permite avançar sem assumir um compromisso.",
+      "src": "audio/c1-v1/e0b9e1c5661599d30445-normal.mp3",
+      "duration": 5.707,
+      "sha256": "630b263ba4415bb469b09a7d55c1a347054702e97a87b409e84ddf94d4ecb56b",
+      "slowSrc": "audio/c1-v1/e0b9e1c5661599d30445-slow.mp3",
+      "slowDuration": 7.639,
+      "slowSha256": "93b9bf9982428a473fda32b32e82c5b5c73c63d90d8fa90fecf92a939d66a76b"
+    },
+    "proponho que conste em ata que a data ainda depende de validação.": {
+      "text": "Proponho que conste em ata que a data ainda depende de validação.",
+      "src": "audio/c1-v1/6acdaa97b80660d8dae0-normal.mp3",
+      "duration": 4.223,
+      "sha256": "3b725221e36371bf6e950000f290f1bda5e73d261d1f760b09eec01da63dcbdb",
+      "slowSrc": "audio/c1-v1/6acdaa97b80660d8dae0-slow.mp3",
+      "slowDuration": 5.57,
+      "slowSha256": "0e68852d1b20b57b4d57629b211f2ef14da7275827b4e60b567a5c786f54c19b"
+    },
+    "se ninguém tiver objeção, a equipe técnica fica de verificar a data e dar um retorno.": {
+      "text": "Se ninguém tiver objeção, a equipe técnica fica de verificar a data e dar um retorno.",
+      "src": "audio/c1-v1/e3bd307544b2bafc3015-normal.mp3",
+      "duration": 5.67,
+      "sha256": "451139aeda504925389232f7b10583137ace0e2cf3d0ceba1a10e8941a1418ba",
+      "slowSrc": "audio/c1-v1/e3bd307544b2bafc3015-slow.mp3",
+      "slowDuration": 7.605,
+      "slowSha256": "1d7bb1a2f0c5a879d82ec274910b6bdd3c10e7fea779df9800fb5135f50b92c2"
+    },
+    "o valor apresentado cobre a entrega do equipamento no local. a instalação poderá ser contratada à parte, assim que a equipe conhecer as condições de acesso.": {
+      "text": "O valor apresentado cobre a entrega do equipamento no local. A instalação poderá ser contratada à parte, assim que a equipe conhecer as condições de acesso.",
+      "src": "audio/c1-v1/6d7d0643b744ee8c3888-normal.mp3",
+      "duration": 9.585,
+      "sha256": "47ac7d2677eb5af9a1701d86a7bbaeca3cb77c1191ece64370f36711ce2ff2a3",
+      "slowSrc": "audio/c1-v1/6d7d0643b744ee8c3888-slow.mp3",
+      "slowDuration": 12.748,
+      "slowSha256": "2f8f3f0e8ce74214e6c30ec118642e3e02793e0333b1a4ffff100f77dadfea87"
+    },
+    "incluímos a instalação no preço, considerando que o acesso esteja desimpedido. caso seja necessário içar o equipamento, esse serviço será orçado separadamente.": {
+      "text": "Incluímos a instalação no preço, considerando que o acesso esteja desimpedido. Caso seja necessário içar o equipamento, esse serviço será orçado separadamente.",
+      "src": "audio/c1-v1/76fc12bf6e743a4ebda8-normal.mp3",
+      "duration": 10.187,
+      "sha256": "86b6dc88cd90b0b9838921c80d500725b00d25ce90aec9be70c30c83aef1f851",
+      "slowSrc": "audio/c1-v1/76fc12bf6e743a4ebda8-slow.mp3",
+      "slowDuration": 13.769,
+      "slowSha256": "1ed909ae8852b4eed08b85efca754ade68984d2c691003f7b496bb3bb1680bcd"
+    },
+    "à primeira vista, as propostas parecem equivalentes, mas partem de premissas diferentes.": {
+      "text": "À primeira vista, as propostas parecem equivalentes, mas partem de premissas diferentes.",
+      "src": "audio/c1-v1/2c31cc023490750a3e8a-normal.mp3",
+      "duration": 6.178,
+      "sha256": "cff599990231701bac2fdbfc6a782e1a8036c7df2407c70e9a07df5ec44865ad",
+      "slowSrc": "audio/c1-v1/2c31cc023490750a3e8a-slow.mp3",
+      "slowDuration": 7.989,
+      "slowSha256": "14fe1f8b57754191bb80182b4b0aeb5fc2c9303a387f0ce1dd83359208c9a7e8"
+    },
+    "só faz sentido comparar os preços se as duas propostas cobrirem os mesmos serviços.": {
+      "text": "Só faz sentido comparar os preços se as duas propostas cobrirem os mesmos serviços.",
+      "src": "audio/c1-v1/a4058520c885baecac33-normal.mp3",
+      "duration": 5.664,
+      "sha256": "34f73f271afd595079708c9a371c0b7dfe03ce4893894beebc3649b47c520f9d",
+      "slowSrc": "audio/c1-v1/a4058520c885baecac33-slow.mp3",
+      "slowDuration": 7.395,
+      "slowSha256": "8fdf8f345912ba7aee0600eea67a7c00dceecf00a03e21f08d6c24202fed400a"
+    },
+    "se a instalação estivesse incluída nas duas propostas, a comparação seria mais simples.": {
+      "text": "Se a instalação estivesse incluída nas duas propostas, a comparação seria mais simples.",
+      "src": "audio/c1-v1/cf21667cb03415214323-normal.mp3",
+      "duration": 5.629,
+      "sha256": "439ddd59de0c49c45675aef5b558935cdc5ea84b9ed1e3e1acaf229cbffba6fb",
+      "slowSrc": "audio/c1-v1/cf21667cb03415214323-slow.mp3",
+      "slowDuration": 7.309,
+      "slowSha256": "b9965d5d6a002761a181be4d0b7caa1e89a6ccf7361eaf9bd1542a26ed1b5191"
+    },
+    "o içamento ficou de fora, a menos que eu tenha interpretado mal a segunda proposta.": {
+      "text": "O içamento ficou de fora, a menos que eu tenha interpretado mal a segunda proposta.",
+      "src": "audio/c1-v1/25bb4f77d8945789fa76-normal.mp3",
+      "duration": 5.333,
+      "sha256": "079a91cb5eac117dd795f9ec534b78cff0f2a14020406cd13c67f0d926bf31a2",
+      "slowSrc": "audio/c1-v1/25bb4f77d8945789fa76-slow.mp3",
+      "slowDuration": 7.019,
+      "slowSha256": "ccb17fe40b01528f312c5cb24c65e86c1d22ad65cbb4cefb7ec427f45f23da41"
+    },
+    "antes de optar pela oferta mais em conta, eu pediria o custo da instalação em separado.": {
+      "text": "Antes de optar pela oferta mais em conta, eu pediria o custo da instalação em separado.",
+      "src": "audio/c1-v1/eeabcaa5c6168e0c98ac-normal.mp3",
+      "duration": 5.728,
+      "sha256": "7e637de6c135f100a5e709e1f7552fb58d8fbbab486f6f95848a2f79cc698ef1",
+      "slowSrc": "audio/c1-v1/eeabcaa5c6168e0c98ac-slow.mp3",
+      "slowDuration": 7.395,
+      "slowSha256": "6e8d55fc7f2b325d3f4445a58c46a271bf8011dc2c227a40b1da558473141b54"
+    },
+    "minha recomendação fica condicionada à confirmação das condições de acesso.": {
+      "text": "Minha recomendação fica condicionada à confirmação das condições de acesso.",
+      "src": "audio/c1-v1/f85fa9021d0aba6cf110-normal.mp3",
+      "duration": 5.162,
+      "sha256": "af802b40457972a4554fbf6425d9c91548937ee9fda5eb8bc7e12de51a290617",
+      "slowSrc": "audio/c1-v1/f85fa9021d0aba6cf110-slow.mp3",
+      "slowDuration": 6.723,
+      "slowSha256": "fcb423e092e903a251705461a5998dd452da9ad9f98ed3d9ff0d1d9d7121e290"
+    },
+    "nosso estande recebeu mais pedidos de informação do que na edição passada. a equipe comercial lê esse movimento como sinal de que o setor voltou a considerar novos investimentos.": {
+      "text": "Nosso estande recebeu mais pedidos de informação do que na edição passada. A equipe comercial lê esse movimento como sinal de que o setor voltou a considerar novos investimentos.",
+      "src": "audio/c1-v1/7921f723325c90fbe685-normal.mp3",
+      "duration": 10.976,
+      "sha256": "8a49caf8ccc34564d5a5b86daaa7cf4c9431217f94aa4d8b9578ba3f2c3f1493",
+      "slowSrc": "audio/c1-v1/7921f723325c90fbe685-slow.mp3",
+      "slowDuration": 14.702,
+      "slowSha256": "f6e300d33fb0e46889758bc6d5f46a3e46cfa92507d32720fc93d7289dbdbc49"
+    },
+    "nesta edição, também foram contados os contatos feitos pela internet. não se verificou se a mesma empresa entrou em contato por mais de um canal, nem se as consultas resultaram em pedidos.": {
+      "text": "Nesta edição, também foram contados os contatos feitos pela internet. Não se verificou se a mesma empresa entrou em contato por mais de um canal, nem se as consultas resultaram em pedidos.",
+      "src": "audio/c1-v1/6cf3db123bb82a46965b-normal.mp3",
+      "duration": 11.701,
+      "sha256": "db984f3821b9b55a3d3147c54ce9ac77301ec8508384ee2c98a66a74a997d90c",
+      "slowSrc": "audio/c1-v1/6cf3db123bb82a46965b-slow.mp3",
+      "slowDuration": 15.632,
+      "slowSha256": "535f79ba9a033f651e09e712744aa9e55fea71031ce6b3bce90be3a509ec5696"
+    },
+    "o aumento das consultas é um indício de interesse, não uma medida de investimento.": {
+      "text": "O aumento das consultas é um indício de interesse, não uma medida de investimento.",
+      "src": "audio/c1-v1/7eda1087b69c82fd26e2-normal.mp3",
+      "duration": 5.195,
+      "sha256": "275b1f9f4fbee4646f4ae1d76148e81dab0ac9bd8c77c791c464a31e87aecd32",
+      "slowSrc": "audio/c1-v1/7eda1087b69c82fd26e2-slow.mp3",
+      "slowDuration": 6.829,
+      "slowSha256": "200b4fac9575baa906c6a496c5873062e97da81f41867e245876262f4fbd1223"
+    },
+    "como a contagem mudou, comparar as duas edições exige cautela.": {
+      "text": "Como a contagem mudou, comparar as duas edições exige cautela.",
+      "src": "audio/c1-v1/92d74451ffeef6b684ad-normal.mp3",
+      "duration": 4.33,
+      "sha256": "b1c3a19d3cebff2eed3c3e89641d7abcaaf30e4990425d0c7b84d6529b222a20",
+      "slowSrc": "audio/c1-v1/92d74451ffeef6b684ad-slow.mp3",
+      "slowDuration": 5.731,
+      "slowSha256": "7c658c4923429136a29f891e175b4e66f2a3b28fe5145b5ad86c60c585524c4b"
+    },
+    "o levantamento sugere uma retomada do interesse, o que não significa que novos contratos tenham sido fechados.": {
+      "text": "O levantamento sugere uma retomada do interesse, o que não significa que novos contratos tenham sido fechados.",
+      "src": "audio/c1-v1/754961fad134ceecc343-normal.mp3",
+      "duration": 6.933,
+      "sha256": "3c849bf2861be64297e8682dd049237cb2bc0cde989b9bd35ab440063dc15213",
+      "slowSrc": "audio/c1-v1/754961fad134ceecc343-slow.mp3",
+      "slowDuration": 9.197,
+      "slowSha256": "89333f4c2d4369f19324355f7556555d0df5bd0e5475ea69caffdeb7f026b7e4"
+    },
+    "não dá para descartar a possibilidade de que uma empresa tenha feito várias consultas.": {
+      "text": "Não dá para descartar a possibilidade de que uma empresa tenha feito várias consultas.",
+      "src": "audio/c1-v1/60da2c32d4cf4416321a-normal.mp3",
+      "duration": 5.567,
+      "sha256": "95d0fff0d07d45dda96ceec0e85b858f0c50d5f14e35e8c5ac2274ed10d79384",
+      "slowSrc": "audio/c1-v1/60da2c32d4cf4416321a-slow.mp3",
+      "slowDuration": 7.288,
+      "slowSha256": "8208ad958a70e9983305656ce02cc4b7f5bf29c3ecfe3a7d5610b5ed98c42083"
+    },
+    "eu evitaria extrapolar esses resultados para o setor como um todo.": {
+      "text": "Eu evitaria extrapolar esses resultados para o setor como um todo.",
+      "src": "audio/c1-v1/88a6a78af0232d8c2943-normal.mp3",
+      "duration": 4.226,
+      "sha256": "afd59d84264aecca57dff6567473e4efab4be4b075b99f2dc52cea4e1521244d",
+      "slowSrc": "audio/c1-v1/88a6a78af0232d8c2943-slow.mp3",
+      "slowDuration": 5.519,
+      "slowSha256": "ab9cfd5e7cee834ae4c8c55d80b086c4c75926a377e2c0f9ab04a726a4a9ce97"
+    },
+    "que dado ajudaria a distinguir uma consulta inicial de uma negociação em andamento?": {
+      "text": "Que dado ajudaria a distinguir uma consulta inicial de uma negociação em andamento?",
+      "src": "audio/c1-v1/eb11e0a99fc9563ed0cc-normal.mp3",
+      "duration": 5.325,
+      "sha256": "4f5cdf33c65a1d888b34db8099a166e7a5107d83bebefb5b5a06da86f0b341f5",
+      "slowSrc": "audio/c1-v1/eb11e0a99fc9563ed0cc-slow.mp3",
+      "slowDuration": 6.918,
+      "slowSha256": "48802c29b7a429b143b7476f3eb1e5494469681f8a12a4f6bf09f0a1f6774680"
+    },
+    "obrigado pela abertura. como combinamos a visita, entendi que a área ficará reservada até nossa chegada. podemos comunicar isso aos nossos sócios?": {
+      "text": "Obrigado pela abertura. Como combinamos a visita, entendi que a área ficará reservada até nossa chegada. Podemos comunicar isso aos nossos sócios?",
+      "src": "audio/c1-v1/57011feaf14533f25eaa-normal.mp3",
+      "duration": 9.301,
+      "sha256": "6c25878ca7d0cc72a2a87bf3ce03ce161e596ca9d1f639a3f9035b5422a54776",
+      "slowSrc": "audio/c1-v1/57011feaf14533f25eaa-slow.mp3",
+      "slowDuration": 12.664,
+      "slowSha256": "88d46f6301ceab9e892bfd06d9ee04f716bcf54072cf6528496faca505f8b49c"
+    },
+    "foi confirmada apenas a visita. o pedido de reserva seria analisado depois do recebimento das informações técnicas; a equipe ainda aguarda esses dados.": {
+      "text": "Foi confirmada apenas a visita. O pedido de reserva seria analisado depois do recebimento das informações técnicas; a equipe ainda aguarda esses dados.",
+      "src": "audio/c1-v1/1977020c2ca18eaf3156-normal.mp3",
+      "duration": 9.777,
+      "sha256": "bad5cb0f52e3443e7b9a80c6f7f192ae1346793b44c0d4acba7b573aee558353",
+      "slowSrc": "audio/c1-v1/1977020c2ca18eaf3156-slow.mp3",
+      "slowDuration": 13.25,
+      "slowSha256": "1147f841695f52a44aa229a7cdb7c62c151111cddfb08cbaaf8ef8a8cd9b08a1"
+    },
+    "entendo como nossa mensagem pode ter dado margem a essa interpretação.": {
+      "text": "Entendo como nossa mensagem pode ter dado margem a essa interpretação.",
+      "src": "audio/c1-v1/0281214cfa1f603002b4-normal.mp3",
+      "duration": 4.937,
+      "sha256": "d68535fc62ccbbd8d4001ceb231a581f6fcf354fed2011d9ddcbdd19a2cc77a8",
+      "slowSrc": "audio/c1-v1/0281214cfa1f603002b4-slow.mp3",
+      "slowDuration": 6.615,
+      "slowSha256": "14f410353c2039e8d1636d6cfddcff4edf83c4ceba2160d6c4d0e2504dd953de"
+    },
+    "o que ficou acertado foi a visita, não a reserva da área.": {
+      "text": "O que ficou acertado foi a visita, não a reserva da área.",
+      "src": "audio/c1-v1/bdd995d63f18702f9841-normal.mp3",
+      "duration": 3.743,
+      "sha256": "46ffa5dfcab379518aba1540a4053a0461e51a67a6d9edd75838eb57647dfda4",
+      "slowSrc": "audio/c1-v1/bdd995d63f18702f9841-slow.mp3",
+      "slowDuration": 5.01,
+      "slowSha256": "ffb8f9382c81582516bcb250c2ac9d04a8198e10075a67cb6ffd6caf398b7fd1"
+    },
+    "até o momento, não houve confirmação de reserva.": {
+      "text": "Até o momento, não houve confirmação de reserva.",
+      "src": "audio/c1-v1/bc93a766d64a0e21c7f1-normal.mp3",
+      "duration": 3.397,
+      "sha256": "aaeeeea83cd2280d70aa409370b453bd552fab4b5225a3ea02f29c395b01af9e",
+      "slowSrc": "audio/c1-v1/bc93a766d64a0e21c7f1-slow.mp3",
+      "slowDuration": 4.313,
+      "slowSha256": "e92f81b88c9aa1cf13097fe333401fea0ef8deb16f685b2d4d64199b7f584d3c"
+    },
+    "para que possamos avaliar o pedido, precisamos primeiro dos dados técnicos.": {
+      "text": "Para que possamos avaliar o pedido, precisamos primeiro dos dados técnicos.",
+      "src": "audio/c1-v1/4f82ceaebd22306dd4c3-normal.mp3",
+      "duration": 5.007,
+      "sha256": "65d6461d9170daea6aeabb83753a8ea91d343e62b97b0b1c1b662f3cc9d159ec",
+      "slowSrc": "audio/c1-v1/4f82ceaebd22306dd4c3-slow.mp3",
+      "slowDuration": 6.701,
+      "slowSha256": "4b71c9df530aace83d54dd132ba1e5eadf5131cbaf5ed5ca1288d2a019f91777"
+    },
+    "podemos encaminhar o pedido para análise, sem que isso implique aprovação.": {
+      "text": "Podemos encaminhar o pedido para análise, sem que isso implique aprovação.",
+      "src": "audio/c1-v1/47d8f134a3200b3d3820-normal.mp3",
+      "duration": 4.693,
+      "sha256": "de00883a97b4f01db336c902282514987b75eeda3cc43506d0cc50697184a2a7",
+      "slowSrc": "audio/c1-v1/47d8f134a3200b3d3820-slow.mp3",
+      "slowDuration": 6.338,
+      "slowSha256": "2f6754dacfc936032e498268c316e0901f2ef5302b30614f11db4e32e3d2b4da"
+    },
+    "se lhes for útil, podemos enviar uma síntese do que já foi confirmado.": {
+      "text": "Se lhes for útil, podemos enviar uma síntese do que já foi confirmado.",
+      "src": "audio/c1-v1/38d715735c68c538f87b-normal.mp3",
+      "duration": 4.511,
+      "sha256": "f5aaffc384855b89bbdb841705476bb8d00c9a95b3755c5631df4a44cfe8301e",
+      "slowSrc": "audio/c1-v1/38d715735c68c538f87b-slow.mp3",
+      "slowDuration": 6.177,
+      "slowSha256": "c1979ea432841639d4e429a0feaa3fa2787fe0a8d134082e6c95182d3d3fc2b8"
+    },
+    "imagina, eu sei que obra dá trabalho. só achei curioso terem começado tão cedo justo no dia em que eu tinha avisado que trabalharia de madrugada.": {
+      "text": "Imagina, eu sei que obra dá trabalho. Só achei curioso terem começado tão cedo justo no dia em que eu tinha avisado que trabalharia de madrugada.",
+      "src": "audio/c1-v1/b1106a33e96c8bd95f6a-normal.mp3",
+      "duration": 9.284,
+      "sha256": "2da8c5b6dd11349fee684f8a37ec6f10762c2dc7b9d6d580e1e052da0503daac",
+      "slowSrc": "audio/c1-v1/b1106a33e96c8bd95f6a-slow.mp3",
+      "slowDuration": 12.469,
+      "slowSha256": "8bad9a7ba5ecaf0f7bbe541fcd5405d19c697abd42d6a1fd408703bbd7f690bb"
+    },
+    "o pessoal só tinha aquela manhã livre. eu até tentei mudar, mas, se a gente perder a próxima janela, a reforma vai ficar parada mais uma semana.": {
+      "text": "O pessoal só tinha aquela manhã livre. Eu até tentei mudar, mas, se a gente perder a próxima janela, a reforma vai ficar parada mais uma semana.",
+      "src": "audio/c1-v1/1374b1e09d028a6af7e2-normal.mp3",
+      "duration": 9.147,
+      "sha256": "642fef4851e14f0ebc12a38904fea0410a8e8577e258298b0981997cdfedd1b8",
+      "slowSrc": "audio/c1-v1/1374b1e09d028a6af7e2-slow.mp3",
+      "slowDuration": 12.571,
+      "slowSha256": "e9e7b6c89b769121be1002cbaff643686a4b2ca6328429d7f9a3694a02ad1b6f"
+    },
+    "pelo que entendi, não é a obra em si que incomoda, e sim o horário.": {
+      "text": "Pelo que entendi, não é a obra em si que incomoda, e sim o horário.",
+      "src": "audio/c1-v1/576934248a4af864fcd6-normal.mp3",
+      "duration": 4.113,
+      "sha256": "0a621429a57609aafcd98905996a4ba3bd6d5b363ae4348923f885e054564d9c",
+      "slowSrc": "audio/c1-v1/576934248a4af864fcd6-slow.mp3",
+      "slowDuration": 5.458,
+      "slowSha256": "ca5c98b2e939caf072bdd712c44554dbd5c842e85a8c9bcf97693cdcc2cc5568"
+    },
+    "entendo o aperto de vocês, mas foi justamente naquela manhã que eu precisava descansar.": {
+      "text": "Entendo o aperto de vocês, mas foi justamente naquela manhã que eu precisava descansar.",
+      "src": "audio/c1-v1/835a1092ac51d02897aa-normal.mp3",
+      "duration": 5.693,
+      "sha256": "5ad899ff94b4383a546779cb3bee5af61c6cdabf678b2977ef01d63b6a795284",
+      "slowSrc": "audio/c1-v1/835a1092ac51d02897aa-slow.mp3",
+      "slowDuration": 7.386,
+      "slowSha256": "737a56c8b2f4f2789496c80d854c0df34c283a6e62a3ba2489db2b05c1bb2cd3"
+    },
+    "será que dá pra deixar a parte mais barulhenta para depois das dez?": {
+      "text": "Será que dá pra deixar a parte mais barulhenta para depois das dez?",
+      "src": "audio/c1-v1/d2f920aa7f6ddc85321a-normal.mp3",
+      "duration": 4.448,
+      "sha256": "433ef0a49b8d7962adf53dce7494b7423beeb0d7d38ba04ad10381802f74bce7",
+      "slowSrc": "audio/c1-v1/d2f920aa7f6ddc85321a-slow.mp3",
+      "slowDuration": 5.797,
+      "slowSha256": "c114465bda8bdb049c15605ffb2c77a89bb6dd83a24969973bdd59491c62d6a4"
+    },
+    "seria possível concentrar os serviços mais ruidosos após as dez horas?": {
+      "text": "Seria possível concentrar os serviços mais ruidosos após as dez horas?",
+      "src": "audio/c1-v1/3cbb86e6060c9573f518-normal.mp3",
+      "duration": 4.802,
+      "sha256": "de59dc6ca1166e9ed88e6fbcdd37659c3a69195f23b8a85afd50c0f2ea7f0d00",
+      "slowSrc": "audio/c1-v1/3cbb86e6060c9573f518-slow.mp3",
+      "slowDuration": 6.363,
+      "slowSha256": "febe5d0ce0285d8c28619373a919f51b438c9968a2b194f9f27096148123551b"
+    },
+    "podemos fazer um teste, desde que a gente combine antes o que vai contar como barulho.": {
+      "text": "Podemos fazer um teste, desde que a gente combine antes o que vai contar como barulho.",
+      "src": "audio/c1-v1/46f787a0fce7045eab79-normal.mp3",
+      "duration": 5.515,
+      "sha256": "8435541e3a61e462677ea929e73870eb9a806761ce0ed23ed9af69fb378a1d72",
+      "slowSrc": "audio/c1-v1/46f787a0fce7045eab79-slow.mp3",
+      "slowDuration": 7.459,
+      "slowSha256": "ec54f73db8e6ad796071ca57acedbcb7a11b3b5e143bbb845ea8bb4ce4b3641b"
+    },
+    "se não der certo para um dos lados, a gente retoma a conversa.": {
+      "text": "Se não der certo para um dos lados, a gente retoma a conversa.",
+      "src": "audio/c1-v1/22cb9fbb70b31a9916f3-normal.mp3",
+      "duration": 4.074,
+      "sha256": "b709209a814e51bf457fbf7f3174cb82be93d22af3c4f8e50585acd1529751d5",
+      "slowSrc": "audio/c1-v1/22cb9fbb70b31a9916f3-slow.mp3",
+      "slowDuration": 5.399,
+      "slowSha256": "b5fb002aa50e9e52ad57d8b07830918a034be1715284869073b4ca08e151e78d"
+    },
+    "podemos confirmar a chegada na manhã seguinte sem alteração no valor da passagem. a opção que chega hoje depende de disponibilidade no segundo trecho; nesse caso, o horário informado é apenas uma previsão.": {
+      "text": "Podemos confirmar a chegada na manhã seguinte sem alteração no valor da passagem. A opção que chega hoje depende de disponibilidade no segundo trecho; nesse caso, o horário informado é apenas uma previsão.",
+      "src": "audio/c1-v1/a43766d4e69c06d4f76d-normal.mp3",
+      "duration": 12.32,
+      "sha256": "8e47f38c7c249fdec0e3918bf6c96c8cf4608da16e04957fd30b2cea33d8f8ba",
+      "slowSrc": "audio/c1-v1/a43766d4e69c06d4f76d-slow.mp3",
+      "slowDuration": 16.631,
+      "slowSha256": "afb95e9fc5845aa5bf4190a52eb8b831dfbd94b7463e766b3ed332913455ad4a"
+    },
+    "consigo colocar seu nome na lista de espera para hoje, mas isso não equivale à confirmação do embarque. antes de alterar a reserva de amanhã, preciso saber qual das duas opções você prefere manter.": {
+      "text": "Consigo colocar seu nome na lista de espera para hoje, mas isso não equivale à confirmação do embarque. Antes de alterar a reserva de amanhã, preciso saber qual das duas opções você prefere manter.",
+      "src": "audio/c1-v1/eebe5c80f467a35eb654-normal.mp3",
+      "duration": 11.969,
+      "sha256": "e66bd09d5dc882d3e4ae16c447ce581b9e271ca69c838279356ab85cdf85c98a",
+      "slowSrc": "audio/c1-v1/eebe5c80f467a35eb654-slow.mp3",
+      "slowDuration": 16.071,
+      "slowSha256": "c20b2bbd344bd48701abfb536482809b3ecc4265c2b613df30f81abd599b1e21"
+    },
+    "se entendi a notificação, a chegada de hoje é uma previsão, ao passo que a de amanhã pode ser confirmada.": {
+      "text": "Se entendi a notificação, a chegada de hoje é uma previsão, ao passo que a de amanhã pode ser confirmada.",
+      "src": "audio/c1-v1/95108b480cdb36a0b6a4-normal.mp3",
+      "duration": 6.593,
+      "sha256": "6511dca62f271971d6a8e5d351168f7fb4805c3859381056248bfebcb86d3591",
+      "slowSrc": "audio/c1-v1/95108b480cdb36a0b6a4-slow.mp3",
+      "slowDuration": 8.858,
+      "slowSha256": "6e9991089db2be14f327d755546f9b0ae49e4cd32f3ca5a94b0d8f443b92f39c"
+    },
+    "entrar na lista de espera implica abrir mão da reserva de amanhã?": {
+      "text": "Entrar na lista de espera implica abrir mão da reserva de amanhã?",
+      "src": "audio/c1-v1/b704dd9e8472d2a581fa-normal.mp3",
+      "duration": 4.182,
+      "sha256": "1b6f6e2cc6bb3d5de739e6ddb997211b1dfafd3d44597d74c4e3565ecff7ad2c",
+      "slowSrc": "audio/c1-v1/b704dd9e8472d2a581fa-slow.mp3",
+      "slowDuration": 5.678,
+      "slowSha256": "80b7eaeedb707978c7e409bd046ea9f3dde35db60863f5538424311514cc9df1"
+    },
+    "enquanto não houver confirmação do segundo trecho, prefiro manter a reserva de amanhã.": {
+      "text": "Enquanto não houver confirmação do segundo trecho, prefiro manter a reserva de amanhã.",
+      "src": "audio/c1-v1/f9b3affa669b0786edd7-normal.mp3",
+      "duration": 5.442,
+      "sha256": "a2f52073256aa8df3d9d8c344a8449ba56c00f0697df8b9c3c8fe068484ed6c6",
+      "slowSrc": "audio/c1-v1/f9b3affa669b0786edd7-slow.mp3",
+      "slowDuration": 7.214,
+      "slowSha256": "8be7502303b7a012bf3a705eaaa547935346034a2845b646dff80607ee505944"
+    },
+    "caso surja uma vaga hoje, peço que me consultem antes de alterar a reserva.": {
+      "text": "Caso surja uma vaga hoje, peço que me consultem antes de alterar a reserva.",
+      "src": "audio/c1-v1/c47be8ff00471e43fce4-normal.mp3",
+      "duration": 4.98,
+      "sha256": "1aa78022cef911bc8525250f1841865ac1a464a5ce4b4664b613e6fc3e9ccea7",
+      "slowSrc": "audio/c1-v1/c47be8ff00471e43fce4-slow.mp3",
+      "slowDuration": 6.638,
+      "slowSha256": "4e4402b4d8a766f67bc7bdcce304aa6bdbf631d62f40f09cc0a684702dc1850d"
+    },
+    "se eu tivesse entendido isso como garantia, teria avisado à família que chegaria hoje.": {
+      "text": "Se eu tivesse entendido isso como garantia, teria avisado à família que chegaria hoje.",
+      "src": "audio/c1-v1/10971a7fa73d7d41a5f2-normal.mp3",
+      "duration": 5.526,
+      "sha256": "fb14e52405c77df74b253b2fdc16297ae41a9093c3087f19fe9333ca6867733e",
+      "slowSrc": "audio/c1-v1/10971a7fa73d7d41a5f2-slow.mp3",
+      "slowDuration": 7.501,
+      "slowSha256": "6d3303dad9111439fb6bf0ebc028e87174da4fbf15d37f75a07ded4f4989702e"
+    },
+    "em outras palavras, hoje eu só consigo embarcar se aparecer uma vaga.": {
+      "text": "Em outras palavras, hoje eu só consigo embarcar se aparecer uma vaga.",
+      "src": "audio/c1-v1/976af81b2faff8ecd30d-normal.mp3",
+      "duration": 4.778,
+      "sha256": "ab4b6e8d8e12c526dfceedd370f72c4ad5efe5525870d9f5ff33735e4069109e",
+      "slowSrc": "audio/c1-v1/976af81b2faff8ecd30d-slow.mp3",
+      "slowDuration": 6.253,
+      "slowSha256": "2a91d4a102efe0128e8494277a338e9f7f4d76fa156e6f394e57c8c12811775e"
+    },
+    "ressalva": {
+      "text": "ressalva",
+      "src": "audio/c1-v1/6d5ad5fb8868be60b677-normal.mp3",
+      "duration": 1.418,
+      "sha256": "a42fcdb617bab31d22473836b3cc0f64e7d3a97bd199f108004732afb93e4596",
+      "slowSrc": "audio/c1-v1/6d5ad5fb8868be60b677-slow.mp3",
+      "slowDuration": 1.652,
+      "slowSha256": "85bdd7a4e02734fde4374e03164c26f259e670a5fbca26357b3a689697f94ab1"
+    },
+    "hipótese de trabalho": {
+      "text": "hipótese de trabalho",
+      "src": "audio/c1-v1/310a60d20fa2a31de3ad-normal.mp3",
+      "duration": 2.121,
+      "sha256": "6003b9db835238e751d96d979e9b2396a89b099f1ee863c91251a20169c85c73",
+      "slowSrc": "audio/c1-v1/310a60d20fa2a31de3ad-slow.mp3",
+      "slowDuration": 2.687,
+      "slowSha256": "a444b92c9d53a01f8c852c36f9327985e4fb1438e2e8cbedefa458a305c6c764"
+    },
+    "constar em ata": {
+      "text": "constar em ata",
+      "src": "audio/c1-v1/655f8c819ddd772cd4cf-normal.mp3",
+      "duration": 1.769,
+      "sha256": "d1bc637ef9b9f15080dab120d104208e7745bba158d5ce9a216e395576555e23",
+      "slowSrc": "audio/c1-v1/655f8c819ddd772cd4cf-slow.mp3",
+      "slowDuration": 2.271,
+      "slowSha256": "abcd2c63add36ef3995aea03acbe891bc89feef882ea97da50dd8b9432877feb"
+    },
+    "premissa": {
+      "text": "premissa",
+      "src": "audio/c1-v1/53677c4547967e00d51c-normal.mp3",
+      "duration": 1.355,
+      "sha256": "11dcafeae6db0d7aaefdd88ac668e1cf2939e63e017388304ca7e3f4ee24e491",
+      "slowSrc": "audio/c1-v1/53677c4547967e00d51c-slow.mp3",
+      "slowDuration": 1.673,
+      "slowSha256": "78e77e9b2f689b06a966ed9ec742b07e867cbcba3aacf11746de2b53d899b58b"
+    },
+    "içamento": {
+      "text": "içamento",
+      "src": "audio/c1-v1/8f9f5456093a18043400-normal.mp3",
+      "duration": 1.418,
+      "sha256": "a225fecfe4d4c5a74048f08ada0ef3487dc9fee7d90b8f773721b6fef4a97aac",
+      "slowSrc": "audio/c1-v1/8f9f5456093a18043400-slow.mp3",
+      "slowDuration": 1.726,
+      "slowSha256": "c0ccd725aaf0e1c8c5f9d7e67c6c14d50f83474de472a083f249d4b8b471924e"
+    },
+    "ficar condicionado a": {
+      "text": "ficar condicionado a",
+      "src": "audio/c1-v1/8ed0ea2192fc9cc383bf-normal.mp3",
+      "duration": 2.259,
+      "sha256": "95da3c339b77b143bb406c1014f58e979919c27129c20a57b47a15e512350370",
+      "slowSrc": "audio/c1-v1/8ed0ea2192fc9cc383bf-slow.mp3",
+      "slowDuration": 2.954,
+      "slowSha256": "3ab1aa6f3a72ed6da50acb2768f6911759d319589851976c269764290b1eeba4"
+    },
+    "indício": {
+      "text": "indício",
+      "src": "audio/c1-v1/1496868dde0754b51f4f-normal.mp3",
+      "duration": 1.437,
+      "sha256": "3a0318f6111c60a7c5c307c46f2ec836104f5f282280e96b8a300bfa1041aad4",
+      "slowSrc": "audio/c1-v1/1496868dde0754b51f4f-slow.mp3",
+      "slowDuration": 1.77,
+      "slowSha256": "b5db022e276dafaa24893171e1c85d542c484655e0165570a5868ee6116ce24a"
+    },
+    "levantamento": {
+      "text": "levantamento",
+      "src": "audio/c1-v1/a23342d379e85c069537-normal.mp3",
+      "duration": 1.621,
+      "sha256": "217e9632d45075da9356bafcc18aafae3da3a8e431cb7c1b720419378670102d",
+      "slowSrc": "audio/c1-v1/a23342d379e85c069537-slow.mp3",
+      "slowDuration": 2.025,
+      "slowSha256": "6f2c946554d5baed186883a19355bcaf932d80342049188e56b424cd809749ed"
+    },
+    "extrapolar": {
+      "text": "extrapolar",
+      "src": "audio/c1-v1/eb233085bb6783584ac0-normal.mp3",
+      "duration": 1.439,
+      "sha256": "74057a8afe8fdf4e1464e935adb38dcefccf371c8f390fc97d6cc061c38ff231",
+      "slowSrc": "audio/c1-v1/eb233085bb6783584ac0-slow.mp3",
+      "slowDuration": 1.802,
+      "slowSha256": "f7f61208d81f25b653c8ff1240819228ab0ed08afd6f8dbbf5cf7b5ec10865d1"
+    },
+    "dar margem a": {
+      "text": "dar margem a",
+      "src": "audio/c1-v1/fd735c4b7f3050a25745-normal.mp3",
+      "duration": 1.673,
+      "sha256": "7ec467ad07614fd10271380135b57b36b5a3a3bf710d3595239e58735febcba5",
+      "slowSrc": "audio/c1-v1/fd735c4b7f3050a25745-slow.mp3",
+      "slowDuration": 2.195,
+      "slowSha256": "eb5f9217a3cb1c831f672d8489049934e0683fc739c10f18118b76681ca2dd53"
+    },
+    "ficar acertado": {
+      "text": "ficar acertado",
+      "src": "audio/c1-v1/4502e47929a07ab8925f-normal.mp3",
+      "duration": 1.706,
+      "sha256": "6b19c437d86e7bb64566c3258f57291406771511b9a02366e2b4383b862137c2",
+      "slowSrc": "audio/c1-v1/4502e47929a07ab8925f-slow.mp3",
+      "slowDuration": 2.174,
+      "slowSha256": "7b43ff2611eb38369bc717ca90f379438d228cccd309d957632cf8ebf92e521a"
+    },
+    "implicar aprovação": {
+      "text": "implicar aprovação",
+      "src": "audio/c1-v1/e1ffa4e70cea630f2197-normal.mp3",
+      "duration": 1.962,
+      "sha256": "9c8006601c679f2e5b4f2c1b3b79fb9c4831bb31b0a2e7df57ec74ca7d255b03",
+      "slowSrc": "audio/c1-v1/e1ffa4e70cea630f2197-slow.mp3",
+      "slowDuration": 2.57,
+      "slowSha256": "37494aa3c39513cbf745fa5ab7793bf081dfcef14d12289627d18bb353b00602"
+    },
+    "em si": {
+      "text": "em si",
+      "src": "audio/c1-v1/469c4204533d6218b95d-normal.mp3",
+      "duration": 1.279,
+      "sha256": "0420b509013943f7ee031d6da5aed6d9922ee9d121a8c4f5a114faf90b240802",
+      "slowSrc": "audio/c1-v1/469c4204533d6218b95d-slow.mp3",
+      "slowDuration": 1.493,
+      "slowSha256": "eee13b10824098e4cdedb10654e792279e9639406c1bffac05644e89861a9c7e"
+    },
+    "justamente": {
+      "text": "justamente",
+      "src": "audio/c1-v1/72b3b98df494451ef215-normal.mp3",
+      "duration": 1.534,
+      "sha256": "4136a1be1ab92be801252703885a0609c5696c7a76fc23219bcffe4739747860",
+      "slowSrc": "audio/c1-v1/72b3b98df494451ef215-slow.mp3",
+      "slowDuration": 1.951,
+      "slowSha256": "caed856d6759dc06713b20b9c805edb330981d6a93a9ac08c96968b67ab1fb8b"
+    },
+    "retomar a conversa": {
+      "text": "retomar a conversa",
+      "src": "audio/c1-v1/1ebfcc7c9c38b8479751-normal.mp3",
+      "duration": 1.908,
+      "sha256": "6bebf0b00b0b9d5c0c64ab61627de4a4bcf651eae8d0bd896ed46878981e1ef3",
+      "slowSrc": "audio/c1-v1/1ebfcc7c9c38b8479751-slow.mp3",
+      "slowDuration": 2.505,
+      "slowSha256": "510c9561a3094ce8fbe23a150669c64bc328813dd4f6d36e16f6d218b89d211f"
+    },
+    "ao passo que": {
+      "text": "ao passo que",
+      "src": "audio/c1-v1/c41a0e49c65fce2ff916-normal.mp3",
+      "duration": 1.427,
+      "sha256": "9156c385f193dc2c53060ed7c0b13fb3074df2dbad605d43dd167767111d7028",
+      "slowSrc": "audio/c1-v1/c41a0e49c65fce2ff916-slow.mp3",
+      "slowDuration": 1.78,
+      "slowSha256": "5764c69b8c43fc7d6fe60c045c51a38d62d4e9c5868698098b888754925a1d7b"
+    },
+    "abrir mão de": {
+      "text": "abrir mão de",
+      "src": "audio/c1-v1/67fa7a1002a84a352a68-normal.mp3",
+      "duration": 1.577,
+      "sha256": "8d4b3b5d5ee568b8575f36cac60721c79709b8c77e8e9bc3608a022b5ad998e5",
+      "slowSrc": "audio/c1-v1/67fa7a1002a84a352a68-slow.mp3",
+      "slowDuration": 1.951,
+      "slowSha256": "6fba21cc6eed8b2e812da41d026635520bc23c235ee8edab05b14b74e9823f4c"
+    },
+    "lista de espera": {
+      "text": "lista de espera",
+      "src": "audio/c1-v1/5ad929cb93ae3e3b1a5e-normal.mp3",
+      "duration": 1.706,
+      "sha256": "f564905b8ffc28a3f198ebc7224f45f559309f7ee64da452274ecd8443ab3f78",
+      "slowSrc": "audio/c1-v1/5ad929cb93ae3e3b1a5e-slow.mp3",
+      "slowDuration": 2.143,
+      "slowSha256": "31b9101a82b56dab303674f0a1ac39c633992b94272b5401146373d9d0bc3d5f"
+    },
+    "não é que a proposta seja inviável; o que nos preocupa é o prazo.": {
+      "text": "Não é que a proposta seja inviável; o que nos preocupa é o prazo.",
+      "src": "audio/c1-v1/3bc53054fc65f90e15ee-normal.mp3",
+      "duration": 4.175,
+      "sha256": "ece930dd5441e10582a45549b295e77c6be29bab180b207dd1f97cedfa66f6ed",
+      "slowSrc": "audio/c1-v1/3bc53054fc65f90e15ee-slow.mp3",
+      "slowDuration": 5.405,
+      "slowSha256": "2b2fbc481474825344ee529e54e6aba9e4acc8f08e0e3a81edf90f1535f45b17"
+    },
+    "se o transporte já estivesse incluído, não haveria motivo para somar o frete novamente.": {
+      "text": "Se o transporte já estivesse incluído, não haveria motivo para somar o frete novamente.",
+      "src": "audio/c1-v1/2ec62b38d7b35de99179-normal.mp3",
+      "duration": 5.663,
+      "sha256": "be59033a13045c952b5f7c9d954e92f2d8038643805038586859ca4c540dd138",
+      "slowSrc": "audio/c1-v1/2ec62b38d7b35de99179-slow.mp3",
+      "slowDuration": 7.467,
+      "slowSha256": "cf299f00e42d7b3dfe2eccb03e1b1a0e3c01281931e1ad1e5719c266ea4a670d"
+    },
+    "o número de visitas caiu, o que não significa que o interesse tenha desaparecido.": {
+      "text": "O número de visitas caiu, o que não significa que o interesse tenha desaparecido.",
+      "src": "audio/c1-v1/c31400b8ae8a9f9d1645-normal.mp3",
+      "duration": 5.074,
+      "sha256": "687471bcea8adb3a949aa7d3504ff142ef0a5ca0c1fa400750b3f4ab42d5d317",
+      "slowSrc": "audio/c1-v1/c31400b8ae8a9f9d1645-slow.mp3",
+      "slowDuration": 6.861,
+      "slowSha256": "c9f7669315289f055f4cad54e31b1980bf5001721160be56e4c30e924dba0226"
+    },
+    "podemos agendar uma conversa sem que isso represente um compromisso de compra.": {
+      "text": "Podemos agendar uma conversa sem que isso represente um compromisso de compra.",
+      "src": "audio/c1-v1/4a1f4247730c4fc2cc66-normal.mp3",
+      "duration": 4.96,
+      "sha256": "fdb7791560d4248564a81bc40af78c123d3407eedb17b8396ee672ab52d1605a",
+      "slowSrc": "audio/c1-v1/4a1f4247730c4fc2cc66-slow.mp3",
+      "slowDuration": 6.661,
+      "slowSha256": "bb4c1a53a485d086699736c82f484dcca3f453bfdfc679fd8fa95262ff324dc5"
+    },
+    "se eu tivesse cancelado a reserva, teria perdido a única opção confirmada.": {
+      "text": "Se eu tivesse cancelado a reserva, teria perdido a única opção confirmada.",
+      "src": "audio/c1-v1/b0f1e8e954039763ab62-normal.mp3",
+      "duration": 4.937,
+      "sha256": "558f59136a498c05a3b8456ed7984cdb2f191562af9e5731520652730e0c3ace",
+      "slowSrc": "audio/c1-v1/b0f1e8e954039763ab62-slow.mp3",
+      "slowDuration": 6.531,
+      "slowSha256": "e9c6f43f7b01dacb8e81048971debe88d59454682de5cc0f3f02ab7a0ccd5a8a"
+    }
+  }
+}
